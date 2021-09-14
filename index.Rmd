@@ -1,5 +1,5 @@
 ---
-title: "<br>CUBE: Covid-19 in the Urban Built Environment"
+title: "<br><br>CUBE: Covid-19 in the Urban Built Environment"
 author: "The CUBE team are: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
 
 output: 
