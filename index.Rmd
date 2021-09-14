@@ -1,0 +1,33 @@
+---
+title: "CUBE: Covid-19 in the Urban Built Environment"
+author: "The CUBE team: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
+# output:
+#   html_document:
+#     toc: true
+#     toc_float:
+#       toc_collapsed: false
+#     toc_depth: 3
+#     number_sections: true
+#     theme: darkly
+# output: 
+#   rmdformats::downcute:
+#       self_contained: true
+#       thumbnails: true
+#       lightbox: true
+#       gallery: false
+#       highlight: kate
+---
+---
+
+
+# Content
+
+## Content
+
+Content content content
+
+
+## Content
+
+- Content 
+- Content
