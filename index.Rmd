@@ -2,6 +2,12 @@
 title: "<br>CUBE: Covid-19 in the Urban Built Environment"
 author: "The CUBE team are: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
 
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      toc_collapsed: false
+    toc_depth: 2
 ---
 ---
 
@@ -23,7 +29,7 @@ Link to [Ashley's protocol video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)..
 
 ----
 
-## CUBE sampling in your congregate setting
+## CUBE & Your Facility
 
 To arrange for CUBE testing in your facility, please contact cube_email@cube_email.com
 
@@ -31,6 +37,8 @@ To arrange for CUBE testing in your facility, please contact cube_email@cube_ema
 
 ## Contribute to CUBE
 
-Give us all your grant monies, please.
+To contribute to the CUBE project ...
+
+Contributions would help us pay for swabs and reagents, allowing us to grow increase the number of locations included in our study...
 
 ----
