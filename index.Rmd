@@ -18,6 +18,8 @@ The CUBE: Covid-19 in the Built Urban Environment project seeks to develop and a
 
 Currently, we are focused on congregate settings located in Toronto, Ottawa, and Sault Ste. Marie.
 
+[Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier proof-of-principle study.
+
 ----
 
 ## Environmentally Swabbing
@@ -39,6 +41,6 @@ To arrange for CUBE testing in your facility, please contact cube_email@cube_ema
 
 To contribute to the CUBE project ...
 
-Contributions would help us pay for swabs and reagents, allowing us to grow increase the number of locations included in our study...
+Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study...
 
 ----
