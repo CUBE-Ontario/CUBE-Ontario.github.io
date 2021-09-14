@@ -1,0 +1,79 @@
+/*
+CSS for MyWebsite
+Updated: 06/01/2020
+
+plain colours
+
+white: #fffff
+'transparent' works in most cases if wanted
+
+Custom colours:
+
+light blue links = 2469e0
+dark blue side and nav bar = 363966
+
+greens -
+138D75
+
+title :   #363966;
+Header 1  #138D75;
+Header 2  #117A65;
+Header 3  #0E6655;
+Header 4  #0E6655;
+Code block  #2469e0; (hyperlinks)
+*/
+
+/* colour of the home icon*/
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color: #363966;
+    background-color: transparent;
+}
+/* Controls header navbar?? */
+.navbar-inverse {
+    background-color: #00000;
+    border-color: #e6e6e6;
+    /*color: red; #should be able to adjust header text color*/
+}
+/* Styles for toc on left */
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    z-index: 2;
+    color: #fffff;  /* toc  highlighted text */
+    background-color: #363966;  /* toc highlight background dark blue purple */
+    border-color: #363966; /* toc border */
+}
+
+/* Text styles*/
+td {  /* Table  */
+  font-size: 12px;
+}
+h1 { /* Header 1 */
+  font-size: 36px;
+  color: MidnightBlue;
+}
+h2 { /* Header 2 */
+    font-size: 28px;
+  color: #117A65;
+}
+h3 { /* Header 3 */
+  font-size: 22px;
+  color: #0E6655;
+}
+h4 { /* Header 4 */
+  font-size: 16px;
+  color: #0E6655;
+}
+code{ /* Code block */
+    font-size: 12px;
+    color: #2469e0;
+}
+/*  hyperlinks colours; what else? */
+a, a > code {
+    color: #2469e0;
+    text-decoration: none;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+body{ /* Normal  */
+      font-size: 16px;
+  }

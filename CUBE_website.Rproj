@@ -15,3 +15,4 @@ LaTeX: pdfLaTeX
 StripTrailingWhitespace: Yes
 
 BuildType: Website
+WebsitePath: ~/Documents/CUBE_website
