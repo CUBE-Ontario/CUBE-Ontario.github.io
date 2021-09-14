@@ -1,0 +1,17 @@
+name: "CUBE: Covid-19 in the Urban Built Environment"
+title: "CUBE: Covid-19 in the Urban Built Environment"
+author: "The CUBE team: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
+
+output_dir: "."  # for GitHub
+navbar:
+  right:
+    - icon: fa-paper-plane
+      href: mailto:ja.moggridge@gmail.com
+    - icon: fa-github
+      href: https://github.com/jmoggridge/CUBE_website
+
+output:
+  html_document:
+    theme: lumen
+    highlight: textmate
+    css: style.css
