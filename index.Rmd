@@ -14,9 +14,9 @@ output:
 
 ## About CUBE
 
-The CUBE: Covid-19 in the Built Urban Environment project seeks to develop and apply environmental sampling as a spatially-resolved method for Covid-19 monitoring in congregate settings including long-term care homes (LTC), universities, and public schools.
+The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for Covid-19 monitoring in congregate settings including long-term care homes (LTC), universities, and public schools.
 
-Currently, we are focused on congregate settings located in Toronto, Ottawa, and Sault Ste. Marie.
+Currently, we are focused on sampling from congregate settings located in Toronto, Ottawa, and Sault Ste. Marie.
 
 [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier proof-of-principle study.
 
@@ -26,7 +26,7 @@ Currently, we are focused on congregate settings located in Toronto, Ottawa, and
 
 We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
 
-Link to [Ashley's protocol video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)...
+<!-- Link to [Ashley's protocol video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)... -->
 
 
 ----
