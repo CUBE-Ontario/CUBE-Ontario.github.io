@@ -1,6 +1,6 @@
 ---
 title: "<br><br>CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
+author: "The CUBE team are: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGeer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
 
 output: 
   html_document:
@@ -14,7 +14,7 @@ output:
 
 ## About CUBE
 
-The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for Covid-19 monitoring in congregate settings including long-term care homes (LTC), universities, and public schools.
+The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools.
 
 Currently, we are focused on sampling from congregate settings located in Toronto, Ottawa, and Sault Ste. Marie.
 
@@ -22,7 +22,7 @@ Currently, we are focused on sampling from congregate settings located in Toront
 
 ----
 
-## Environmentally Swabbing
+## Environmental Swabbing
 
 We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
 
@@ -33,14 +33,20 @@ We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org
 
 ## CUBE & Your Facility
 
-To arrange for CUBE testing in your facility, please contact cube_email@cube_email.com
+To arrange for CUBE testing in your facility, please contact us by email: **email contact**
 
 ----
 
 ## Contribute to CUBE
 
-To contribute to the CUBE project ...
+To contribute to the CUBE project ... ?
 
-Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study...
+Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study... ?
+
 
 ----
+
+## Acknowledgements
+
+CUBE is supported by ...
+
