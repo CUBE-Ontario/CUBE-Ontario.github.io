@@ -1,6 +1,6 @@
 ---
 title: "<br><br>CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGeer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
+author: "The CUBE team are: Evgeni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFaddenAllison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli"
 
 output: 
   html_document:
@@ -14,20 +14,21 @@ output:
 
 ## About CUBE
 
+*--infographic here--*
+
 The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools.
 
 Currently, we are focused on sampling from congregate settings located in Toronto, Ottawa, and Sault Ste. Marie.
 
 [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier proof-of-principle study.
 
+
+
 ----
 
 ## Environmental Swabbing
 
 We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
-
-<!-- Link to [Ashley's protocol video](https://www.youtube.com/watch?v=dQw4w9WgXcQ)... -->
-
 
 ----
 
@@ -46,7 +47,13 @@ Contributions would help us pay for swabs and reagents, allowing us to increase 
 
 ----
 
-## Acknowledgements
+## Funding & Support
 
 CUBE is supported by ...
 
+
+----
+
+## CUBE Team Bios
+
+*--Pics & short bios here--*
