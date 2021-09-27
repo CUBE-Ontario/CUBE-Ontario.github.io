@@ -1,19 +1,15 @@
 /*
-CSS for MyWebsite
-Updated: 06/01/2020
-
-plain colours
+CSS for CUBE website
 
 white: #fffff
 'transparent' works in most cases if wanted
 
 Custom colours:
-
-light blue links = 2469e0
-dark blue side and nav bar = 363966
+light blue links = #2469e0
+dark blue side and nav bar = #363966
 
 greens -
-138D75
+#138D75
 
 title :   #363966;
 Header 1  #138D75;
@@ -60,7 +56,8 @@ h3 { /* Header 3 */
 }
 h4 { /* Header 4 */
   font-size: 16px;
-  color: #0E6655;
+  font-weight: bold;
+  color: #0E6655; /**/
 }
 code{ /* Code block */
     font-size: 12px;
@@ -77,3 +74,6 @@ pre { /* Code block - determines code spacing between lines */
 body{ /* Normal  */
       font-size: 16px;
   }
+
+
+

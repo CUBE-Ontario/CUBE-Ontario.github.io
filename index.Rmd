@@ -14,21 +14,38 @@ output:
 
 ## About CUBE
 
-*--infographic here--*
+<!-- *--infographic here--* -->
 
-The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools.
+<img src="figures/CUBE_info2.png" width="60%" height="60%"
+    alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 
-Currently, we are focused on sampling from congregate settings located in Toronto, Ottawa, and Sault Ste. Marie.
+The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools. Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
+
+We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
+
 
 [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier proof-of-principle study.
 
 
-
 ----
 
-## Environmental Swabbing
+## FAQ
 
-We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
+<br>
+
+<h4 style="color:DodgerBlue";> Can we tell if the virus is viable or not?</h4>
+
+Our assay is not able to discern whether Covid-19 recovered in floor samples is viable or not. 
+
+<br>
+
+<h4 style="color:DodgerBlue";> What can environmental sampling tell us about the Covid-19 burden in congregate settings?</h4>
+
+
+Detection of Covid-19 in floor samples is correlated with the presence of infected persons.... 
+
+<br>
+
 
 ----
 
@@ -45,15 +62,51 @@ To contribute to the CUBE project ... ?
 Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study... ?
 
 
-----
-
-## Funders
-
-CUBE is supported by ...
-
 
 ----
 
 ## CUBE Team 
 
-*--Pics & short bios here--*
+<br>
+<!-- *--Pics & short bios here--* -->
+
+<div class='row' style= "top: 0px; margin: 5px 0;">
+  <p>
+  <img src="pics/jm_pic.png" alt="Jason Moggridge"       
+  style="float:left;width:20%;padding-right:3%"> 
+    Jason Moggridge, M. Binf. 
+    <br>
+    Research assistant at Lunenfeld-Tanenbaum Research Institute. <br>
+    Data analyst and R programmer for CUBE.
+  </p>
+</div>
+
+<br>
+
+<br>
+
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img src="pics/homer.jpeg" alt="Homer Simpson"
+    style="float:left;width:20%;padding-right:3%"> 
+    <br>Homer Simpson
+    <br>Safety inspector for sector 7G at the Springfield nuclear power plant
+  </p>
+</div>
+
+<br>
+
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img src="pics/bart.png" alt="Bart Simpson"
+    style="float:left;width:20%;padding-right:3%"> 
+    <br>Bart Simpson
+    <br>
+    Student at Springfield Elementary. Aye carumba!
+  </p>
+</div>
+
+
+
+-----
+
