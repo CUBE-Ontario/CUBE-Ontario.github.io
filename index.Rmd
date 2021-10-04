@@ -19,6 +19,8 @@ output:
 <img src="figures/CUBE_info3.png" width="50%" height="50%"
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 
+<br>
+
 The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools. Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
 
 We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
@@ -76,13 +78,13 @@ leaflet::leaflet() |>
 
 To arrange for CUBE testing in your facility, please contact us by email: **email contact**
 
-----
+<!-- ---- -->
 
-## Contribute to CUBE
+<!-- ## Contribute to CUBE -->
 
-To contribute to the CUBE project ... ?
+<!-- To contribute to the CUBE project ... ? -->
 
-Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study... ?
+<!-- Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study... ? -->
 
 
 
