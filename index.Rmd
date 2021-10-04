@@ -16,7 +16,7 @@ output:
 
 <!-- *--infographic here--* -->
 
-<img src="figures/CUBE_info2.png" width="60%" height="60%"
+<img src="figures/CUBE_info3.png" width="50%" height="50%"
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 
 The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools. Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
