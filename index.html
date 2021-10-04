@@ -15,7 +15,7 @@
 <title>  CUBE: Covid-19 in the Urban Built Environment</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -36,6 +36,16 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="site_libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -331,7 +341,7 @@ div.tocify {
   </a>
 </li>
 <li>
-  <a href="https://github.com/jmoggridge/CUBE_website">
+  <a href="https://github.com/CUBE-Ontario">
     <span class="fa fa-github"></span>
      
   </a>
@@ -369,8 +379,17 @@ div.tocify {
 <p>Our assay is not able to discern whether Covid-19 recovered in floor samples is viable or not.</p>
 <p><br></p>
 <h4 style="color:DodgerBlue";> What can environmental sampling tell us about the Covid-19 burden in congregate settings?</h4>
-<p>Detection of Covid-19 in floor samples is correlated with the presence of infected persons….</p>
+<p>Detection of Covid-19 in floor samples is correlated with the presence of infected persons.</p>
 <p><br></p>
+<h4 style="color:DodgerBlue";> Can I catch Covid-19 from the floor?</h4>
+<p>It is highly unlikely to be infected by Covid-19 from floors, but floors may have some viable virus present.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="cube-sites" class="section level2">
+<h2>CUBE Sites</h2>
+<div id="htmlwidget-61f51a56031fc4507268" style="width:672px;height:384px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-61f51a56031fc4507268">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[44.55,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[43.6855057759362,43.7932739764347,43.6648004000926],[-79.4126657718843,-79.3906302272971,-79.4185036922611],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Cedarvale Terrace LTC","Bayview Extendicare LTC","O'Neill LTC"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6648004000926,43.7932739764347],"lng":[-79.4185036922611,-79.3906302272971]}},"evals":[],"jsHooks":[]}</script>
 <hr />
 </div>
 <div id="cube-your-facility" class="section level2">
@@ -386,27 +405,92 @@ div.tocify {
 </div>
 <div id="cube-team" class="section level2">
 <h2>CUBE Team</h2>
-<p><br> <!-- *--Pics & short bios here--* --></p>
+<p><br></p>
+<!-- Evgueni Doukhanine -->
+<div class="row" style="top: 0px; margin: 5px 0; ">
+<p>
+<img src="pics/evgueni.jpg" alt="Evgueni Doukhanine"
+    style="float:left;width:20%;padding-right:3%">
+<h4>
+Evgueni Doukhanine
+</h4>
+Molecular biologist at DNA Genotek specializing in microbiome research and development of chemical reagents and collection devices to facilitate stabilization of primary samples.
+</p>
+</div>
+<p><br></p>
+<!--Laura Hug  -->
+<div class="row" style="top: 0px; margin: 5px 0; ">
+<p>
+<img src="pics/LAHug_headshot.jpg" alt="Dr. Laura Hug"
+    style="float:left;width:20%;padding-right:3%">
+<h4>
+Dr. Laura Hug
+</h4>
+Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug’s research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites. <br>
+</p>
+</div>
+<p><br></p>
+<!-- Benazir Hodzic-Santor -->
+<div class="row" style="top: 0px; margin: 5px 0; ">
+<p>
+<img src="pics/bena.jpg" alt="Benazir Hodzic-Santor"
+    style="float:left;width:20%;padding-right:3%">
+<h4>
+Benazir Hodzic-Santor
+</h4>
+Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
+</p>
+</div>
+<p><br></p>
+<!-- Rees Kassen -->
+<div class="row" style="top: 0px; margin: 5px 0; ">
+<p>
+<img src="pics/rees.jpg" alt="Dr. Rees Kassen"
+    style="float:left;width:20%;padding-right:3%">
+<h4>
+Dr. Rees Kassen
+</h4>
+Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa. Dr. Kassen microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s <a href="https://www.weforum.org/communities/gfc-on-scientific-collaboration">Global Future Council on Scientific Collaboration</a>.
+</p>
+</div>
+<p><br></p>
+<!-- Jason Moggridge -->
 <div class="row" style="top: 0px; margin: 5px 0;">
 <p>
 <img src="pics/jm_pic.png" alt="Jason Moggridge"       
-  style="float:left;width:20%;padding-right:3%"> Jason Moggridge, M. Binf. <br> Research assistant at Lunenfeld-Tanenbaum Research Institute. <br> Data analyst and R programmer for CUBE.
+  style="float:left;width:20%;padding-right:3%">
+<h4>
+Jason Moggridge
+</h4>
+Research assistant for Dr. Michael Fralick. <br> Data analyst and R programmer for CUBE.
 </p>
 </div>
 <p><br></p>
-<p><br></p>
+<!-- Nisha Thampi -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/homer.jpeg" alt="Homer Simpson"
-    style="float:left;width:20%;padding-right:3%"> <br>Homer Simpson <br>Safety inspector for sector 7G at the Springfield nuclear power plant
+<img src="pics/nisha.jpg" alt="Nisha Thampi"
+    style="float:left;width:20%;padding-right:3%">
+<h4>
+Dr. Nisha Thampi
+</h4>
+Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
 </p>
 </div>
 <p><br></p>
+<!-- Veronica Zanichelli -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/bart.png" alt="Bart Simpson"
-    style="float:left;width:20%;padding-right:3%"> <br>Bart Simpson <br> Student at Springfield Elementary. Aye carumba!
+<img src="pics/Veronica_Zanichelli.png" alt="Veronica Zanichelli"
+    style="float:left;width:20%;padding-right:3%">
+<h4>
+Veronica Zanichelli
+</h4>
+Clinical research coordinator for CUBE and other projects in the field of infectious diseases at the Ottawa Hospital Research Institute.
 </p>
+</div>
+<p><br></p>
+<br>
 </div>
 <hr />
 </div>

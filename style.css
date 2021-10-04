@@ -75,5 +75,12 @@ body{ /* Normal  */
       font-size: 16px;
   }
 
+.bioDiv {
+  border: 5px outset white;
+  background-color: lightgrey;
+  text-align: left;
+  top: 0px;
+  margin: 5px 0;
+}
 
 

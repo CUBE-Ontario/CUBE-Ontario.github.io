@@ -7,7 +7,7 @@ navbar:
     - icon: fa-paper-plane
       href: mailto:ja.moggridge@gmail.com
     - icon: fa-github
-      href: https://github.com/jmoggridge/CUBE_website
+      href: https://github.com/CUBE-Ontario
 
 output:
   html_document:
