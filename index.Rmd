@@ -76,8 +76,8 @@ leaflet::leaflet() |>
 
 ## CUBE & Your Facility
 
-To arrange for CUBE testing in your facility, please contact us by email: **email contact**
-
+To arrange for CUBE testing in your facility, [please contact us by email]().
+<!-- [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20Source%20Han%20Sans) -->
 <!-- ---- -->
 
 <!-- ## Contribute to CUBE -->
@@ -106,19 +106,17 @@ To arrange for CUBE testing in your facility, please contact us by email: **emai
 </div>
 <br>
 
-<!--Laura Hug  -->
+
+<!-- Michael Fralick -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/LAHug_headshot.jpg" alt="Dr. Laura Hug"
+    <img src="pics/Mike.jpg" alt="Michael Fralick"
     style="float:left;width:20%;padding-right:3%"> 
-    <h4>Dr. Laura Hug </h4>
-    Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug's research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites.
-    <br>
+    <h4>Michael Fralick</h4>
+    Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto, Clinician Scientist at Sinai Health, and Locum general internist at The Sault Area Hospital. 
   </p>
 </div>
-
 <br>
-
 
 <!-- Benazir Hodzic-Santor -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -129,8 +127,20 @@ To arrange for CUBE testing in your facility, please contact us by email: **emai
     Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
   </p>
 </div>
-
 <br>
+
+<!--Laura Hug  -->
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img src="pics/LAHug_headshot.jpg" alt="Dr. Laura Hug"
+    style="float:left;width:20%;padding-right:3%"> 
+    <h4>Dr. Laura Hug </h4>
+    Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug's research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites.
+    <br>
+  </p>
+</div>
+<br>
+
 
 <!-- Rees Kassen -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -148,7 +158,7 @@ To arrange for CUBE testing in your facility, please contact us by email: **emai
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
-  <img src="pics/jm_pic.png" alt="Jason Moggridge"       
+  <img src="pics/jason1.jpg" alt="Jason Moggridge"       
   style="float:left;width:20%;padding-right:3%"> 
     <h4>Jason Moggridge </h4>
     Research assistant for Dr. Michael Fralick. <br>
@@ -157,16 +167,28 @@ To arrange for CUBE testing in your facility, please contact us by email: **emai
 </div>
 <br>
 
+<!-- Ashley Raudanskis -->
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img src="pics/Ashley.jpg" alt="Ashley Raudanskis"
+    style="float:left;width:20%;padding-right:3%">
+    <h4>Ashley Raudanskis</h4>
+    Project Manager for the CUBE study. Ashley recently graduated from the University of Guelph and is focused on pursuing a career in healthcare in the near future. 
+  </p>
+</div>
+<br>
+
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/nisha.jpg" alt="Nisha Thampi"
-    style="float:left;width:20%;padding-right:3%"> 
+    <img src="pics/no_pic_given.png" alt="Nisha Thampi"
+    style="float:left;width:20%;padding-right:3%">
     <h4>Dr. Nisha Thampi</h4>
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
 </div>
 <br>
+
 
 <!-- Veronica Zanichelli -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -179,8 +201,13 @@ To arrange for CUBE testing in your facility, please contact us by email: **emai
 </div>
 <br>
 
+
+
+
 <br>
 </div>
+
+
 -----
 
 
