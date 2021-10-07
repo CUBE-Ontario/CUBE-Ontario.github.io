@@ -189,6 +189,16 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 </div>
 <br>
 
+<!-- Alex Wong -->
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img src="pics/Alex.jpg" alt="Alex Wong"
+    style="float:left;width:20%;padding-right:3%">
+    <h4>Dr. Alex Wong</h4>
+    Alex Wong is an associate professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
+  </p>
+</div>
+<br>
 
 <!-- Veronica Zanichelli -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
