@@ -1,6 +1,6 @@
 ---
-title: "<br><br>CUBE: Covid-19 in the Urban Built Environment"
-author: "<br>The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
+title: "CUBE: Covid-19 in the Urban Built Environment"
+author: "<br><em>The CUBE team are</em>: <br>Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
 
 output: 
   html_document:
@@ -21,7 +21,7 @@ output:
 <img class='info' src="figures/CUBE_info3.png" 
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 
-<h2> About the CUBE project</h2>
+<h2> About the CUBE study</h2>
 <br>
 The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings, such as long-term care homes (LTC), universities, public schools, and daycares. 
 
@@ -54,10 +54,20 @@ Detection of Covid-19 in floor samples is correlated with the presence of infect
 
 <h4 style="color:DodgerBlue";> Can I catch Covid-19 from the floor?</h4>
 
-It is highly unlikely to be infected by Covid-19 from floors, but floors may have some viable virus present.
+It is highly unlikely for an individual to become infected by Covid-19 from floors, but floors may have some viable virus present.
 
 <br>
 
+<p style='color:white'>
+Why do you swab the floors?  
+How long will you be swabbing our facilities?  
+When will we hear about the results?  
+Do we need to clean our floors more often?  
+Can you get COVID-19 from the floor?  
+Have you found any COVID-19 in our building?  
+How long is the study running?  
+Who are you working with/who is funding the study?   
+</p>
 
 -----
 
@@ -144,20 +154,16 @@ If you are interested in contributing to the CUBE research project, [please cont
     Molecular biologist at DNA Genotek specializing in microbiome research and development of chemical reagents and collection devices to facilitate stabilization of primary samples.
   </p>
 </div>
-<br>
 
 
 <!-- Michael Fralick -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <!-- <img src="pics/Mike.jpg" alt="Michael Fralick" -->
-    <!-- style="float:left;width:20%;padding-right:3%">  -->
     <img class='profilepic' src="pics/Mike.jpg" alt="Michael Fralick"> 
     <h4>Michael Fralick</h4>
     Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto, Clinician Scientist at Sinai Health, and Locum general internist at The Sault Area Hospital. 
   </p>
 </div>
-<br>
 
 <!-- Aaron Hinz -->
 <!-- <div class='row' style= "top: 0px; margin: 5px 0; "> -->
@@ -179,7 +185,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
   </p>
 </div>
-<br>
 
 <!--Laura Hug  -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -190,8 +195,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     <br>
   </p>
 </div>
-<br>
-
 
 <!-- Rees Kassen -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -204,16 +207,13 @@ If you are interested in contributing to the CUBE research project, [please cont
   </p>
 </div>
 
-<br>
-
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
   <img src="pics/jm_pic.jpeg" alt="Jason Moggridge"       
   class='profilepic'> 
     <h4>Jason Moggridge </h4>
-    Research assistant for Dr. Michael Fralick. <br>
-    Data analyst and R programmer for CUBE.
+    Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study.
   </p>
 </div>
 <br>
@@ -261,11 +261,8 @@ If you are interested in contributing to the CUBE research project, [please cont
   </p>
 </div>
 <br>
-
-
-
-
 <br>
+
 </div>
 
 
