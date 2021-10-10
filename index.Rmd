@@ -216,7 +216,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study.
   </p>
 </div>
-<br>
 
 <!-- Ashley Raudanskis -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -227,7 +226,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Project Manager for the CUBE study. Ashley recently graduated from the University of Guelph and is focused on pursuing a career in healthcare in the near future. 
   </p>
 </div>
-<br>
 
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -238,7 +236,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
 </div>
-<br>
 
 <!-- Alex Wong -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -249,7 +246,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Alex Wong is an associate professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
   </p>
 </div>
-<br>
 
 <!-- Veronica Zanichelli -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
@@ -260,7 +256,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Clinical research coordinator for CUBE and other projects in the field of infectious diseases at the Ottawa Hospital Research Institute.
   </p>
 </div>
-<br>
 <br>
 
 </div>
