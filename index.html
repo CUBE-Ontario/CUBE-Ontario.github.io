@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Allison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli" />
+<meta name="author" content=" The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli  " />
 
 
 <title>  CUBE: Covid-19 in the Urban Built Environment</title>
@@ -46,6 +46,9 @@
 <script src="site_libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
 <script src="site_libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
 <script src="site_libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="site_libs/ionicons-2.0.1/ionicons.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -356,23 +359,26 @@ div.tocify {
 
 
 <h1 class="title toc-ignore"><br><br>CUBE: Covid-19 in the Urban Built Environment</h1>
-<h4 class="author">The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Allison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli</h4>
+<h4 class="author"><br>The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br></h4>
 
 </div>
 
 
 <hr />
-<div id="about-cube" class="section level2">
-<h2>About CUBE</h2>
+<!-- ## About CUBE -->
 <!-- *--infographic here--* -->
-<p><img src="figures/CUBE_info3.png" width="50%" height="50%"
+<div class="row" style="margin-left:0.5%;margin-right:0.5%">
+<p><img class='info' src="figures/CUBE_info3.png" 
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay"></p>
-<p><br></p>
-<p>The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools. Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.</p>
-<p>We swab floors and test for Covid-19 using an <a href="https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction">RT-qPCR</a> assay developed by <a href="https://www.dnagenotek.com/">DNA Genotek</a> and a novel CRISPR-based device.</p>
-<p><a href="https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2">Click here to read our preprint</a> from an earlier proof-of-principle study.</p>
-<hr />
+<h2>
+About the CUBE project
+</h2>
+<p><br> The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings, such as long-term care homes (LTC), universities, public schools, and daycares.</p>
+<p>We collect samples by swabbing floors; then, the swabs are tested for Covid-19 using an <a href="https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction">RT-qPCR</a> assay developed by <a href="https://www.dnagenotek.com/">DNA Genotek</a> and/or a novel CRISPR-based device.</p>
+<p>Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie.</p>
+<p><a href="https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2">Click here to read our preprint</a> from an earlier study showing the effectiveness of environmental sampling for Covid-19 monitoring.</p>
 </div>
+<hr />
 <div id="faq" class="section level2">
 <h2>FAQ</h2>
 <p><br></p>
@@ -387,28 +393,36 @@ div.tocify {
 <p><br></p>
 <hr />
 </div>
-<div id="cube-sites" class="section level2">
-<h2>CUBE Sites</h2>
-<div id="htmlwidget-0e6633c8f7aac841b71b" style="width:672px;height:384px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0e6633c8f7aac841b71b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[44.55,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[43.6855057759362,43.7932739764347,43.6648004000926],[-79.4126657718843,-79.3906302272971,-79.4185036922611],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Cedarvale Terrace LTC","Bayview Extendicare LTC","O'Neill LTC"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6648004000926,43.7932739764347],"lng":[-79.4185036922611,-79.3906302272971]}},"evals":[],"jsHooks":[]}</script>
+<div id="site-locations" class="section level2">
+<h2>Site locations</h2>
+<p><br></p>
+<p>This interactive map show sites that are currently being monitored by our research team.</p>
+<div id="htmlwidget-165b5e2e1c5e43da2c7e" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-165b5e2e1c5e43da2c7e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[44.55,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":6,"maxZoom":10}]},{"method":"addAwesomeMarkers","args":[[43.6855057759362,43.7932739764347,43.6648004000926],[-79.4126657718843,-79.3906302272971,-79.4185036922611],{"icon":"cube","markerColor":["green","green","green"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["LTC","LTC","LTC"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6648004000926,43.7932739764347],"lng":[-79.4185036922611,-79.3906302272971]}},"evals":[],"jsHooks":[]}</script>
 <hr />
+<p><br></p>
 </div>
 <div id="cube-your-facility" class="section level2">
-<h2>CUBE &amp; Your Facility</h2>
-<p>To arrange for CUBE testing in your facility, <a href="">please contact us by email</a>. <!-- [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20Source%20Han%20Sans) --> <!-- ---- --></p>
-<!-- ## Contribute to CUBE -->
-<!-- To contribute to the CUBE project ... ? -->
-<!-- Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study... ? -->
+<h2>CUBE @ Your Facility</h2>
+<p>To arrange for CUBE testing in your facility, <a href="mailto:ja.moggridge@gmail.com?subject=%5BCUBE%5D%20facility%20recruitment">please contact us by email</a>.</p>
+<p><br></p>
+<!-- [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20Source%20Han%20Sans) -->
+<hr />
+<p><br></p>
+</div>
+<div id="contribute-to-cube" class="section level2">
+<h2>Contribute to CUBE</h2>
+<p>If you are interested in contributing to the CUBE research project, <a href="mailto:ja.moggridge@gmail.com?subject=%5BCUBE%5D%20funding">please contact us by email</a>.</p>
+<p><br></p>
 <hr />
 </div>
-<div id="cube-team" class="section level2">
-<h2>CUBE Team</h2>
+<div id="research-team" class="section level2">
+<h2>Research Team</h2>
 <p><br></p>
 <!-- Evgueni Doukhanine -->
-<div class="row" style="top: 0px; margin: 5px 0; ">
+<div class="row" style="top: 0px; margin: 5px 0; p">
 <p>
-<img src="pics/evgueni.jpg" alt="Evgueni Doukhanine"
-    style="float:left;width:20%;padding-right:3%">
+<img class='profilepic' src="pics/Evgueni2.jpg" alt="Evgueni Doukhanine">
 <h4>
 Evgueni Doukhanine
 </h4>
@@ -419,8 +433,9 @@ Molecular biologist at DNA Genotek specializing in microbiome research and devel
 <!-- Michael Fralick -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/mike.jpg" alt="Michael Fralick"
-    style="float:left;width:20%;padding-right:3%">
+<!-- <img src="pics/mike.jpg" alt="Michael Fralick" -->
+<!-- style="float:left;width:20%;padding-right:3%">  -->
+<img class='profilepic' src="pics/mike.jpg" alt="Michael Fralick">
 <h4>
 Michael Fralick
 </h4>
@@ -428,11 +443,19 @@ Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto,
 </p>
 </div>
 <p><br></p>
+<!-- Aaron Hinz -->
+<!-- <div class='row' style= "top: 0px; margin: 5px 0; "> -->
+<!--   <p> -->
+<!--     <img src="pics/Aaron.png" alt="Aaron Hinz" -->
+<!--     style="float:left;width:20%;padding-right:3%">  -->
+<!--     <h4>Aaron Hinz</h4> -->
+<!--   </p> -->
+<!-- </div> -->
+<!-- <br> -->
 <!-- Benazir Hodzic-Santor -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/bena.jpg" alt="Benazir Hodzic-Santor"
-    style="float:left;width:20%;padding-right:3%">
+<img class='profilepic' src="pics/bena.jpg" alt="Benazir Hodzic-Santor">
 <h4>
 Benazir Hodzic-Santor
 </h4>
@@ -443,8 +466,7 @@ Bena is a medical student at the University of Toronto and a research assistant 
 <!--Laura Hug  -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/LAHug_headshot.jpg" alt="Dr. Laura Hug"
-    style="float:left;width:20%;padding-right:3%">
+<img class='profilepic' src="pics/Laura2.jpg" alt="Dr. Laura Hug">
 <h4>
 Dr. Laura Hug
 </h4>
@@ -455,20 +477,20 @@ Assistant Professor and Canada Research Chair in Environmental Microbiology in t
 <!-- Rees Kassen -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/rees.jpg" alt="Dr. Rees Kassen"
-    style="float:left;width:20%;padding-right:3%">
+<img src="pics/rees2.jpg" alt="Dr. Rees Kassen"
+    class='profilepic'>
 <h4>
 Dr. Rees Kassen
 </h4>
-Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa. Dr. Kassen microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s <a href="https://www.weforum.org/communities/gfc-on-scientific-collaboration">Global Future Council on Scientific Collaboration</a>.
+Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa. Dr. Kassen uses microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s <a href="https://www.weforum.org/communities/gfc-on-scientific-collaboration">Global Future Council on Scientific Collaboration</a>.
 </p>
 </div>
 <p><br></p>
 <!-- Jason Moggridge -->
 <div class="row" style="top: 0px; margin: 5px 0;">
 <p>
-<img src="pics/jason1.jpg" alt="Jason Moggridge"       
-  style="float:left;width:20%;padding-right:3%">
+<img src="pics/jm_pic.jpeg" alt="Jason Moggridge"       
+  class='profilepic'>
 <h4>
 Jason Moggridge
 </h4>
@@ -480,7 +502,7 @@ Research assistant for Dr. Michael Fralick. <br> Data analyst and R programmer 
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
 <img src="pics/Ashley.jpg" alt="Ashley Raudanskis"
-    style="float:left;width:20%;padding-right:3%">
+    class='profilepic'>
 <h4>
 Ashley Raudanskis
 </h4>
@@ -491,8 +513,8 @@ Project Manager for the CUBE study. Ashley recently graduated from the Universit
 <!-- Nisha Thampi -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/no_pic_given.png" alt="Nisha Thampi"
-    style="float:left;width:20%;padding-right:3%">
+<img src="pics/nisha.jpg" alt="Nisha Thampi"
+    class='profilepic'>
 <h4>
 Dr. Nisha Thampi
 </h4>
@@ -503,8 +525,8 @@ Medical director of the Infection Prevention and Control Program at CHEO, a pedi
 <!-- Alex Wong -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/Alex.jpg" alt="Alex Wong"
-    style="float:left;width:20%;padding-right:3%">
+<img src="pics/Alex3.jpg" alt="Alex Wong"
+    class='profilepic'>
 <h4>
 Dr. Alex Wong
 </h4>
@@ -515,8 +537,8 @@ Alex Wong is an associate professor of biology at Carleton University. His lab i
 <!-- Veronica Zanichelli -->
 <div class="row" style="top: 0px; margin: 5px 0; ">
 <p>
-<img src="pics/Veronica_Zanichelli.png" alt="Veronica Zanichelli"
-    style="float:left;width:20%;padding-right:3%">
+<img src="pics/Veronica2.jpg" alt="Veronica Zanichelli"
+    class='profilepic'>
 <h4>
 Veronica Zanichelli
 </h4>

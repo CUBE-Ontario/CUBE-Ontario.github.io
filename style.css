@@ -75,7 +75,7 @@ body{ /* Normal  */
       font-size: 16px;
   }
 
-.bioDiv {
+div.bios {
   border: 5px outset white;
   background-color: lightgrey;
   text-align: left;
@@ -83,4 +83,23 @@ body{ /* Normal  */
   margin: 5px 0;
 }
 
+img.info {
+  height:; 45%;
+  width: 45%;
+  float:right;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
+img.profilepic {
+  height: 125px;
+  width: 125px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 3%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  object-fit: cover;
+}

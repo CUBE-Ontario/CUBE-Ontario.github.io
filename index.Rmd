@@ -1,6 +1,6 @@
 ---
 title: "<br><br>CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Allison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli"
+author: "<br>The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
 
 output: 
   html_document:
@@ -12,22 +12,26 @@ output:
 ---
 
 
-## About CUBE
+<!-- ## About CUBE -->
 
 <!-- *--infographic here--* -->
 
-<img src="figures/CUBE_info3.png" width="50%" height="50%"
+<div class='row' style="margin-left:0.5%;margin-right:0.5%">
+
+<img class='info' src="figures/CUBE_info3.png" 
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 
+<h2> About the CUBE project</h2>
 <br>
+The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings, such as long-term care homes (LTC), universities, public schools, and daycares. 
 
-The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop and apply environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings including long-term care homes (LTC), universities, and public schools. Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
+We collect samples by swabbing floors; then, the swabs are tested for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
 
-We swab floors and test for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and a novel CRISPR-based device.
+Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie.
 
+[Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for Covid-19 monitoring.
 
-[Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier proof-of-principle study.
-
+</div>
 
 ----
 
@@ -57,49 +61,85 @@ It is highly unlikely to be infected by Covid-19 from floors, but floors may hav
 
 -----
 
-## CUBE Sites 
+## Site locations
 
+<br>
 
-```{r, message=F, warning=FALSE, echo=F, fig.height=4}
+This interactive map show sites that are currently being monitored by our research team.
+
+```{r, message=F, warning=FALSE, echo=F}
 library(leaflet)
 library(tidyverse)
-sites <- read_csv(file = 'sites.csv')
-leaflet::leaflet() |> 
-  setView(lng = -80, lat = 44.55,zoom = 6) %>%
-  addProviderTiles(providers$CartoDB.Positron) |> 
-  addMarkers(data = sites,lng = ~lon, lat = ~lat, popup = ~site)
+sites <- 
+  read_csv(file = 'data/sites.csv') |> 
+  mutate(color = case_when(
+    type == 'LTC' ~ 'green',
+    type == 'Daycare' ~ 'orange',
+    type == 'School' ~ 'blue',
+    TRUE ~ 'red'
+  ))
+
+icons <- awesomeIcons(
+  icon = 'cube',
+  iconColor = 'white',
+  library = 'ion',
+  markerColor = sites$color
+)
+
+leaflet::leaflet() |>
+  setView(
+    lng = -80, 
+    lat = 44.55, 
+    zoom = 6
+  )  |> 
+  addProviderTiles(
+    provider = providers$CartoDB.Positron,
+    options = providerTileOptions(minZoom = 6, maxZoom = 10)
+  ) |>
+  addAwesomeMarkers(
+    data = sites,
+    lng = ~ lon,
+    lat = ~ lat,
+    icon = icons,
+    popup = ~type
+  )
 ```
 
 
 
 ----
 
-## CUBE & Your Facility
+<br>
 
-To arrange for CUBE testing in your facility, [please contact us by email]().
+## CUBE @ Your Facility
+
+To arrange for CUBE testing in your facility, [please contact us by email](mailto:ja.moggridge@gmail.com?subject=[CUBE]%20facility%20recruitment).
+
+<br>
+
 <!-- [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20Source%20Han%20Sans) -->
-<!-- ---- -->
-
-<!-- ## Contribute to CUBE -->
-
-<!-- To contribute to the CUBE project ... ? -->
-
-<!-- Contributions would help us pay for swabs and reagents, allowing us to increase the number of locations included in our study... ? -->
-
-
 
 ----
 
-## CUBE Team 
+<br>
+
+## Contribute to CUBE
+
+If you are interested in contributing to the CUBE research project, [please contact us by email](mailto:ja.moggridge@gmail.com?subject=[CUBE]%20funding).
+
+<br>
+
+----
+
+## Research Team 
 
 <br>
 
 
 <!-- Evgueni Doukhanine -->
-<div class='row' style= "top: 0px; margin: 5px 0; ">
+<div class='row' style= "top: 0px; margin: 5px 0; p">
   <p>
-    <img src="pics/evgueni.jpg" alt="Evgueni Doukhanine"
-    style="float:left;width:20%;padding-right:3%"> 
+  <img class='profilepic' src="pics/Evgueni2.jpg" alt="Evgueni Doukhanine"> 
     <h4>Evgueni Doukhanine</h4>
     Molecular biologist at DNA Genotek specializing in microbiome research and development of chemical reagents and collection devices to facilitate stabilization of primary samples.
   </p>
@@ -110,19 +150,31 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!-- Michael Fralick -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Mike.jpg" alt="Michael Fralick"
-    style="float:left;width:20%;padding-right:3%"> 
+    <!-- <img src="pics/Mike.jpg" alt="Michael Fralick" -->
+    <!-- style="float:left;width:20%;padding-right:3%">  -->
+    <img class='profilepic' src="pics/Mike.jpg" alt="Michael Fralick"> 
     <h4>Michael Fralick</h4>
     Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto, Clinician Scientist at Sinai Health, and Locum general internist at The Sault Area Hospital. 
   </p>
 </div>
 <br>
 
+<!-- Aaron Hinz -->
+<!-- <div class='row' style= "top: 0px; margin: 5px 0; "> -->
+<!--   <p> -->
+<!--     <img src="pics/Aaron.png" alt="Aaron Hinz" -->
+<!--     style="float:left;width:20%;padding-right:3%">  -->
+<!--     <h4>Aaron Hinz</h4> -->
+<!--   </p> -->
+<!-- </div> -->
+<!-- <br> -->
+
+
+
 <!-- Benazir Hodzic-Santor -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/bena.jpg" alt="Benazir Hodzic-Santor"
-    style="float:left;width:20%;padding-right:3%"> 
+    <img class='profilepic' src="pics/bena.jpg" alt="Benazir Hodzic-Santor"> 
     <h4>Benazir Hodzic-Santor</h4>
     Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
   </p>
@@ -132,8 +184,7 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!--Laura Hug  -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/LAHug_headshot.jpg" alt="Dr. Laura Hug"
-    style="float:left;width:20%;padding-right:3%"> 
+    <img class='profilepic' src="pics/Laura2.jpg" alt="Dr. Laura Hug"> 
     <h4>Dr. Laura Hug </h4>
     Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug's research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites.
     <br>
@@ -145,11 +196,11 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!-- Rees Kassen -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/rees.jpg" alt="Dr. Rees Kassen"
-    style="float:left;width:20%;padding-right:3%"> 
+    <img src="pics/rees2.jpg" alt="Dr. Rees Kassen"
+    class='profilepic'> 
     <h4>Dr. Rees Kassen</h4>
     Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa.
-    Dr. Kassen microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s [Global Future Council on Scientific Collaboration](https://www.weforum.org/communities/gfc-on-scientific-collaboration). 
+    Dr. Kassen uses microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s [Global Future Council on Scientific Collaboration](https://www.weforum.org/communities/gfc-on-scientific-collaboration). 
   </p>
 </div>
 
@@ -158,8 +209,8 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
-  <img src="pics/jason1.jpg" alt="Jason Moggridge"       
-  style="float:left;width:20%;padding-right:3%"> 
+  <img src="pics/jm_pic.jpeg" alt="Jason Moggridge"       
+  class='profilepic'> 
     <h4>Jason Moggridge </h4>
     Research assistant for Dr. Michael Fralick. <br>
     Data analyst and R programmer for CUBE.
@@ -171,7 +222,7 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
     <img src="pics/Ashley.jpg" alt="Ashley Raudanskis"
-    style="float:left;width:20%;padding-right:3%">
+    class='profilepic'>
     <h4>Ashley Raudanskis</h4>
     Project Manager for the CUBE study. Ashley recently graduated from the University of Guelph and is focused on pursuing a career in healthcare in the near future. 
   </p>
@@ -181,8 +232,8 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/no_pic_given.png" alt="Nisha Thampi"
-    style="float:left;width:20%;padding-right:3%">
+    <img src="pics/nisha.jpg" alt="Nisha Thampi"
+    class='profilepic'>
     <h4>Dr. Nisha Thampi</h4>
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
@@ -192,8 +243,8 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!-- Alex Wong -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Alex.jpg" alt="Alex Wong"
-    style="float:left;width:20%;padding-right:3%">
+    <img src="pics/Alex3.jpg" alt="Alex Wong"
+    class='profilepic'>
     <h4>Dr. Alex Wong</h4>
     Alex Wong is an associate professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
   </p>
@@ -203,8 +254,8 @@ To arrange for CUBE testing in your facility, [please contact us by email]().
 <!-- Veronica Zanichelli -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Veronica_Zanichelli.png" alt="Veronica Zanichelli"
-    style="float:left;width:20%;padding-right:3%"> 
+    <img src="pics/Veronica2.jpg" alt="Veronica Zanichelli"
+    class='profilepic'> 
     <h4>Veronica Zanichelli</h4>
     Clinical research coordinator for CUBE and other projects in the field of infectious diseases at the Ottawa Hospital Research Institute.
   </p>
