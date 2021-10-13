@@ -11,19 +11,18 @@ output:
 ---
 ---
 
-
-<!-- ## About CUBE -->
-
-<!-- *--infographic here--* -->
-
+<!-- ## About CUBE section-->
 <div class='row' style="margin-left:0.5%;margin-right:0.5%">
 
+<!-- *--infographic here--* -->
 <img class='info' src="figures/CUBE_info3.png" 
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 
+<!-- header -->
 <h2> About the CUBE study</h2>
 <br>
-The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings, such as long-term care homes (LTC), universities, public schools, and daycares. 
+<!-- blurb -->
+The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
 
 We collect samples by swabbing floors; then, the swabs are tested for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
 
