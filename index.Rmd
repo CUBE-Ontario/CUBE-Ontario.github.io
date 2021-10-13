@@ -128,6 +128,7 @@ sites <-
   read_csv(file = 'data/sites.csv') |> 
   mutate(color = case_when(
     type == 'LTC' ~ 'green',
+    type == 'University' ~ 'purple',
     type == 'Daycare' ~ 'orange',
     type == 'School' ~ 'blue',
     TRUE ~ 'red'
@@ -167,11 +168,9 @@ leaflet::leaflet() |>
 
 ## CUBE @ Your Facility
 
-To arrange for CUBE testing in your facility, [please contact us by email](mailto:ja.moggridge@gmail.com?subject=[CUBE]%20facility%20recruitment).
+To arrange for CUBE testing in your facility, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20facility%20recruitment).
 
 <br>
-
-<!-- [Dr. Ken Lunde](mailto:lunde@adobe.com?subject=[GitHub]%20Source%20Han%20Sans) -->
 
 ----
 
@@ -179,7 +178,7 @@ To arrange for CUBE testing in your facility, [please contact us by email](mailt
 
 ## Contribute to CUBE
 
-If you are interested in contributing to the CUBE research project, [please contact us by email](mailto:ja.moggridge@gmail.com?subject=[CUBE]%20funding).
+If you are interested in contributing to the CUBE research project, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20funding).
 
 <br>
 
@@ -204,28 +203,25 @@ If you are interested in contributing to the CUBE research project, [please cont
 <!-- Michael Fralick -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Mike.jpg" alt="Michael Fralick"> 
-    <h4>Michael Fralick</h4>
+    <img class='profilepic' src="pics/Mike2.jpg" alt="Michael Fralick"> 
+    <h4>Dr. Michael Fralick</h4>
     Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto, Clinician Scientist at Sinai Health, and Locum general internist at The Sault Area Hospital. 
   </p>
 </div>
 
 <!-- Aaron Hinz -->
-<!-- <div class='row' style= "top: 0px; margin: 5px 0; "> -->
-<!--   <p> -->
-<!--     <img src="pics/Aaron.png" alt="Aaron Hinz" -->
-<!--     style="float:left;width:20%;padding-right:3%">  -->
-<!--     <h4>Aaron Hinz</h4> -->
-<!--   </p> -->
-<!-- </div> -->
-<!-- <br> -->
-
-
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img class='profilepic' src="pics/Aaron.png" alt="Aaron Hinz"> 
+    <h4>Aaron Hinz</h4>
+    Aaron is a Research Associate at the University of Ottawa with interests in genetics and molecular mechanisms of microbial adaptation. For the CUBE project, he has been optimizing methods for SARS-CoV-2 detection from built environment samples.
+  </p>
+</div>
 
 <!-- Benazir Hodzic-Santor -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/bena.jpg" alt="Benazir Hodzic-Santor"> 
+    <img class='profilepic' src="pics/Bena2.jpg" alt="Benazir Hodzic-Santor"> 
     <h4>Benazir Hodzic-Santor</h4>
     Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
   </p>

@@ -5,7 +5,7 @@ output_dir: "."  # for GitHub
 navbar:
   right:
     - icon: fa-paper-plane
-      href: mailto:ja.moggridge@gmail.com
+      href: mailto:CUBEstudy21@gmail.com
     - icon: fa-github
       href: https://github.com/CUBE-Ontario
 
