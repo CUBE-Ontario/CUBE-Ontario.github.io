@@ -1,6 +1,6 @@
 ---
 title: "CUBE: Covid-19 in the Urban Built Environment"
-author: "<br><em>The CUBE team are</em>: <br>Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
+author: "The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
 
 output: 
   html_document:
@@ -39,35 +39,80 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 
 <br>
 
-<h4 style="color:DodgerBlue";> Can we tell if the virus is viable or not?</h4>
+<h4 style="color:DodgerBlue";> Why do you swab the floors?</h4>
 
-Our assay is not able to discern whether Covid-19 recovered in floor samples is viable or not. 
-
-<br>
-
-<h4 style="color:DodgerBlue";> What can environmental sampling tell us about the Covid-19 burden in congregate settings?</h4>
-
-
-Detection of Covid-19 in floor samples is correlated with the presence of infected persons.
+We swab floors to pick up any Covid-19 RNA (the genetic material of the virus) that we can then detect using the RT-qPCR method. The aim of our study is to develop this technique as a means to monitor the presence of Covid-19 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).  
 
 <br>
 
-<h4 style="color:DodgerBlue";> Can I catch Covid-19 from the floor?</h4>
-
-It is highly unlikely for an individual to become infected by Covid-19 from floors, but floors may have some viable virus present.
+<h4 style="color:DodgerBlue";> How long will you be swabbing our facilities?</h4>
 
 <br>
 
-<p style='color:white'>
-Why do you swab the floors?  
-How long will you be swabbing our facilities?  
-When will we hear about the results?  
-Do we need to clean our floors more often?  
-Can you get COVID-19 from the floor?  
-Have you found any COVID-19 in our building?  
-How long is the study running?  
-Who are you working with/who is funding the study?   
-</p>
+<br>
+
+<h4 style="color:DodgerBlue";> When will we hear about the results? </h4>
+
+We will try report our results to each facility on a monthly basis.
+
+<br>
+
+<h4 style="color:DodgerBlue";> Do we need to clean our floors more often? </h4>
+
+No, time and resources would be better spent on improving ventilation and/or air filtration.
+
+<br>
+
+<h4 style="color:DodgerBlue";> Can you get COVID-19 from the floor?  </h4>
+The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.
+
+<br>
+
+<h4 style="color:DodgerBlue";> Have you found any COVID-19 in our building? </h4>
+
+<br>
+
+<h4 style="color:DodgerBlue";> How long is the study running?  </h4>
+
+This will depend on funding and has not yet been determined.
+
+<br>
+
+<h4 style="color:DodgerBlue";> Who are you working with/who is funding the study? </h4>
+
+Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.
+
+<!-- We are working with public health authorities in Toronto, Ottawa, and Algoma .... -->
+<!-- Our study is funded by ... -->
+
+<br>
+
+<!-- <h4 style="color:DodgerBlue";> Can our study tell if virus found on floors is viable or not?</h4> -->
+
+<!-- Our assay is not able to discern whether Covid-19 recovered in floor samples is viable or not.  -->
+
+<!-- <br> -->
+
+<!-- <h4 style="color:DodgerBlue";> What can environmental sampling tell us about the Covid-19 burden in congregate settings?</h4> -->
+
+
+<!-- The detection of Covid-19 in floor samples is correlated with the presence of infected persons in the facility. -->
+
+<!-- <br> -->
+
+
+
+
+<!-- <p style='color:white'> -->
+<!-- Why do you swab the floors?   -->
+<!-- How long will you be swabbing our facilities?   -->
+<!-- When will we hear about the results?   -->
+<!-- Do we need to clean our floors more often?   -->
+<!-- Can you get COVID-19 from the floor?   -->
+<!-- Have you found any COVID-19 in our building?   -->
+<!-- How long is the study running?   -->
+<!-- Who are you working with/who is funding the study?    -->
+<!-- </p> -->
 
 -----
 
@@ -141,10 +186,11 @@ If you are interested in contributing to the CUBE research project, [please cont
 
 ----
 
+<br>
+
 ## Research Team 
 
 <br>
-
 
 <!-- Evgueni Doukhanine -->
 <div class='row' style= "top: 0px; margin: 5px 0; p">
@@ -199,29 +245,38 @@ If you are interested in contributing to the CUBE research project, [please cont
 <!-- Rees Kassen -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/rees2.jpg" alt="Dr. Rees Kassen"
-    class='profilepic'> 
+    <img src="pics/rees2.jpg" alt="Dr. Rees Kassen" class='profilepic'> 
     <h4>Dr. Rees Kassen</h4>
-    Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa.
+    <p>Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa.
     Dr. Kassen uses microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s [Global Future Council on Scientific Collaboration](https://www.weforum.org/communities/gfc-on-scientific-collaboration). 
+    </p>
   </p>
 </div>
 
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
-  <img src="pics/jm_pic.jpeg" alt="Jason Moggridge"       
-  class='profilepic'> 
+  <img src="pics/jm_pic.jpeg" alt="Jason Moggridge" class='profilepic'> 
     <h4>Jason Moggridge </h4>
     Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study.
+  </p>
+</div>
+
+<!-- Dr. Caroline Nott is an Infectious Diseases Physician and Director of the Antimicrobial Stewardship Program at The Ottawa Hospital (TOH). She has supported TOH Infection Prevention and Control and Occupational Health Departments as a COVID-19 Pandemic Support Lead since April 2020.  -->
+
+<!-- Dr. Caroline Nott -->
+<div class='row' style= "top: 0px; margin: 5px 0;">
+  <p>
+  <img src="pics/c_nott2.jpg" alt="Dr. Caroline Nott" class='profilepic'> 
+    <h4>Dr. Caroline Nott</h4>
+    Infectious Diseases Physician and Director of the Antimicrobial Stewardship Program at The Ottawa Hospital (TOH). Dr. Nott has supported TOH Infection Prevention and Control and Occupational Health Departments as a COVID-19 Pandemic Support Lead since April 2020. 
   </p>
 </div>
 
 <!-- Ashley Raudanskis -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Ashley.jpg" alt="Ashley Raudanskis"
-    class='profilepic'>
+    <img src="pics/Ashley.jpg" alt="Ashley Raudanskis" class='profilepic'>
     <h4>Ashley Raudanskis</h4>
     Project Manager for the CUBE study. Ashley recently graduated from the University of Guelph and is focused on pursuing a career in healthcare in the near future. 
   </p>
@@ -230,8 +285,7 @@ If you are interested in contributing to the CUBE research project, [please cont
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/nisha.jpg" alt="Nisha Thampi"
-    class='profilepic'>
+    <img src="pics/nisha.jpg" alt="Nisha Thampi" class='profilepic'>
     <h4>Dr. Nisha Thampi</h4>
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
@@ -240,7 +294,7 @@ If you are interested in contributing to the CUBE research project, [please cont
 <!-- Alex Wong -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Alex3.jpg" alt="Alex Wong"
+    <img src="pics/Alex4.jpg" alt="Alex Wong"
     class='profilepic'>
     <h4>Dr. Alex Wong</h4>
     Alex Wong is an associate professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
