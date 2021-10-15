@@ -40,78 +40,40 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 
 <h4 style="color:DodgerBlue";> Why do you swab the floors?</h4>
 
-We swab floors to pick up any Covid-19 RNA (the genetic material of the virus) that we can then detect using the RT-qPCR method. The aim of our study is to develop this technique as a means to monitor the presence of Covid-19 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).  
+We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).  
 
 <br>
 
 <h4 style="color:DodgerBlue";> How long will you be swabbing our facilities?</h4>
 
-<br>
+Most facilities are swabbed on a weekly basis for a number of months.
 
 <br>
 
 <h4 style="color:DodgerBlue";> When will we hear about the results? </h4>
 
-We will try report our results to each facility on a monthly basis.
+The results will be made publicly available when the study is complete.  
 
 <br>
 
-<h4 style="color:DodgerBlue";> Do we need to clean our floors more often? </h4>
+<h4 style="color:DodgerBlue";> Can you get COVID-19 from the floor? Do we need to clean our floors more often? </h4>
 
-No, time and resources would be better spent on improving ventilation and/or air filtration.
-
-<br>
-
-<h4 style="color:DodgerBlue";> Can you get COVID-19 from the floor?  </h4>
 The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.
 
 <br>
 
-<h4 style="color:DodgerBlue";> Have you found any COVID-19 in our building? </h4>
-
-<br>
-
-<h4 style="color:DodgerBlue";> How long is the study running?  </h4>
-
-This will depend on funding and has not yet been determined.
-
-<br>
 
 <h4 style="color:DodgerBlue";> Who are you working with/who is funding the study? </h4>
 
 Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.
 
-<!-- We are working with public health authorities in Toronto, Ottawa, and Algoma .... -->
-<!-- Our study is funded by ... -->
-
 <br>
 
-<!-- <h4 style="color:DodgerBlue";> Can our study tell if virus found on floors is viable or not?</h4> -->
+<h4 style="color:DodgerBlue";> Who is funding the study? </h4>
 
-<!-- Our assay is not able to discern whether Covid-19 recovered in floor samples is viable or not.  -->
+The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.
 
-<!-- <br> -->
-
-<!-- <h4 style="color:DodgerBlue";> What can environmental sampling tell us about the Covid-19 burden in congregate settings?</h4> -->
-
-
-<!-- The detection of Covid-19 in floor samples is correlated with the presence of infected persons in the facility. -->
-
-<!-- <br> -->
-
-
-
-
-<!-- <p style='color:white'> -->
-<!-- Why do you swab the floors?   -->
-<!-- How long will you be swabbing our facilities?   -->
-<!-- When will we hear about the results?   -->
-<!-- Do we need to clean our floors more often?   -->
-<!-- Can you get COVID-19 from the floor?   -->
-<!-- Have you found any COVID-19 in our building?   -->
-<!-- How long is the study running?   -->
-<!-- Who are you working with/who is funding the study?    -->
-<!-- </p> -->
+<br>
 
 -----
 
@@ -248,6 +210,17 @@ If you are interested in contributing to the CUBE research project, [please cont
   </p>
 </div>
 
+<!-- Dr. Derek McFadden -->
+<div class='row' style= "top: 0px; margin: 5px 0;">
+  <p>
+  <img src="pics/Derek.jpg" alt="Dr. Derek McFadden profile image" class='profilepic'> 
+    <h4>Dr. Derek McFadden</h4>
+    Dr. MacFadden is a clinician scientist and epidemiologist at the Ottawa Hospital Research Institute.  
+  </p>
+</div>
+
+
+
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
@@ -256,8 +229,6 @@ If you are interested in contributing to the CUBE research project, [please cont
     Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study.
   </p>
 </div>
-
-<!-- Dr. Caroline Nott is an Infectious Diseases Physician and Director of the Antimicrobial Stewardship Program at The Ottawa Hospital (TOH). She has supported TOH Infection Prevention and Control and Occupational Health Departments as a COVID-19 Pandemic Support Lead since April 2020.  -->
 
 <!-- Dr. Caroline Nott -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
@@ -286,11 +257,19 @@ If you are interested in contributing to the CUBE research project, [please cont
   </p>
 </div>
 
+<!-- Tamara Van Bakel -->
+<div class='row' style= "top: 0px; margin: 5px 0; ">
+  <p>
+    <img src="pics/Tam2.jpg" alt="Tamara Van Bakel" class='profilepic'>
+    <h4>Tamara Van Bakel</h4>
+    Tamara is a Research Coordinator at Sinai Health System providing administrative support. 
+  </p>
+</div>
+
 <!-- Alex Wong -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Alex4.jpg" alt="Alex Wong"
-    class='profilepic'>
+    <img src="pics/Alex4.jpg" alt="Alex Wong" class='profilepic'>
     <h4>Dr. Alex Wong</h4>
     Alex Wong is an associate professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
   </p>
@@ -299,8 +278,7 @@ If you are interested in contributing to the CUBE research project, [please cont
 <!-- Veronica Zanichelli -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Veronica2.jpg" alt="Veronica Zanichelli"
-    class='profilepic'> 
+    <img src="pics/Veronica2.jpg" alt="Veronica Zanichelli" class='profilepic'> 
     <h4>Veronica Zanichelli</h4>
     Clinical research coordinator for CUBE and other projects in the field of infectious diseases at the Ottawa Hospital Research Institute.
   </p>
