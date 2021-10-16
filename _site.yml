@@ -8,11 +8,8 @@ navbar:
       href: mailto:CUBEstudy21@gmail.com
     - icon: fa-github
       href: https://github.com/CUBE-Ontario
-
 output:
   html_document:
     theme: flatly
     highlight: textmate
     css: style.css
-
-

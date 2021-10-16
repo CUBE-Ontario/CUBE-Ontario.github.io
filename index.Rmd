@@ -1,7 +1,6 @@
 ---
 title: "CUBE: Covid-19 in the Urban Built Environment"
 author: "The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
-
 output: 
   html_document:
     toc: true
@@ -9,6 +8,7 @@ output:
       toc_collapsed: false
     toc_depth: 2
 ---
+
 ---
 
 <!-- ## About CUBE section-->
@@ -290,4 +290,6 @@ If you are interested in contributing to the CUBE research project, [please cont
 
 -----
 
+<!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
 
