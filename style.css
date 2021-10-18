@@ -113,7 +113,7 @@ img.profilepic {
 h4.faq {
   font-size: 17px;
   font-weight: bold;
-  color:#363ec5;
+  color: #35516e;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -124,21 +124,38 @@ h4.faq {
   cursor: pointer;
   padding: 5px 10px 5px 10px;
   text-align: left;
-  border: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e1e1e1;
+  border-radius: 5px;
+  border-radius: 5px;
   outline: none;
-  transition: 0.4s;
+  transition: 0.75s; /* controls the div background color transition */
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active {
   background-color: #e5e5e5;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  border-radius: 5px;
+}
+.accordion:hover {
+  background-color: #b8b8b8;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #383838;
+  border-radius: 5px;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 5px 5px 5px 5px;
   background-color: white;
-  display: none;
+  display: block;
+  /* 'none' makes the answer box closed by default */
+  /* 'block' makes answer box open by default */
   overflow: hidden;
 }
 

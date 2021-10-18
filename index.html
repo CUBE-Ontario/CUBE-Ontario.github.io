@@ -384,7 +384,7 @@ About the CUBE study
 <h2>
 Frequently Asked Questions
 </h2>
-<p><br></p>
+<p><br> <!-- <em>Click a button to display the answer</em> --></p>
 <!-- Accordion section with FAQs -->
 <!-- Example: -->
 <!-- <button class="accordion">Question X</button> -->
@@ -466,10 +466,10 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
     <!-- Toggle between hiding and showing the active panel  -->
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
+    if (panel.style.display === "none") {
       panel.style.display = "block";
+    } else {
+      panel.style.display = "none";
     }
   });
 }
@@ -490,8 +490,8 @@ Site locations
 </h2>
 <p><br></p>
 <p>This interactive map show sites that are currently being monitored by our research team.</p>
-<div id="htmlwidget-57b8e3dc6b761e795734" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-57b8e3dc6b761e795734">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[44.55,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":6,"maxZoom":10}]},{"method":"addAwesomeMarkers","args":[[43.6855057759362,43.7932739764347,43.6648004000926,45.42288,43.707537],[-79.4126657718843,-79.3906302272971,-79.4185036922611,-75.683283,-79.332469],{"icon":"cube","markerColor":["green","green","green","purple","orange"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["LTC","LTC","LTC","University","Daycare"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6648004000926,45.42288],"lng":[-79.4185036922611,-75.683283]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-2bea87711898ddc9a54a" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2bea87711898ddc9a54a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[44.55,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":6,"maxZoom":10}]},{"method":"addAwesomeMarkers","args":[[43.6855057759362,43.7932739764347,43.6648004000926,45.42288,43.707537],[-79.4126657718843,-79.3906302272971,-79.4185036922611,-75.683283,-79.332469],{"icon":"cube","markerColor":["green","green","green","purple","orange"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["LTC","LTC","LTC","University","Daycare"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6648004000926,45.42288],"lng":[-79.4185036922611,-75.683283]}},"evals":[],"jsHooks":[]}</script>
 <hr>
 <p><br></p>
 <h2>
