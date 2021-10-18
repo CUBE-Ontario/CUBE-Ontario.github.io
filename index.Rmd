@@ -53,7 +53,7 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 </button>
 
 <div class="panel">
-  <p class="faq">We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).<p/>
+  <p class="faqans">We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).<p/>
 </div>
 
 <button class="accordion">
@@ -61,35 +61,35 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 </button>
 
 <div class="panel">
-  <p class="faq">Most facilities are swabbed on a weekly basis for a number of months.</p>
+  <p class="faqans">Most facilities are swabbed on a weekly basis for a number of months.</p>
 </div>
 
 <button class="accordion">
   <h4 class="faq"> When will we hear about the results? </h4>
 </button>
 <div class="panel">
-  <p class="faq">The results will be made publicly available when the study is complete.</p>
+  <p class="faqans">The results will be made publicly available when the study is complete.</p>
 </div>
 
 <button class="accordion">
   <h4 class="faq">Can you get COVID-19 from the floor? Do we need to clean our floors more often?</h4>  
 </button>
 <div class="panel">
-  <p class="faq">The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.</p>
+  <p class="faqans">The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.</p>
 </div>
 
 <button class="accordion">
   <h4 class="faq"> What institutions are you affiliated with?</h4>
 </button>
 <div class="panel">
-  <p class="faq">Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.</p>
+  <p class="faqans">Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.</p>
 </div>
 
 <button class="accordion">
   <h4 class="faq"> Who is funding the study? </h4>
 </button>
 <div class="panel">
-  <p class="faq">The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.</p>
+  <p class="faqans">The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.</p>
 </div>
 
 </div>

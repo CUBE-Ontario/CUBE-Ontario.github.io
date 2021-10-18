@@ -118,15 +118,15 @@ h4.faq {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+  width: 100%;
   background-color: #eee;
   color: #444;
   cursor: pointer;
   padding: 5px 10px 5px 10px;
-  width: 100%;
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -142,7 +142,7 @@ h4.faq {
   overflow: hidden;
 }
 
-p.faq {
+p.faqans {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
