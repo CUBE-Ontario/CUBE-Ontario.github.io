@@ -1,6 +1,6 @@
 ---
 title: "CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek McFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
+author: "The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
 output: 
   html_document:
     toc: true
@@ -32,53 +32,111 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 
 </div>
 
+<hr>
+
+<!-- Section2 FAQs -->
+<h2>Frequently Asked Questions</h2>
+<br>
+
+<!-- Accordion section with FAQs -->
+<!-- Example: -->
+<!-- <button class="accordion">Question X</button> -->
+<!-- <div class="panel"> -->
+<!--   <p>Answer X .......  </p> -->
+<!-- </div> -->
+
+
+<div>
+
+<button class="accordion">
+  <h4 class="faq">Why do you swab the floors?</h4>
+</button>
+
+<div class="panel">
+  <p class="faq">We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).<p/>
+</div>
+
+<button class="accordion">
+  <h4 class="faq">How long will you be swabbing our facilities?</h4>
+</button>
+
+<div class="panel">
+  <p class="faq">Most facilities are swabbed on a weekly basis for a number of months.</p>
+</div>
+
+<button class="accordion">
+  <h4 class="faq"> When will we hear about the results? </h4>
+</button>
+<div class="panel">
+  <p class="faq">The results will be made publicly available when the study is complete.</p>
+</div>
+
+<button class="accordion">
+  <h4 class="faq">Can you get COVID-19 from the floor? Do we need to clean our floors more often?</h4>  
+</button>
+<div class="panel">
+  <p class="faq">The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.</p>
+</div>
+
+<button class="accordion">
+  <h4 class="faq"> What institutions are you affiliated with?</h4>
+</button>
+<div class="panel">
+  <p class="faq">Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.</p>
+</div>
+
+<button class="accordion">
+  <h4 class="faq"> Who is funding the study? </h4>
+</button>
+<div class="panel">
+  <p class="faq">The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.</p>
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- this javascript is needed to observe click/hover events for highlighting and expanding the accordion sections -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    <!-- Toggle between adding and removing the "active" class, -->
+    <!-- to highlight the button that controls the panel  -->
+    this.classList.toggle("active");
+    <!-- Toggle between hiding and showing the active panel  -->
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div></div>
+  
 ----
 
-## FAQ
+<!-- <h2>Old FAQ</h2> -->
 
-<br>
+<!-- <br> -->
 
-<h4 style="color:DodgerBlue";> Why do you swab the floors?</h4>
+<!-- <h4 style="color:DodgerBlue";> Why do you swab the floors?</h4> -->
 
-We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).  
+<!-- We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).   -->
 
-<br>
+<!-- <br> -->
 
-<h4 style="color:DodgerBlue";> How long will you be swabbing our facilities?</h4>
-
-Most facilities are swabbed on a weekly basis for a number of months.
-
-<br>
-
-<h4 style="color:DodgerBlue";> When will we hear about the results? </h4>
-
-The results will be made publicly available when the study is complete.  
-
-<br>
-
-<h4 style="color:DodgerBlue";> Can you get COVID-19 from the floor? Do we need to clean our floors more often? </h4>
-
-The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.
-
-<br>
-
-
-<h4 style="color:DodgerBlue";> Who are you working with/who is funding the study? </h4>
-
-Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.
-
-<br>
-
-<h4 style="color:DodgerBlue";> Who is funding the study? </h4>
-
-The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.
-
-<br>
-
------
-
-## Site locations
-
+<!-- SITES MAP SECTION -->
+<hr>
+<h2>Site locations</h2>
 <br>
 
 This interactive map show sites that are currently being monitored by our research team.
@@ -122,34 +180,27 @@ leaflet::leaflet() |>
   )
 ```
 
-
-
-----
-
+<hr>
 <br>
 
-## CUBE @ Your Facility
+<h2>CUBE @ Your Facility</h2>
 
 To arrange for CUBE testing in your facility, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20facility%20recruitment).
 
 <br>
-
-----
-
+<hr>
 <br>
 
-## Contribute to CUBE
-
+<h2>Contribute to CUBE</h2>
+<p>
 If you are interested in contributing to the CUBE research project, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20funding).
-
+</p>
 <br>
 
-----
+<hr>
 
 <br>
-
-## Research Team 
-
+<h2>Research Team </h2>
 <br>
 
 <!-- Evgueni Doukhanine -->
@@ -210,11 +261,11 @@ If you are interested in contributing to the CUBE research project, [please cont
   </p>
 </div>
 
-<!-- Dr. Derek McFadden -->
+<!-- Dr. Derek MacFadden -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
-  <img src="pics/Derek.jpg" alt="Dr. Derek McFadden profile image" class='profilepic'> 
-    <h4>Dr. Derek McFadden</h4>
+  <img src="pics/Derek.jpg" alt="Dr. Derek MacFadden profile image" class='profilepic'> 
+    <h4>Dr. Derek MacFadden</h4>
     Dr. MacFadden is a clinician scientist and epidemiologist at the Ottawa Hospital Research Institute.  
   </p>
 </div>
@@ -293,3 +344,25 @@ If you are interested in contributing to the CUBE research project, [please cont
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
 
+
+
+
+
+<!-- <h4 style="color:DodgerBlue";> How long will you be swabbing our facilities?</h4> -->
+<!-- Most facilities are swabbed on a weekly basis for a number of months. -->
+<!-- <br> -->
+<!-- <h4 class="faq"> When will we hear about the results? </h4> -->
+<!-- The results will be made publicly available when the study is complete. -->
+<!-- <br> -->
+
+<!-- <h4 class="faq">  Can you get COVID-19 from the floor? Do we need to clean our floors more often? </h4> -->
+<!-- The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present. -->
+<!-- <br> -->
+
+<!-- <h4 class="faq"> Who are you working with/who is funding the study? </h4> -->
+<!-- Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek. -->
+<!-- <br> -->
+
+<!-- <h4 class="faq"> Who is funding the study? </h4> -->
+<!-- The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek. -->
+<!-- <br> -->
