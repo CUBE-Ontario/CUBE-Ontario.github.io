@@ -96,10 +96,6 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 </div>
 
 
-
-
-
-
 <!-- this javascript is needed to observe click/hover events for highlighting and expanding the accordion sections -->
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -125,19 +121,10 @@ for (i = 0; i < acc.length; i++) {
   
 ----
 
-<!-- <h2>Old FAQ</h2> -->
-
-<!-- <br> -->
-
-<!-- <h4 style="color:DodgerBlue";> Why do you swab the floors?</h4> -->
-
-<!-- We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).   -->
-
-<!-- <br> -->
 
 <!-- SITES MAP SECTION -->
 <hr>
-<h2>Site locations</h2>
+<h2>Site Locations</h2>
 <br>
 
 This interactive map show sites that are currently being monitored by our research team.
