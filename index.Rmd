@@ -1,6 +1,6 @@
 ---
 title: "CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
+author: "The CUBE team are: Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli"
 output: 
   html_document:
     toc: true
@@ -14,23 +14,23 @@ output:
 ---
 
 <!-- ## About CUBE section-->
-<div class='row' style="margin-left:0.5%;margin-right:0.5%">
+<div class='row' style="margin-left:0%;margin-right:0%">
 
 <!-- *--infographic here--* -->
-<img class='info' src="figures/CUBE_info4.png" 
+<img class='info' src="figures/CUBE_info6.png" 
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
 </div>
 
 <div>
 <!-- header -->
 <h2> About the CUBE study</h2>
-<br>
+
 <!-- blurb -->
 The Covid-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
 
 We collect samples by swabbing floors; then, the swabs are tested for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
 
-Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie.
+Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
 
 [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for Covid-19 monitoring.
 
@@ -40,8 +40,6 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 
 <!-- Section2 FAQs -->
 <h2>Frequently Asked Questions</h2>
-<em>Click to open</em>
-<!-- <em>Click a button to display the answer</em> -->
 
 <!-- Accordion section with FAQs -->
 <!-- Example: -->
@@ -128,7 +126,7 @@ for (i = 0; i < acc.length; i++) {
 <p>These interactive maps show sites that are currently being monitored by our research team in Toronto and Ottawa.</p>
 
 
-```{r, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3}
+```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3}
 library(leaflet)
 library(tidyverse)
 # read site geo data and set marker colors based on type of site
@@ -188,15 +186,17 @@ library(htmltools)
 browsable(
   tagList(list(
     tags$div(
-      style = 'width:50%;display:block;float:left;',
+      style = 'width:50%;display:block;float:left;padding:2px;',
       toronto_map
     ),
     tags$div(
-      style = 'width:50%;display:block;float:left;',
+      style = 'width:50%;display:block;float:left;padding:2px;',
       ottawa_map
     )
   ))
 )
+
+email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
 ```
 
 <!-- need this to start next section below the maps, not underneath them! -->
@@ -204,12 +204,14 @@ browsable(
 
 
 <h2>CUBE @ Your Facility</h2>
-To arrange for CUBE testing in your facility, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20facility%20recruitment).
+To arrange for CUBE testing in your facility, 
+[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20facility%20recruitment).
 <hr>
 
 <h2>Contribute to CUBE</h2>
 <p>
-If you are interested in contributing to the CUBE research project, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20funding).
+If you are interested in contributing to the CUBE research project, 
+[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20funding) .
 </p>
 <hr>
 
@@ -354,28 +356,8 @@ If you are interested in contributing to the CUBE research project, [please cont
 
 -----
 
+<!-- ###### Copyright © 2021 CUBE study team. All Rights Reserved. -->
+
+
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
-
-
-
-
-
-<!-- <h4 style="color:DodgerBlue";> How long will you be swabbing our facilities?</h4> -->
-<!-- Most facilities are swabbed on a weekly basis for a number of months. -->
-<!-- <br> -->
-<!-- <h4 class="faq"> When will we hear about the results? </h4> -->
-<!-- The results will be made publicly available when the study is complete. -->
-<!-- <br> -->
-
-<!-- <h4 class="faq">  Can you get COVID-19 from the floor? Do we need to clean our floors more often? </h4> -->
-<!-- The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present. -->
-<!-- <br> -->
-
-<!-- <h4 class="faq"> Who are you working with/who is funding the study? </h4> -->
-<!-- Our research team has members affliated with The Ottawa Hospital, Children's Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek. -->
-<!-- <br> -->
-
-<!-- <h4 class="faq"> Who is funding the study? </h4> -->
-<!-- The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek. -->
-<!-- <br> -->

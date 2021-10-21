@@ -91,14 +91,14 @@ img.info {
 */
 /* image format for the infographic panel */
 img.info {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   float: center;
-  padding: 1px;
+  padding: 0px;
   margin-top: 2px;
   margin-bottom: 0px;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /*biography section for each member of the project staff*/
@@ -137,8 +137,8 @@ h4.faq {
   color: #444;
   cursor: pointer;
   padding: 5px 10px 5px 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   text-align: left;
   border-style: solid;
   border-width: 1px;
@@ -169,7 +169,11 @@ h4.faq {
 .panel {
   padding: 5px 5px 5px 5px;
   background-color: white;
-  display: none;
+  border-style: solid; /*trying to add border on answer boxes*/
+  border-width: 1px;
+  border-color: #e5e5e5;
+  border-radius: 5px;
+  display: block;
   /* 'none' makes the answer box closed by default */
   /* 'block' makes answer box open by default */
   overflow: hidden;
@@ -188,12 +192,22 @@ p.faqans {
 }
 
 
-/* Leaflet maps div*/
 
-span.lflt {
-  display: inline; /* the default for span */
-  width: 100%;
-  padding: 5px;
-  border: 1px white;
-  background-color: white;
+
+/* NO TOC on mobile */
+@media screen and (max-width: 767px){
+
+  .col-xs-12.col-sm-4.col-md-3 {
+    display: none;
+  }
+
+  .top-text {
+    font-size: 25px;
+  }
+
+  .bottom-text {
+    font-size: 40px;
+  }
+
+
 }
