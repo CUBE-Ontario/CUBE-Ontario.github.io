@@ -76,15 +76,29 @@ body{ /* Normal  */
       font-size: 16px;
   }
 
+/* image format for the infographic panel OLD */
+/*
+img.info {
+  height: 46%;
+  width: 46%;
+  float:right;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  margin-right: 1px;
+}
+*/
 /* image format for the infographic panel */
 img.info {
-  height:; 45%;
-  width: 45%;
-  float:right;
-  margin-top: 5%;
-  margin-bottom: 2%;
-  margin-left: 3%;
-  margin-right: 0.5%;
+  height: 90%;
+  width: 90%;
+  float: center;
+  padding: 1px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 /*biography section for each member of the project staff*/
@@ -123,6 +137,8 @@ h4.faq {
   color: #444;
   cursor: pointer;
   padding: 5px 10px 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-align: left;
   border-style: solid;
   border-width: 1px;
@@ -153,7 +169,7 @@ h4.faq {
 .panel {
   padding: 5px 5px 5px 5px;
   background-color: white;
-  display: block;
+  display: none;
   /* 'none' makes the answer box closed by default */
   /* 'block' makes answer box open by default */
   overflow: hidden;
@@ -169,4 +185,15 @@ p.faqans {
     box-sizing: border-box;
     padding: 1px 8px 1px 8px;
     margin: 1px 1px 1px 1px;
+}
+
+
+/* Leaflet maps div*/
+
+span.lflt {
+  display: inline; /* the default for span */
+  width: 100%;
+  padding: 5px;
+  border: 1px white;
+  background-color: white;
 }

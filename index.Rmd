@@ -1,6 +1,6 @@
 ---
 title: "CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Evgueni Douakine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
+author: "The CUBE team are: Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli<br><br>"
 output: 
   html_document:
     toc: true
@@ -9,20 +9,24 @@ output:
     toc_depth: 2
 ---
 
+<!-- Doug Manuel and Allison McGeer -->
+
 ---
 
 <!-- ## About CUBE section-->
 <div class='row' style="margin-left:0.5%;margin-right:0.5%">
 
 <!-- *--infographic here--* -->
-<img class='info' src="figures/CUBE_info3.png" 
+<img class='info' src="figures/CUBE_info4.png" 
     alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
+</div>
 
+<div>
 <!-- header -->
 <h2> About the CUBE study</h2>
 <br>
 <!-- blurb -->
-The CUBE (Covid-19 in the Built Urban Environment) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
+The Covid-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring Covid-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
 
 We collect samples by swabbing floors; then, the swabs are tested for Covid-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
 
@@ -36,7 +40,7 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 
 <!-- Section2 FAQs -->
 <h2>Frequently Asked Questions</h2>
-<br>
+<em>Click to open</em>
 <!-- <em>Click a button to display the answer</em> -->
 
 <!-- Accordion section with FAQs -->
@@ -52,15 +56,13 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
 <button class="accordion">
   <h4 class="faq">Why do you swab the floors?</h4>
 </button>
-
 <div class="panel">
-  <p class="faqans">We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (eg. schools, daycares, long-term care homes, workplaces, *etc.*).<p/>
+  <p class="faqans">We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (*e.g.* schools, daycares, long-term care homes, workplaces, etc.).<p/>
 </div>
 
 <button class="accordion">
   <h4 class="faq">How long will you be swabbing our facilities?</h4>
 </button>
-
 <div class="panel">
   <p class="faqans">Most facilities are swabbed on a weekly basis for a number of months.</p>
 </div>
@@ -76,7 +78,7 @@ Currently, we are focused on facilities in Toronto, Ottawa, and Sault Ste. Marie
   <h4 class="faq">Can you get COVID-19 from the floor? Do we need to clean our floors more often?</h4>  
 </button>
 <div class="panel">
-  <p class="faqans">The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.</p>
+  <p class="faqans">The current scientific consensus is that Covid-19 is mainly transmitted through aerosols. It is __highly unlikely__ for an individual to become infected by Covid-19 directly from floors, but floors may have some viable virus present.</p>
 </div>
 
 <button class="accordion">
@@ -118,46 +120,61 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 <div></div>
-  
-----
+<hr>
 
 
 <!-- SITES MAP SECTION -->
-<hr>
 <h2>Site Locations</h2>
-<br>
+<p>These interactive maps show sites that are currently being monitored by our research team in Toronto and Ottawa.</p>
 
-This interactive map show sites that are currently being monitored by our research team.
 
-```{r, message=F, warning=FALSE, echo=F}
+```{r, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3}
 library(leaflet)
 library(tidyverse)
+# read site geo data and set marker colors based on type of site
 sites <- 
-  read_csv(file = 'data/sites.csv') |> 
-  mutate(color = case_when(
-    type == 'LTC' ~ 'green',
-    type == 'University' ~ 'purple',
-    type == 'Daycare' ~ 'orange',
-    type == 'School' ~ 'blue',
-    TRUE ~ 'red'
-  ))
+  read_tsv(file = 'data/sites.tsv') |> 
+  mutate(
+    color = case_when(
+      type == 'LTC' ~ 'cadetblue',
+      type == 'University' ~ 'purple',
+      type == 'Daycare' ~ 'green',
+      type == 'School' ~ 'orange',
+      TRUE ~ 'red'
+    ))
+# Possible values are "red", "darkred", "lightred", "orange", "beige", "green",
+# "darkgreen", "lightgreen", "blue", "darkblue", "lightblue", "purple",
+# "darkpurple", "pink", "cadetblue", "white", "gray", "lightgray", "black"
 
+# define Marker style
 icons <- awesomeIcons(
   icon = 'cube',
-  iconColor = 'white',
   library = 'ion',
+  iconColor = 'white',
+  spin = F,
   markerColor = sites$color
 )
-
-leaflet::leaflet() |>
-  setView(
-    lng = -80, 
-    lat = 44.55, 
-    zoom = 6
-  )  |> 
+# map for Toronto sites
+zmlvl <- 10
+toronto_map <- 
+  leaflet::leaflet(width = '100%', height = 300, padding = '5px') |>
+  setView(lng = -79.34, lat = 43.74, zoom = zmlvl)  |> 
   addProviderTiles(
     provider = providers$CartoDB.Positron,
-    options = providerTileOptions(minZoom = 6, maxZoom = 10)
+    options = providerTileOptions(minZoom = zmlvl-1, maxZoom = zmlvl+2)
+  ) |>
+  addAwesomeMarkers(
+    data = sites, lng = ~ lon, lat = ~ lat,
+    icon = icons, popup = ~str_trim(type)
+  )
+# map for Ottawa sites
+zmlvl <- 11
+ottawa_map <-
+  leaflet::leaflet(width = '100%', height = 300, padding = '5px') |>
+  setView(lng = -75.67, lat = 45.40, zoom = zmlvl)  |> 
+  addProviderTiles(
+    provider = providers$CartoDB.Positron,
+    options = providerTileOptions(minZoom = zmlvl-1, maxZoom = zmlvl+2)
   ) |>
   addAwesomeMarkers(
     data = sites,
@@ -166,28 +183,36 @@ leaflet::leaflet() |>
     icon = icons,
     popup = ~type
   )
+
+library(htmltools)
+browsable(
+  tagList(list(
+    tags$div(
+      style = 'width:50%;display:block;float:left;',
+      toronto_map
+    ),
+    tags$div(
+      style = 'width:50%;display:block;float:left;',
+      ottawa_map
+    )
+  ))
+)
 ```
 
-<hr>
-<br>
+<!-- need this to start next section below the maps, not underneath them! -->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+
 
 <h2>CUBE @ Your Facility</h2>
-
 To arrange for CUBE testing in your facility, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20facility%20recruitment).
-
-<br>
 <hr>
-<br>
 
 <h2>Contribute to CUBE</h2>
 <p>
 If you are interested in contributing to the CUBE research project, [please contact us by email](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20funding).
 </p>
-<br>
-
 <hr>
 
-<br>
 <h2>Research Team </h2>
 <br>
 
