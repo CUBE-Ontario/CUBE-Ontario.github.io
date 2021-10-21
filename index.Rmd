@@ -8,7 +8,7 @@ output:
     toc_depth: 2
 ---
 
-<h5 class='subtitle'>Developing environmental sampling as a spatially-resolved method for monitoring SARS-CoV-2 in congregate settings</h2>
+<h5 class='subtitle'>Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings</h2>
 <hr>
 
 <!-- author: "Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Allison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli" --> 
@@ -332,6 +332,15 @@ If you are interested in contributing to the CUBE research project,
   </p>
 </div>
 
+<!-- Dr. Allison McGeer -->
+<div class='row' style= "top: 0px; margin: 5px 0;">
+  <p>
+  <img src="pics/AMcGeer.jpg" alt="Dr. Allison McGeer profile image" class='profilepic'> 
+    <h4>Dr. Allison McGeer</h4>
+    Allison McGeer is an infectious diseases physician and microbiologist at Sinai Health System and Professor of Laboratory Medicine and Pathobiology at the University of Toronto.
+  </p>
+</div>
+
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
@@ -399,12 +408,10 @@ If you are interested in contributing to the CUBE research project,
 
 </div>
 
-<!-- !!! yes thank god it works !!! thank u sweet jesus !!!-->
-
 -----
 
-<!-- ###### Copyright © 2021 CUBE study team. All Rights Reserved. -->
 
+<!-- ###### Copyright © 2021 CUBE study team. All Rights Reserved. -->
 
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
