@@ -291,7 +291,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Benazir Hodzic-Santor -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Bena.jpg" alt="Benazir Hodzic-Santor"> 
+    <img class='profilepic' src="pics/Bena_alt.jpg" alt="Benazir Hodzic-Santor"> 
     <h4>Benazir Hodzic-Santor</h4>
     Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
   </p>
@@ -300,7 +300,7 @@ If you are interested in contributing to the CUBE research project,
 <!--Laura Hug  -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Laura.jpg" alt="Dr. Laura Hug"> 
+    <img class='profilepic' src="pics/Laura_alt.jpg" alt="Dr. Laura Hug"> 
     <h4>Dr. Laura Hug </h4>
     Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug's research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites.
     <br>
@@ -348,7 +348,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Ashley Raudanskis -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Ashley.jpg" alt="Ashley Raudanskis" class='profilepic'>
+    <img src="pics/Ashley_alt.jpg" alt="Ashley Raudanskis" class='profilepic'>
     <h4>Ashley Raudanskis</h4>
     Project Manager for the CUBE study. Ashley recently graduated from the University of Guelph and is focused on pursuing a career in healthcare in the near future. 
   </p>
@@ -366,7 +366,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Tamara Van Bakel -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Tam.jpg" alt="Tamara Van Bakel" class='profilepic'>
+    <img src="pics/Tam_alt.jpg" alt="Tamara Van Bakel" class='profilepic'>
     <h4>Tamara Van Bakel</h4>
     Tamara is a Research Coordinator at Sinai Health System providing administrative support. 
   </p>
