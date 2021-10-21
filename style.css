@@ -93,6 +93,16 @@ body{ /* Normal  */
   margin-bottom: 0.75em;
 }
 
+  /* Space Between TOC and
+  Righthand side content on large screens */
+
+ @media (min-width: 992px) {
+    .col-md-9 {
+      width: 75%;
+      padding-left: 5em !important;
+    }
+ }
+
 
 /*----------------CONTAINERS-------------*/
 /* image format for the infographic panel OLD */
