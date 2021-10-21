@@ -283,7 +283,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Aaron Hinz -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Aaron.png" alt="Aaron Hinz"> 
+    <img class='profilepic' src="pics/aaron.png" alt="Aaron Hinz"> 
     <h4>Aaron Hinz</h4>
     Aaron is a Research Associate at the University of Ottawa with interests in genetics and molecular mechanisms of microbial adaptation. For the CUBE project, he has been optimizing methods for SARS-CoV-2 detection from built environment samples.
   </p>
@@ -358,7 +358,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Nisha.jpg" alt="Nisha Thampi" class='profilepic'>
+    <img src="pics/nisha.jpg" alt="Nisha Thampi" class='profilepic'>
     <h4>Dr. Nisha Thampi</h4>
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
