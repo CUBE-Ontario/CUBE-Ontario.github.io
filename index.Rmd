@@ -19,9 +19,11 @@ knitr::opts_chunk$set(
 ```
 
 ```{r meta}
+# <meta tags to add to site
 library(metathis)
 meta() |> 
   meta_viewport() |> 
+  metathis::meta_tag("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
   meta_general(
     application_name = 'CUBE: Covid-19 in the Urban Built Environment',
     theme_color = '#2c3e50',
