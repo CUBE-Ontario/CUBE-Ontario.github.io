@@ -2,7 +2,7 @@ Version: 1.0
 
 RestoreWorkspace: No
 SaveWorkspace: No
-AlwaysSaveHistory: Yes
+AlwaysSaveHistory: No
 
 EnableCodeIndexing: Yes
 UseSpacesForTab: Yes
@@ -15,6 +15,6 @@ LaTeX: pdfLaTeX
 StripTrailingWhitespace: Yes
 
 BuildType: Website
-WebsitePath: ~/Documents/CUBE-Ontario.github.io
+WebsitePath: ~/Documents/CUBE_project/CUBE-Ontario.github.io
 
 QuitChildProcessesOnExit: Yes

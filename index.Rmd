@@ -9,24 +9,45 @@ output:
     toc_depth: 2
 ---
 
-```{r, echo=FALSE}
+```{r setup, include=F}
+knitr::opts_chunk$set(
+  message = FALSE, warning = FALSE, echo = FALSE,
+  comment = "#>",
+  fig.path = "figures", # use only for single Rmd files
+  collapse = TRUE
+)
+```
+
+```{r meta}
 library(metathis)
 meta() |> 
-  meta_description("CUBE: Covid-19 in the Urban Built Environment") |> 
   meta_viewport() |> 
+  meta_general(
+    application_name = 'CUBE: Covid-19 in the Urban Built Environment',
+    theme_color = '#2c3e50',
+    description = "Website for the CUBE: Covid-19 in the Urban Built Environment study. We are investigating the utility of environmental sampling as a means for monitoring Covid-19 in congregate settings.",
+    robots = 'index,follow',
+    generator = 'rmarkdown',
+    subject = "Covid-19 SARS-CoV-2 environmental microbiology epidemiology",
+    rating = "General"
+  ) |>
   meta_social(
     title = "CUBE: Covid-19 in the Urban Built Environment",
     url = "https://cube-ontario.github.io",
     image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
-    image_alt = "CUBE Study Infographic: 
-    [Panel 1] Setting: CUBE monitors Covid-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
-    [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
-    [Panel 3]: Testing: We use a PCR test to determine which samples contain Covid-19. We are also testing a CRISPR-based method and other approaches.",
-    og_type = "book",
+    image_alt = "CUBE Study Infographic: [Panel 1] Setting: CUBE monitors Covid-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility. [Panel 3]: Testing: We use a PCR test to determine which samples contain Covid-19. We are also testing a CRISPR-based method and other approaches.",
+    og_type = "website",
+    og_site_name = "CUBE: Covid-19 in the Urban Built Environment",
     og_author = c("Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
     twitter_card_type = "summary",
-    twitter_creator = "@quaxlikeaduck"
+    twitter_creator = "@quaxlikeaduck",
+    twitter_site = "@quaxlikeaduck",
+    disable_pinterest = TRUE
   )
+```
+
+```{r icons}
+email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
 ```
 
 <!-- Doug Manuel and Allison McGeer -->
@@ -218,8 +239,6 @@ browsable(
     )
   ))
 )
-
-email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
 ```
 
 <!-- need this to start next section below the maps, not underneath them! -->
