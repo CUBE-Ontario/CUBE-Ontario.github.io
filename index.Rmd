@@ -358,7 +358,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/nisha.jpg" alt="Nisha Thampi" class='profilepic'>
+    <img src="pics/Nisha.jpg" alt="Nisha Thampi" class='profilepic'>
     <h4>Dr. Nisha Thampi</h4>
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
