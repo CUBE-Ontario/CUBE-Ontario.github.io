@@ -9,6 +9,26 @@ output:
     toc_depth: 2
 ---
 
+```{r, echo=FALSE}
+library(metathis)
+meta() |> 
+  meta_description("CUBE: Covid-19 in the Urban Built Environment") |> 
+  meta_viewport() |> 
+  meta_social(
+    title = "CUBE: Covid-19 in the Urban Built Environment",
+    url = "https://cube-ontario.github.io",
+    image = "https://r4ds.had.co.nz/figures/CUBE_info6.png",
+    image_alt = "CUBE Study Infographic: 
+    [Panel 1] Setting: CUBE monitors Covid-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
+    [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
+    [Panel 3]: Testing: We use a PCR test to determine which samples contain Covid-19. We are also testing a CRISPR-based method and other approaches.",
+    og_type = "book",
+    og_author = c("Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
+    twitter_card_type = "summary",
+    twitter_creator = "@quaxlikeaduck"
+  )
+```
+
 <!-- Doug Manuel and Allison McGeer -->
 
 ---
