@@ -18,7 +18,10 @@ output:
 
 <!-- *--infographic here--* -->
 <img class='info' src="figures/CUBE_info6.png" 
-    alt="CUBE monitors Covid-19 in congregate settings. We collect samples by swabbing floors. Samples are tested for the presence of Covid-19 RNA using a PCR assay">
+    alt="CUBE Study Infographic: 
+    [Panel 1] Setting: CUBE monitors Covid-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
+    [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
+    [Panel 3]: Testing: We use a PCR test to determine which samples contain Covid-19. We are also testing a CRISPR-based method and other approaches.">
 </div>
 
 <div>
