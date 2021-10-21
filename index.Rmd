@@ -282,7 +282,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Aaron Hinz -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Aaron.png" alt="Aaron Hinz"> 
+    <img class='profilepic' src="pics/aaron.png" alt="Aaron Hinz"> 
     <h4>Aaron Hinz</h4>
     Aaron is a Research Associate at the University of Ottawa with interests in genetics and molecular mechanisms of microbial adaptation. For the CUBE project, he has been optimizing methods for SARS-CoV-2 detection from built environment samples.
   </p>
@@ -326,8 +326,6 @@ If you are interested in contributing to the CUBE research project,
     Dr. MacFadden is a clinician scientist and epidemiologist at the Ottawa Hospital Research Institute.  
   </p>
 </div>
-
-
 
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
