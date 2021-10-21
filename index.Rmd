@@ -263,7 +263,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Evgueni Doukhanine -->
 <div class='row' style= "top: 0px; margin: 5px 0; p">
   <p>
-  <img class='profilepic' src="pics/Evgueni2.jpg" alt="Evgueni Doukhanine"> 
+  <img class='profilepic' src="pics/Evgueni.jpg" alt="Evgueni Doukhanine"> 
     <h4>Evgueni Doukhanine</h4>
     Molecular biologist at DNA Genotek specializing in microbiome research and development of chemical reagents and collection devices to facilitate stabilization of primary samples.
   </p>
@@ -273,7 +273,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Michael Fralick -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Mike2.jpg" alt="Michael Fralick"> 
+    <img class='profilepic' src="pics/Mike.jpg" alt="Michael Fralick"> 
     <h4>Dr. Michael Fralick</h4>
     Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto, Clinician Scientist at Sinai Health, and Locum general internist at The Sault Area Hospital. 
   </p>
@@ -282,7 +282,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Aaron Hinz -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/aaron.png" alt="Aaron Hinz"> 
+    <img class='profilepic' src="pics/Aaron.png" alt="Aaron Hinz"> 
     <h4>Aaron Hinz</h4>
     Aaron is a Research Associate at the University of Ottawa with interests in genetics and molecular mechanisms of microbial adaptation. For the CUBE project, he has been optimizing methods for SARS-CoV-2 detection from built environment samples.
   </p>
@@ -291,7 +291,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Benazir Hodzic-Santor -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Bena2.jpg" alt="Benazir Hodzic-Santor"> 
+    <img class='profilepic' src="pics/Bena.jpg" alt="Benazir Hodzic-Santor"> 
     <h4>Benazir Hodzic-Santor</h4>
     Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
   </p>
@@ -300,7 +300,7 @@ If you are interested in contributing to the CUBE research project,
 <!--Laura Hug  -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img class='profilepic' src="pics/Laura2.jpg" alt="Dr. Laura Hug"> 
+    <img class='profilepic' src="pics/Laura.jpg" alt="Dr. Laura Hug"> 
     <h4>Dr. Laura Hug </h4>
     Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug's research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites.
     <br>
@@ -310,7 +310,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Rees Kassen -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/rees2.jpg" alt="Dr. Rees Kassen" class='profilepic'> 
+    <img src="pics/Rees.jpg" alt="Dr. Rees Kassen" class='profilepic'> 
     <h4>Dr. Rees Kassen</h4>
     <p>Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa.
     Dr. Kassen uses microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s [Global Future Council on Scientific Collaboration](https://www.weforum.org/communities/gfc-on-scientific-collaboration). 
@@ -330,7 +330,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Jason Moggridge -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
-  <img src="pics/jm_pic.jpeg" alt="Jason Moggridge" class='profilepic'> 
+  <img src="pics/Jason.jpeg" alt="Jason Moggridge" class='profilepic'> 
     <h4>Jason Moggridge </h4>
     Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study.
   </p>
@@ -339,7 +339,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Dr. Caroline Nott -->
 <div class='row' style= "top: 0px; margin: 5px 0;">
   <p>
-  <img src="pics/c_nott2.jpg" alt="Dr. Caroline Nott" class='profilepic'> 
+  <img src="pics/Caroline.jpg" alt="Dr. Caroline Nott" class='profilepic'> 
     <h4>Dr. Caroline Nott</h4>
     Infectious Diseases Physician and Director of the Antimicrobial Stewardship Program at The Ottawa Hospital (TOH). Dr. Nott has supported TOH Infection Prevention and Control and Occupational Health Departments as a COVID-19 Pandemic Support Lead since April 2020. 
   </p>
@@ -357,7 +357,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Nisha Thampi -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/nisha.jpg" alt="Nisha Thampi" class='profilepic'>
+    <img src="pics/Nisha.jpg" alt="Nisha Thampi" class='profilepic'>
     <h4>Dr. Nisha Thampi</h4>
     Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
   </p>
@@ -366,7 +366,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Tamara Van Bakel -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Tam2.jpg" alt="Tamara Van Bakel" class='profilepic'>
+    <img src="pics/Tam.jpg" alt="Tamara Van Bakel" class='profilepic'>
     <h4>Tamara Van Bakel</h4>
     Tamara is a Research Coordinator at Sinai Health System providing administrative support. 
   </p>
@@ -375,7 +375,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Alex Wong -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Alex4.jpg" alt="Alex Wong" class='profilepic'>
+    <img src="pics/Alex.jpg" alt="Alex Wong" class='profilepic'>
     <h4>Dr. Alex Wong</h4>
     Alex Wong is an associate professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
   </p>
@@ -384,7 +384,7 @@ If you are interested in contributing to the CUBE research project,
 <!-- Veronica Zanichelli -->
 <div class='row' style= "top: 0px; margin: 5px 0; ">
   <p>
-    <img src="pics/Veronica2.jpg" alt="Veronica Zanichelli" class='profilepic'> 
+    <img src="pics/Veronica.jpg" alt="Veronica Zanichelli" class='profilepic'> 
     <h4>Veronica Zanichelli</h4>
     Clinical research coordinator for CUBE and other projects in the field of infectious diseases at the Ottawa Hospital Research Institute.
   </p>
