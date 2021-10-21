@@ -23,13 +23,11 @@ knitr::opts_chunk$set(
 library(metathis)
 meta() |> 
   meta_viewport() |> 
-  metathis::meta_tag("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
+  meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
   meta_general(
     application_name = 'CUBE: Covid-19 in the Urban Built Environment',
-    theme_color = '#2c3e50',
     description = "Website for the CUBE: Covid-19 in the Urban Built Environment study. We are investigating the utility of environmental sampling as a means for monitoring Covid-19 in congregate settings.",
-    robots = 'index,follow',
-    generator = 'rmarkdown',
+    robots = 'index',
     subject = "Covid-19 SARS-CoV-2 environmental microbiology epidemiology",
     rating = "General"
   ) |>
@@ -45,8 +43,7 @@ meta() |>
     twitter_creator = "@quaxlikeaduck",
     twitter_site = "@quaxlikeaduck",
     disable_pinterest = TRUE
-  ) |> 
-  include_meta()
+  )
 ```
 
 ```{r icons}
