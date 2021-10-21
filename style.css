@@ -141,8 +141,8 @@ div.bios {
 
 /* profile picture round thumbnail image style */
 img.profilepic {
-  height: 130px;
-  width: 130px;
+  height: 100px;
+  width: 100px;
   float: left;
   border-radius: 50%;
   margin-right: 3%;
