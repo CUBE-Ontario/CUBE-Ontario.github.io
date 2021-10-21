@@ -6,7 +6,7 @@ navbar:
   left:
     - icon: fa-cube
       text: "CUBE: Covid-19 in the Urban Built Environment"
-      href:  https://github.com/CUBE-Ontario
+      href:  https://cube-ontario.github.io
   right:
     - icon: fa-paper-plane
       text: 'Email'
