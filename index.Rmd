@@ -1,6 +1,5 @@
 ---
 title: "CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team are: Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli"
 output: 
   html_document:
     toc: true
@@ -8,6 +7,13 @@ output:
       toc_collapsed: false
     toc_depth: 2
 ---
+
+<h5 class='subtitle'>Developing environmental sampling as a spatially-resolved method for monitoring SARS-CoV-2 in congregate settings</h2>
+<hr>
+
+<!-- author: "Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Allison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli" --> 
+<!-- Doug Manuel and Allison McGeer -->
+
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(
@@ -23,6 +29,7 @@ knitr::opts_chunk$set(
 library(metathis)
 meta() |> 
   meta_viewport() |> 
+  # keep this meta tag for google search indexing
   meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
   meta_general(
     application_name = 'CUBE: Covid-19 in the Urban Built Environment',
@@ -42,6 +49,7 @@ meta() |>
     twitter_card_type = "summary",
     twitter_creator = "@quaxlikeaduck",
     twitter_site = "@quaxlikeaduck",
+    # twitter_image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
     disable_pinterest = TRUE
   )
 ```
@@ -50,9 +58,6 @@ meta() |>
 email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
 ```
 
-<!-- Doug Manuel and Allison McGeer -->
-
----
 
 <!-- ## About CUBE section-->
 <div class='row' style="margin-left:0%;margin-right:0%">

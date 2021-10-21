@@ -42,13 +42,13 @@ Code block  #2469e0; (hyperlinks)
 td {  /* Table  */
   font-size: 12px;
 }
-h1 { /* Header 1 */
-  font-size: 36px;
-  color: MidnightBlue;
+h1 { /* Header 1 - used to be color 'Midnight Blue' */
+  font-size: 30px;
+  color: #2c3e50;
 }
 h2 { /* Header 2 */
-    font-size: 28px;
-  color: #117A65;
+    font-size: 26px;
+    color: #117A65;
 }
 h3 { /* Header 3 */
   font-size: 22px;
@@ -58,6 +58,14 @@ h4 { /* Header 4 */
   font-size: 16px;
   font-weight: bold;
   color: #0E6655; /**/
+}
+
+h5.subtitle{
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 0.25em;
 }
 
 code{ /* Code block */
@@ -80,8 +88,9 @@ body{ /* Normal  */
 /*----------------ADDING WHITE SPACE-------------*/
 
 .title {
-  margin-top: 2em !important;
-  margin-bottom: 0.75em;
+  color: #2c3e50;
+  margin-top: 1em !important;
+  margin-bottom: 0.25em;
 }
 
 .section h1,
@@ -89,7 +98,7 @@ body{ /* Normal  */
 .section h3,
 .section h4,
 .section h5 {
-  padding-top: 3em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
+  padding-top: 2em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
   margin-bottom: 0.75em;
 }
 
@@ -220,23 +229,15 @@ p.faqans {
     margin: 1px 1px 1px 1px;
 }
 
-
-
-
 /* NO TOC on mobile */
 @media screen and (max-width: 767px){
-
   .col-xs-12.col-sm-4.col-md-3 {
     display: none;
   }
-
   .top-text {
     font-size: 25px;
   }
-
   .bottom-text {
     font-size: 40px;
   }
-
-
 }
