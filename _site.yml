@@ -1,23 +1,67 @@
-name: "CUBE: Covid-19 in the Urban Built Environment"
-title: "CUBE: Covid-19 in the Urban Built Environment"
-author: "The CUBE team: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
-output_dir: "."  # for GitHub
-navbar:
-  title: "CUBE"
-  type: inverse
-  left:
-    - icon: fa-cube
-      text: 'Main'
-      href: index.html
-    - icon: fa-paper-plane
-      text: "Contact Us"
-      href: contact.html
-  right:
-    - icon: fa-github
-      text: 'GitHub'
-      href: https://github.com/CUBE-Ontario
+---
 output:
   html_document:
     theme: flatly
     highlight: textmate
     css: style.css
+output_dir: '.'
+name: 'CUBE: Covid-19 in the Urban Built Environment'
+favicon: fa-cube
+new_session: true
+title: 'CUBE: Covid-19 in the Urban Built Environment'
+author:
+- Aaron Hinz
+- Ashley Raudanskis
+- Benazir Hodzic-Santor
+- Evgeni Douakine
+- Jason Moggridge
+- Tamara Van Bakel
+- Nisha Thampi
+- Rees Kassen
+- Veronica Zanichelli
+- Allison McGreer
+- Alex Wong
+- Michael Fralick
+- Caroline Nott
+- Derek McFadden
+navbar:
+  title: "CUBE: Covid-19 in the Urban Built Environment"
+  type: default
+  right:
+  - text: Home
+    href: index.html
+    icon: fa-cube
+  - text: Contact
+    href: mailto:CUBEstudy21@gmail.com
+    icon: fa-envelope
+  - text: GitHub
+    href: https://github.com/CUBE-Ontario
+    icon: fa-github
+---
+
+# name: "CUBE: Covid-19 in the Urban Built Environment"
+# title: "CUBE: Covid-19 in the Urban Built Environment"
+# author: "The CUBE team: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
+# output_dir: "."  # for GitHub
+# navbar:
+#   title: "CUBE"
+#   favicon: fa-cube
+#   type: inverse
+#   left:
+#     - text: 'Main'
+#       href: index.html
+#     # - icon: fa-paper-plane
+#     #   text: "Contact Us"
+#     #   href: contact.html
+#   right:
+#     - icon: fa-envelope
+#       text: 'Contact'
+#       href: mailto:CUBEstudy21@gmail.com
+#     - icon: fa-github
+#       text: 'GitHub'
+#       href: https://github.com/CUBE-Ontario
+# output:
+#   html_document:
+#     theme: flatly
+#     highlight: textmate
+#     css: style.css
