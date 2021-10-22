@@ -3,16 +3,15 @@ title: "CUBE: Covid-19 in the Urban Built Environment"
 author: "The CUBE team: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Evgeni Douakine, Jason Moggridge, Tamara Van Bakel, Nisha Thampi, Rees Kassen, Veronica Zanichelli, Allison McGreer, Alex Wong, Michael Fralick, Caroline Nott, Derek McFadden"
 output_dir: "."  # for GitHub
 navbar:
+  title: "CUBE"
   left:
     - icon: fa-cube
-      text: "CUBE: Covid-19 in the Urban Built Environment"
-      href:  https://cube-ontario.github.io
-  right:
-    - text: 'Contact form'
-      href: https://cube-ontario.github.io/email_contact_form.html
+      text: 'Main'
+      href: index.html
     - icon: fa-paper-plane
-      text: 'Email'
-      href: mailto:CUBEstudy21@gmail.com
+      text: "Contact Us"
+      href: contact.html
+  right:
     - icon: fa-github
       text: 'GitHub'
       href: https://github.com/CUBE-Ontario

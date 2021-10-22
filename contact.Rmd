@@ -1,0 +1,33 @@
+---
+title: "Contact CUBE"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+----
+
+<!-- Sample HTML Form -->
+<form name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    <h4>Name:</h4>
+    <input type="text" name="name">
+    <h4>Email:</h4>
+    <input type="text" name="email"><br>
+    <h4>Message:</h4>
+    <textarea name="textbody" cols="40" rows="5" style="height:100px;width:80%"></textarea>
+    <hr>
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+</form>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Your submission has been processed...');
+    });
+</script>
