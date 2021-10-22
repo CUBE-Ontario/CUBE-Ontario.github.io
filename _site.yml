@@ -4,6 +4,7 @@ author: "The CUBE team: Aaron Hinz, Ashley Raudanskis, Benazir Hodzic-Santor, Ev
 output_dir: "."  # for GitHub
 navbar:
   title: "CUBE"
+  type: inverse
   left:
     - icon: fa-cube
       text: 'Main'
