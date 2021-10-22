@@ -8,6 +8,8 @@ navbar:
       text: "CUBE: Covid-19 in the Urban Built Environment"
       href:  https://cube-ontario.github.io
   right:
+    - text: 'Contact form'
+      href: https://cube-ontario.github.io/email_contact_form.html
     - icon: fa-paper-plane
       text: 'Email'
       href: mailto:CUBEstudy21@gmail.com
