@@ -24,9 +24,17 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r}
+library(leaflet)
+library(tidyverse)
+library(htmltools)
+library(metathis)
+library(glue)
+```
+
+
 ```{r meta}
 # <meta tags to add to site
-library(metathis)
 meta() |> 
   meta_viewport() |> 
   # keep this meta tag for google search indexing
@@ -171,13 +179,24 @@ for (i = 0; i < acc.length; i++) {
 
 
 <!-- SITES MAP SECTION -->
-<h2>Site Locations</h2>
-<p>These interactive maps show sites that are currently being monitored by our research team in Toronto and Ottawa.</p>
+
+```{r message=FALSE, warning=FALSE}
+# read site geo data and set marker colors based on type of site
+sites <- 
+  read_tsv(file = 'data/sites.tsv') 
+n_site <- sites |> nrow()
+n_ltc <- sites |> filter(type =="LTC") |> nrow()
+n_dc <- sites |> filter(type == 'Daycare') |> nrow()
+n_uni <- sites |> filter(type == 'University') |> nrow()
+n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
+```
+
+<h2>Study Locations</h2>
+<p>Our research team is currently monitoring `r n_site` facilities in Toronto and Ottawa, including `r n_ltc` long-term care homes, `r n_dc` daycares, and `r n_uni`. 
+</p>
 
 
-```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3}
-library(leaflet)
-library(tidyverse)
+```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3, fig.align='center'}
 # read site geo data and set marker colors based on type of site
 sites <- 
   read_tsv(file = 'data/sites.tsv') |> 
@@ -201,54 +220,47 @@ icons <- awesomeIcons(
   spin = F,
   markerColor = sites$color
 )
-# map for Toronto sites
-zmlvl <- 10
-toronto_map <- 
-  leaflet::leaflet(width = '100%', height = 300, padding = '5px') |>
-  setView(lng = -79.34, lat = 43.74, zoom = zmlvl)  |> 
+# 
+# browsable(
+#   tagList(list(
+#     tags$div(
+#       style = 'width:50%;display:block;float:left;padding:2px;',
+#       toronto_map
+#     ),
+#     tags$div(
+#       style = 'width:50%;display:block;float:left;padding:2px;',
+#       ottawa_map
+#     )
+#   ))
+# )
+
+
+# maps - need to obscure where sites are actually located
+zmlvl <- 6
+ontario_map <-
+  leaflet::leaflet(width = '80%', height = 300, padding = '5px') |>
+  setView(lng = -77, lat = 44.4, zoom = zmlvl)  |>
   addProviderTiles(
     provider = providers$CartoDB.Positron,
-    options = providerTileOptions(minZoom = zmlvl-1, maxZoom = zmlvl+1)
-  ) |>
-  addAwesomeMarkers(
-    data = sites, lng = ~ lon, lat = ~ lat,
-    icon = icons, popup = ~str_trim(type)
-  )
-# map for Ottawa sites
-zmlvl <- 10
-ottawa_map <-
-  leaflet::leaflet(width = '100%', height = 300, padding = '5px') |>
-  setView(lng = -75.67, lat = 45.40, zoom = zmlvl)  |> 
-  addProviderTiles(
-    provider = providers$CartoDB.Positron,
-    options = providerTileOptions(minZoom = zmlvl-1, maxZoom = zmlvl+1)
+    options = providerTileOptions(maxZoom = zmlvl+1)
   ) |>
   addAwesomeMarkers(
     data = sites,
     lng = ~ lon,
     lat = ~ lat,
     icon = icons,
-    popup = ~type
+    label = ~type,
+    popup = ~type,
+    clusterOptions = markerClusterOptions(freezeAtZoom = zmlvl+1)
   )
+ontario_map
 
-library(htmltools)
-browsable(
-  tagList(list(
-    tags$div(
-      style = 'width:50%;display:block;float:left;padding:2px;',
-      toronto_map
-    ),
-    tags$div(
-      style = 'width:50%;display:block;float:left;padding:2px;',
-      ottawa_map
-    )
-  ))
-)
 ```
 
 <!-- need this to start next section below the maps, not underneath them! -->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr> -->
 
+<hr>
 
 <h2>CUBE @ Your Facility</h2>
 To arrange for CUBE testing in your facility, 
