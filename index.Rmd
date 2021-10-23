@@ -238,11 +238,20 @@ icons <- awesomeIcons(
 # maps - need to obscure where sites are actually located
 zmlvl <- 6
 ontario_map <-
-  leaflet::leaflet(width = '80%', height = 300, padding = '5px') |>
+  leaflet::leaflet(
+    width = '80%', 
+    height = 300, 
+    padding = '5px', 
+    options = leafletOptions(zoomControl = FALSE)
+  ) |>
   setView(lng = -77, lat = 44.4, zoom = zmlvl)  |>
   addProviderTiles(
-    provider = providers$CartoDB.Positron,
-    options = providerTileOptions(maxZoom = zmlvl+1)
+    provider = providers$CartoDB.Positron, 
+    options = providerTileOptions(
+      zoomControl = FALSE,
+      dragging = FALSE,
+      maxZoom = zmlvl, 
+      minZoom = zmlvl)
   ) |>
   addAwesomeMarkers(
     data = sites,
@@ -250,8 +259,8 @@ ontario_map <-
     lat = ~ lat,
     icon = icons,
     label = ~type,
-    popup = ~type,
-    clusterOptions = markerClusterOptions(freezeAtZoom = zmlvl+1)
+    popup = NULL,
+    clusterOptions = markerClusterOptions(freezeAtZoom = zmlvl)
   )
 ontario_map
 
