@@ -1,3 +1,8 @@
+## Generate yml file for website layout
+
+## MISSING: output.dir: '.'
+## # need to add this tag such that site builds properly
+
 library(ymlthis)
 
 yml_empty() |>
