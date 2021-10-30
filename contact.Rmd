@@ -3,13 +3,14 @@ title: "<br><br>Contact CUBE"
 output: html_document
 ---
 
+<!-- trying to implement the contact form linked to google forms from here: https://github.com/toperkin/staticFormEmails -->
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-----
 
-**This section is in development**
+Please use this form to get in contact with our project manager Ashley Raudanskis.
 
 -----
 
@@ -17,8 +18,23 @@ knitr::opts_chunk$set(echo = FALSE)
 https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/viewform?usp=pp_url&entry.1343111128=Jason+Moggridge&entry.1111689708=ja.moggridge@gmail.com&entry.1050507149=A+TEST
 -->
 
-<!-- Sample HTML Form -->
-<form name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+
+
+<!-- Sample HTML Form --> 
+
+<!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
+<!--   First name:<br> -->
+<!--   <input type="text" name="entry.810989529" id="entry.810989529"><br> -->
+<!--   Last name:<br> -->
+<!--   <input type="text" name="entry.463380756" id="entry.463380756"> -->
+<!--   <input type="submit" value="Submit"> -->
+<!-- </form> -->
+
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+
+
+<!-- My contact form front end -->
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
     <h4>Name:</h4>
     <input type="text" name="entry.1343111128" id="entry.1343111128">
     <h4>Email:</h4>
@@ -28,31 +44,20 @@ https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooF
     <input type="submit" value="Submit">
 </form>
 
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-<!-- <script type="text/javascript">var submitted=false;</script> -->
-<!-- <script type="text/javascript"> -->
-<!-- $('#gform').on('submit', function(e) { -->
-<!--     $('#gform *').fadeOut('fast'); -->
-<!--     $('#gform').prepend('Your submission has been processed...'); -->
-<!--     }); -->
-<!-- </script> -->
-
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submit) {}"></iframe>
-
+<!-- javascript to send the info and display success message -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
-  $('#gform').on('Submit', function(e) {
-    $('#gform *').fadeOut('fast');
-    $('#gform').prepend('Your submission has been processed...');
-    });
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(1500);
+  $('#gform').prepend('<br><br><div class="alert alert-success" role="alert">Thanks for contacting us. We will be in touch soon.</div>');
+  });
 </script>
-
 
 
 <br>
 
 
-----
+

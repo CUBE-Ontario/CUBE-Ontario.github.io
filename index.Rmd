@@ -32,7 +32,10 @@ library(leaflet)
 library(htmltools)
 library(metathis)
 library(glue)
+library(fontawesome)
 ```
+
+
 
 
 ```{r meta, results='asis'}
@@ -44,7 +47,7 @@ meta() |>
   meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
   meta_general(
     application_name = 'CUBE: Covid-19 in the Urban Built Environment',
-    description = "CUBE: Covid-19 in the Urban Built Environment: Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings.",
+    description = "Our research team aims to develop environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings.",
     robots = 'index',
     subject = "Covid-19 SARS-CoV-2 environmental microbiology epidemiology urban built environment Ontario",
     rating = "General"
@@ -172,7 +175,7 @@ n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
 <!-- map description -->
 <!-- dynamic text with values based on the data in sites.tsv -->
 <p>
-Our research team is currently monitoring `r n_site` facilities in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and `r n_uni`. Click a cluster to expand.
+Our research team is currently monitoring `r n_site` facilities in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and `r n_uni`. Click on any map marker to show more information.
 </p>
 
 
@@ -241,13 +244,13 @@ ontario_map
 
 <h2>CUBE @ Your Facility</h2>
 To arrange for CUBE testing in your facility, 
-[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20facility%20recruitment).
+[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]).
 <hr>
 
 <h2>Contribute to CUBE</h2>
 <p>
 If you are interested in contributing to the CUBE research project, 
-[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]%20funding) .
+[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]) .
 </p>
 <hr>
 
@@ -281,8 +284,60 @@ team <- read_tsv('data/team_profiles.tsv') |>
 
 -----
 
-<!-- // any text here would work-->
-[Back to top](#) 
+<!-- footer -->
+<div>
+<div class="container">
+<!-- not sure why, but need like 300 line breaks to get a new hr to show up below team section-->
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+<h4>[Back to top](#) </h4>
+<!-- <p>Created by the CUBE team. All rights reserved.</p> -->
+<!-- </footer> -->
+</div>
+</div>
+
+
+<!-- ```{r footer, results='asis'} -->
+<!-- R_icon <- fa(name = "r-project", fill = "steelblue") -->
+<!-- footer_text <- glue( -->
+<!--   'Created by the CUBE team. All rights reserved.<br> -->
+<!--   Last update: {Sys.Date()}<br>') -->
+<!-- cat(footer_text) -->
+<!-- ``` -->
+
+
+
+<!-- ```{r social} -->
+<!-- twit_icon <- fa(name='twitter', fill = '#1DA1F2') -->
+<!-- twit_link <- '' -->
+<!-- ``` -->
+
+
+<!-- <div class="row" style="top: 0px; margin: 5px 0;"> -->
+<!-- <p> -->
+<!-- <img class="profilepic" src="pics/Jason.jpeg" alt="Jason Moggridge"> -->
+<!-- <h4> -->
+<!-- Jason Moggridge -->
+<!-- </h4> -->
+<!-- Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study. -->
+<!-- <br> -->
+<!--  -->
+<!-- </p> -->
+<!-- </div> -->
+
+
+
+<!-- [contact form in development](contact.html) -->
+
+
+
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+<hr>
 
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+
+
+
