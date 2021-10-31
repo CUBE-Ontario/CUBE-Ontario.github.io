@@ -175,7 +175,7 @@ n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
 <!-- map description -->
 <!-- dynamic text with values based on the data in sites.tsv -->
 <p>
-Our research team is currently monitoring `r n_site` facilities in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and `r n_uni`. Click on any map marker to show more information.
+Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click on any map marker to show more information.
 </p>
 
 
