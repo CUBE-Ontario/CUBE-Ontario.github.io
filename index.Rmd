@@ -244,13 +244,13 @@ ontario_map
 
 <h2>CUBE @ Your Facility</h2>
 To arrange for CUBE testing in your facility, 
-[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]).
+[please contact us](./contact.html).
 <hr>
 
 <h2>Contribute to CUBE</h2>
 <p>
 If you are interested in contributing to the CUBE research project, 
-[please contact us by email `r email_icon` ](mailto:CUBEstudy21@gmail.com?subject=[CUBE]) .
+[please contact us ](./contact.html) .
 </p>
 <hr>
 

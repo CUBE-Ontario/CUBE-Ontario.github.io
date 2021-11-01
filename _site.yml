@@ -32,7 +32,7 @@ navbar:
     href: index.html
     icon: fa-cube
   - text: Contact
-    href: mailto:CUBEstudy21@gmail.com
+    href: contact.html
     icon: fa-envelope
   - text: GitHub
     href: https://github.com/CUBE-Ontario
