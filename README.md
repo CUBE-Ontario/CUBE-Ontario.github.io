@@ -7,8 +7,8 @@ The webpage is rendered from a set of rmarkdown files (*.Rmd), with a yaml file 
 
 Github pages is a free hosting service for static sites. The interactive map is generated with leaflet. 
 
-Development / To Do:  
--[] logos for supporting orgs. 
--[] contact form implementation. 
--[] hero logo above TOC. 
--[] figure out how to style TOC. 
+Development / To Do:   
+-[] logos for supporting orgs.  
+-[] contact form implementation.  
+-[] hero logo above TOC.  
+-[] figure out how to style TOC.  
