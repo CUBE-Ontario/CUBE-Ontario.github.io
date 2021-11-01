@@ -9,6 +9,7 @@ Github pages is a free hosting service for static sites. The interactive map is 
 
 Development / To Do:   
 -[] logos for supporting orgs.  
--[] contact form implementation.  
--[] hero logo above TOC.  
--[] figure out how to style TOC.  
+-[] hero logo above TOC / style TOC
+
+Done lately:
+-[x] contact form implementation.  
