@@ -8,14 +8,19 @@ output:
     toc_depth: 2
 ---
 
-<!-- CUBE: Covid-19 in the Urban Built Environment: Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings -->
+<!-- ADDING NEW INFO to website: (how-to)-->
+
+<!-- Site: add a line to the data/sites.tsv file; don't include loction name; copy the coordinates from a location in the same city; add the type of facility; use tabs to seperate fields -->
+
+<!-- Team Member: Add their photo to pics/; write a tab-delimited line in data/team_profiles.tsv with name, the picture filename, and bio text  -->
+<!-- name <tab> pic_filename.jpg <tab> bio paragraph -->
+
+<!-- FAQ: add comma-delimited line to data/FAQs.csv with: "question", "answer" -->
+
+
 
 <h5 class='subtitle'>Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings</h2>
 <hr>
-
-<!-- author: "Evgueni Doukhanine, Michael Fralick, Aaron Hinz, Benazir Hodzic-Santor, Rees Kassen, Derek MacFadden, Allison McGeer, Jason Moggridge, Caroline Nott, Ashley Raudanskis, Nisha Thampi, Tamara Van Bakel, Alex Wong, and Veronica Zanichelli" --> 
-<!-- Doug Manuel and Allison McGeer -->
-
 
 ```{r setup, include=F}
 knitr::opts_chunk$set(

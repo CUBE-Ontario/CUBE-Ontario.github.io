@@ -255,7 +255,7 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="mailto:CUBEstudy21@gmail.com">
+  <a href="contact.html">
     <span class="fa fa-envelope"></span>
      
     Contact
@@ -285,37 +285,53 @@ $(document).ready(function () {
 <!-- trying to implement the contact form linked to google forms from here: https://github.com/toperkin/staticFormEmails -->
 <p>Please use this form to get in contact with our project manager Ashley Raudanskis.</p>
 <hr />
+<style>
+
+<!-- /* padding for all elements*/ -->
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+<!-- styles for any input text box -->
+input[type=text] {
+  padding: 10px;
+  margin:10px 0; 
+}
+
+.contact-text-input {
+  box-shadow:0 0 10px 5px rgba(0,0,0,0.06);
+}
+
+.contact-text-message {
+  box-shadow:0px 0px 15px 10px rgba(0,0,0,0.06);
+}
+
+input[type=submit] {
+}
+
+</style>
 <!-- google forms link
 https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/viewform?usp=pp_url&entry.1343111128=Jason+Moggridge&entry.1111689708=ja.moggridge@gmail.com&entry.1050507149=A+TEST
 -->
-<!-- Sample HTML Form -->
-<!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;"> -->
-<!--   First name:<br> -->
-<!--   <input type="text" name="entry.810989529" id="entry.810989529"><br> -->
-<!--   Last name:<br> -->
-<!--   <input type="text" name="entry.463380756" id="entry.463380756"> -->
-<!--   <input type="submit" value="Submit"> -->
-<!-- </form> -->
-<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> -->
+<div>
 <!-- My contact form front end -->
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 <h4>
 Name:
 </h4>
-<input type="text" name="entry.1343111128" id="entry.1343111128">
+<input type="text" name="entry.1343111128" id="entry.1343111128" class="contact-text-input" placeholder="Name">
 <h4>
 Email:
 </h4>
-<input type="text" name="entry.1111689708" id="entry.1111689708">
+<input type="text" name="entry.1111689708" id="entry.1111689708" class="contact-text-input" placeholder="Email address">
 <h4>
 Message:
 </h4>
-<input type="text" name="entry.1050507149" id="entry.1050507149"> <br>
-<hr>
-<br> <input type="submit" value="Submit">
+<input type="text" name="entry.1050507149" id="entry.1050507149" style="width=100%" placeholder="message to CUBE" class="contact-text-message"> <br> <br> <input type="submit" value="Submit">
 </form>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
 </iframe>
+</div>
 <!-- javascript to send the info and display success message -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
