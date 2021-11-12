@@ -5,8 +5,8 @@ output:
     highlight: textmate
     css: style.css
 output_dir: '.'
-name: 'CUBE: Covid-19 in the Urban Built Environment'
-title: 'CUBE: Covid-19 in the Urban Built Environment'
+name: 'COVID-19 in the Urban Built Environment'
+title: 'COVID-19 in the Urban Built Environment'
 favicon: fa-cube
 new_session: true
 author:
@@ -25,7 +25,7 @@ author:
 - Caroline Nott
 - Derek McFadden
 navbar:
-  title: "CUBE: Covid-19 in the Urban Built Environment"
+  title: "<img id=\"logo\" style=\"width: 120px;height: 48px;margin: -12px -5px;border-radius: 10px;\" src=\"logo.jpg\" />"
   type: default
   right:
   - text: Home
