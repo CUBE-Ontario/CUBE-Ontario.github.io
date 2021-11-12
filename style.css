@@ -243,6 +243,29 @@ p.faqans {
   }
 }
 
+  /* Space Between TOC and
+  Righthand side content on large screens */
+
+ @media (min-width: 992px) {
+    .col-md-9 {
+      width: 75%;
+      padding-left: 5em !important;
+    }
+ }
+
+/*----------LOGO above TOC---------*/
+
+#TOC::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin: 2em 10px 30px 10px;
+  background-image: url("logo.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 /*Email contact form inputs*/
 
 input[type=text], select {

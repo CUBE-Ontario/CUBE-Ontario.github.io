@@ -25,7 +25,7 @@ author:
 - Caroline Nott
 - Derek McFadden
 navbar:
-  title: "<img id=\"logo\" style=\"width: 120px;height: 48px;margin: -12px -5px;border-radius: 10px;\" src=\"logo.jpg\" />"
+  # title: "<img id=\"logo\" style=\"width: 132px;height: 48px;margin: -12px -5px;border-radius: 10px;\" src=\"logo.jpg\" />"
   type: default
   right:
   - text: Home
