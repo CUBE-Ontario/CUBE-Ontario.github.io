@@ -269,7 +269,7 @@ If you are interested in contributing to the CUBE research project,
 # this function generates the html for a single person's profile
 make_bio <- function(name, photo, bio){
   photo <- glue('./pics/{photo}')
-  html_str <- glue('<div class="row" style= "top: 0px; margin: 5px 0;">
+  html_str <- glue('<div class="row team-profile">
          <p>
             <img class="profilepic" src="{photo}" alt="{name}"> 
             <h4>{name}</h4>
@@ -294,51 +294,13 @@ team <- read_tsv('data/team_profiles.tsv') |>
 <div class="container">
 <!-- not sure why, but need like 300 line breaks to get a new hr to show up below team section-->
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<hr>
-<h4>[Back to top](#) </h4>
-<!-- <p>Created by the CUBE team. All rights reserved.</p> -->
-<!-- </footer> -->
-</div>
-</div>
-
-
-<!-- ```{r footer, results='asis'} -->
-<!-- R_icon <- fa(name = "r-project", fill = "steelblue") -->
-<!-- footer_text <- glue( -->
-<!--   'Created by the CUBE team. All rights reserved.<br> -->
-<!--   Last update: {Sys.Date()}<br>') -->
-<!-- cat(footer_text) -->
-<!-- ``` -->
-
-
-
-<!-- ```{r social} -->
-<!-- twit_icon <- fa(name='twitter', fill = '#1DA1F2') -->
-<!-- twit_link <- '' -->
-<!-- ``` -->
-
-
-<!-- <div class="row" style="top: 0px; margin: 5px 0;"> -->
-<!-- <p> -->
-<!-- <img class="profilepic" src="pics/Jason.jpeg" alt="Jason Moggridge"> -->
-<!-- <h4> -->
-<!-- Jason Moggridge -->
-<!-- </h4> -->
-<!-- Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study. -->
-<!-- <br> -->
-<!--  -->
-<!-- </p> -->
-<!-- </div> -->
-
-
-
-<!-- [contact form in development](contact.html) -->
-
-
-
-<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 <hr>
+<h4 style="text-align: right;">[Back to top](#) </h4>
+</div>
+</div>
+<hr>
+
 
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
