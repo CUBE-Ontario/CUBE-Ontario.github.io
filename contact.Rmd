@@ -1,9 +1,9 @@
 ---
-title: "<br><br>Contact CUBE"
+title: "<br><br>Contact the CUBE team"
 output: html_document
 ---
 
-<!-- trying to implement the contact form linked to google forms from here: https://github.com/toperkin/staticFormEmails -->
+<!-- contact form linked to google forms; described here: https://github.com/toperkin/staticFormEmails -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -16,7 +16,7 @@ Please use this form to get in contact with our project manager Ashley Raudanski
 
 <style>
 
-<!-- /* padding for all elements*/ -->
+<!-- /* padding for all form elements*/ -->
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -24,9 +24,14 @@ Please use this form to get in contact with our project manager Ashley Raudanski
 </style>
 
 
-<!-- google forms link
-https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/viewform?usp=pp_url&entry.1343111128=Jason+Moggridge&entry.1111689708=ja.moggridge@gmail.com&entry.1050507149=A+TEST
+<!-- Our google forms link (prototype url with form elements: entry.xxxx)
+https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/viewform?usp=pp_url&entry.1343111128=NAME&entry.1111689708=EMAIL&entry.1050507149=MESSAGE_bODY
 -->
+
+<!-- entry.1343111128=NAME -->
+<!-- entry.1111689708=EMAIL -->
+<!-- entry.1050507149=MESSAGE_BODY -->
+
 
 <div>
 

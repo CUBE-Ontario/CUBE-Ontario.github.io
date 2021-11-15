@@ -61,7 +61,7 @@ meta() |>
     title = "COVID-19 in the Urban Built Environment",
     url = "https://cube-ontario.github.io",
     image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
-    image_alt = "CUBE Study Infographic: [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility. [Panel 3]: Testing: We use a PCR test to determine which samples contain COVID-19. We are also testing a CRISPR-based method and other approaches.",
+    image_alt = "CUBE Study Infographic: [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility. [Panel 3]: Testing: We use a PCR test to determine which samples contain coronavirus. We are also testing a CRISPR-based method and other approaches.",
     og_type = "website",
     og_site_name = "COVID-19 in the Urban Built Environment",
     og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
@@ -91,20 +91,21 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 </div>
 
 <div>
+<br>
 <!-- header -->
 <h2> About the CUBE study</h2>
 
 <!-- blurb -->
-The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
+- The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
 
-We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
+- We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
 
-Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
+- Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
 
-[Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
+- [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
 
 </div>
-
+<br>
 <hr>
 
 
