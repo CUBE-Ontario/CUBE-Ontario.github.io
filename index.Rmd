@@ -106,60 +106,7 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 
 </div>
 <br>
-<hr>
 
-
-<!-- Section2 FAQs -->
-<h2>Frequently Asked Questions</h2>
-
-<!-- class: accordion is the container for the question (button) -->
-<!-- class: panel is the answer that is revealed on click -->
-
-<!-- Example: -->
-<!-- <button class="accordion"> Question </button> -->
-<!-- <div class="panel"> <p> Answer </p> </div> -->
-
-```{r results='asis'}
-# generates the html for a given faq + answer pair 
-make_faq <- function(question, answer){
-  cat(glue(
-    '<button class="accordion">
-      <h4 class="faq">{question}</h4>
-    </button>
-    <div class="panel">
-      <p class="faqans">{answer}<p/>
-    </div>'
-  ))
-}
-# FAQs are stored in ./data/
-faqs <- read_csv('data/FAQs.csv') |> 
-  mutate(html = map2(question, answer, .f = ~make_faq(.x, .y)))
-```
-
-
-<!-- this javascript is needed to observe click/hover events for highlighting and expanding the accordion sections -->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    <!-- Toggle between adding and removing the "active" class, -->
-    <!-- to highlight the button that controls the panel  -->
-    this.classList.toggle("active");
-    <!-- Toggle between hiding and showing the active panel  -->
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "none") {
-      panel.style.display = "block";
-    } else {
-      panel.style.display = "none";
-    }
-  });
-}
-</script>
-
-<div></div>
-<hr>
 
 
 <!-- SITES MAP SECTION -->
@@ -181,7 +128,7 @@ n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
 <!-- map description -->
 <!-- dynamic text with values based on the data in sites.tsv -->
 <p>
-Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click on any map marker to show more information.
+Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click any city to show additional facility information.
 </p>
 
 
@@ -245,6 +192,62 @@ ontario_map <-
 # display the map
 ontario_map
 ```
+
+<br>
+<hr>
+
+
+
+<!-- Section2 FAQs -->
+<h2>Frequently Asked Questions</h2>
+
+<!-- class: accordion is the container for the question (button) -->
+<!-- class: panel is the answer that is revealed on click -->
+
+<!-- Example: -->
+<!-- <button class="accordion"> Question </button> -->
+<!-- <div class="panel"> <p> Answer </p> </div> -->
+
+```{r results='asis'}
+# generates the html for a given faq + answer pair 
+make_faq <- function(question, answer){
+  cat(glue(
+    '<button class="accordion">
+      <h4 class="faq">{question}</h4>
+    </button>
+    <div class="panel">
+      <p class="faqans">{answer}<p/>
+    </div>'
+  ))
+}
+# FAQs are stored in ./data/
+faqs <- read_csv('data/FAQs.csv') |> 
+  mutate(html = map2(question, answer, .f = ~make_faq(.x, .y)))
+```
+
+
+<!-- this javascript is needed to observe click/hover events for highlighting and expanding the accordion sections -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    <!-- Toggle between adding and removing the "active" class, -->
+    <!-- to highlight the button that controls the panel  -->
+    this.classList.toggle("active");
+    <!-- Toggle between hiding and showing the active panel  -->
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "none") {
+      panel.style.display = "block";
+    } else {
+      panel.style.display = "none";
+    }
+  });
+}
+</script>
+
+<div></div>
 
 <hr>
 
