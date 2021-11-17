@@ -128,7 +128,7 @@ n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
 <!-- map description -->
 <!-- dynamic text with values based on the data in sites.tsv -->
 <p>
-Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click any city to show additional facility information.
+Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click any city to expand.
 </p>
 
 
@@ -189,6 +189,7 @@ ontario_map <-
     popup = NULL,
     clusterOptions = markerClusterOptions(freezeAtZoom = zmlvl)
   )
+
 # display the map
 ontario_map
 ```
@@ -201,8 +202,8 @@ ontario_map
 <!-- Section2 FAQs -->
 <h2>Frequently Asked Questions</h2>
 
-<!-- class: accordion is the container for the question (button) -->
-<!-- class: panel is the answer that is revealed on click -->
+<!-- class: "accordion" is the container for the question (button) -->
+<!-- class: "panel" is the answer that is revealed on click -->
 
 <!-- Example: -->
 <!-- <button class="accordion"> Question </button> -->
@@ -251,11 +252,13 @@ for (i = 0; i < acc.length; i++) {
 
 <hr>
 
+<br>
 <h2>CUBE @ Your Facility</h2>
 To arrange for CUBE testing in your facility, 
 [please contact us](./contact.html).
 <hr>
 
+<br>
 <h2>Contribute to CUBE</h2>
 <p>
 If you are interested in contributing to the CUBE research project, 
@@ -264,6 +267,7 @@ If you are interested in contributing to the CUBE research project,
 <hr>
 
 <!-- Research team section -->
+<br>
 <h2>Research Team </h2>
 <br>
 
