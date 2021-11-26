@@ -126,6 +126,7 @@ img.profilepic {
 }
 
 .team-profile {
+  background-color: #f2f5f5;
   top: 0px;
   margin: 15px 5px 5px 5px;
   padding: 5px 5px 5px 15px;
@@ -306,4 +307,82 @@ textarea:focus {
 }
 
 
+/*Card for 'Learn More' section*/
 
+.card {
+  /* Add shadows to create the "card" effect */
+  width=100%;
+  margin: 0px;
+  padding: 15px;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.videocard {
+  /* Add shadows to create the "card" effect */
+  display: inline-block;
+  margin: 0px;
+  padding: 20px;
+  padding-right: 50px
+  margin: 20px;
+
+  background-color: #f2f5f5;
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px;
+}
+/* On mouse-over, add a deeper shadow */
+.videocard:hover {
+  border-style: solid;
+  border-color: #2c3e50;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.videocard:active {
+  border-style: solid;
+  border-color: #2c3e50;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+IMG.centered_img {
+    display: block;
+    height:250px;
+    margin: 0px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+h2.cardtitle {
+  padding-left: 10px;
+}
+
+li {
+  margin: 5px;
+  margin-left: -15px;
+}
