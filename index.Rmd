@@ -79,31 +79,35 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 ```
 
 
-<!-- ## About CUBE section-->
-<div class='row' style="margin-left:0%;margin-right:0%">
 
-<!-- *--infographic here--* -->
-<img class='info' src="figures/CUBE_info6.png" 
-    alt="CUBE Study Infographic: 
-    [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
-    [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
-    [Panel 3]: Testing: We use a PCR test to determine which samples contain SARS-CoV2. We are also testing a CRISPR-based method and other approaches.">
-</div>
-
-<div>
 <br>
-<!-- header -->
-<h2> About the CUBE study</h2>
-
-<!-- blurb -->
-- The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
-
-- We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
-
-- Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
-
-- [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
-
+<!-- ## About CUBE section-->
+<div class='card'>
+  <!-- header -->
+  <h2> About the CUBE study</h2>
+  <hr>
+  <!-- *--infographic here--* -->
+  <img class='info' src="figures/CUBE_info6.png" 
+      alt="CUBE Study Infographic: 
+      [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
+      [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
+      [Panel 3]: Testing: We use a PCR test to determine which samples contain SARS-CoV2. We are also testing a CRISPR-based method and other approaches.">
+  <ul>
+  <hr>
+  <!-- blurb -->
+   <li>
+   The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
+   </li>
+   <li>
+   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
+  </li>
+  <li>
+  Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
+  </li>
+  <li>
+  [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
+  </li>
+  </ul>
 </div>
 <br>
 
@@ -123,13 +127,14 @@ n_uni <- sites |> filter(type == 'University') |> nrow()
 n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
 ```
 
-<h2>Study Locations</h2>
-
-<!-- map description -->
-<!-- dynamic text with values based on the data in sites.tsv -->
-<p>
-Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click any city to expand.
-</p>
+<div class='card'>
+  <h2>Study Locations</h2>
+  <hr>
+  <!-- map description -->
+  <!-- dynamic text with values based on the data in sites.tsv -->
+  <p>
+  Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click any city to expand.
+  </p>
 
 
 ```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3, fig.align='center'}
@@ -194,14 +199,33 @@ ontario_map <-
 ontario_map
 ```
 
+</div>
 <br>
-<hr>
 
 
+<!-- "Learn more" section -->
+<!-- Library of congress lecture card -->
 
-<!-- Section2 FAQs -->
+<div class='card' style="width=100% padding=2em">
+  <h2 class="cardtitle">Learn More</h2>
+  <hr>
+  <a href="https://www.loc.gov/item/webcast-9908/">
+  <div class="videocard">
+  <IMG class="centered_img" src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image">
+  <h4 style="color: #2c3e50">U.S. Library of Congress COVID19 Webinar Lecture</h4>
+  <h5 style="color: #2c3e50">Presented by Rees Kassen and Caroline Nott</h5>
+  <i class="fas fa-play"></i>  &nbsp;&nbsp; <em>Skip to 44:10</em>
+  </div>
+  </a>
+  <br>
+</div>
+<br>
+
+
+<!-- FAQs card -->
+<div class='card'>
 <h2>Frequently Asked Questions</h2>
-
+<hr>
 <!-- class: "accordion" is the container for the question (button) -->
 <!-- class: "panel" is the answer that is revealed on click -->
 
@@ -249,27 +273,32 @@ for (i = 0; i < acc.length; i++) {
 </script>
 
 <div></div>
-
-<hr>
-
+</div>
 <br>
-<h2>CUBE @ Your Facility</h2>
-To arrange for CUBE testing in your facility, 
-[please contact us](./contact.html).
-<hr>
 
+<!-- CUBE @ Your Facility -->
+<div class='card'>
+  <h2>CUBE @ Your Facility</h2>
+  To arrange for CUBE testing in your facility, 
+  [please contact us](./contact.html).
+</div>
 <br>
-<h2>Contribute to CUBE</h2>
-<p>
-If you are interested in contributing to the CUBE research project, 
-[please contact us ](./contact.html) .
-</p>
-<hr>
 
-<!-- Research team section -->
+<!-- Contribute to CUBE -->
+<div class = 'card'>
+  <h2>Contribute to CUBE</h2>
+  <p>
+  If you are interested in contributing to the CUBE research project, 
+  [please contact us ](./contact.html) .
+  </p>
+</div>
 <br>
-<h2>Research Team </h2>
-<br>
+  
+  
+  <!-- Research team section -->
+<div class='card' style="background-color: white">
+  <h2>Research Team </h2>
+  <hr>
 
 ```{r results='asis'}
 # use results='asis' for this chunk to get raw html
@@ -291,23 +320,16 @@ make_bio <- function(name, photo, bio){
 team <- read_tsv('data/team_profiles.tsv') |> 
   mutate(html = pmap(.l = list(name, path_to_pic, bio), .f = function(x,y,z) make_bio(x, y, z)))
 ```
-
 <br>
 </div>
 
+<br>
+
 -----
 
-<!-- footer -->
-<div>
-<div class="container">
-<!-- not sure why, but need like 300 line breaks to get a new hr to show up below team section-->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h4 style="text-align: center;">[Back to top](#) </h4>
 
-<hr>
-<h4 style="text-align: right;">[Back to top](#) </h4>
-</div>
-</div>
-<hr>
+----
 
 
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
