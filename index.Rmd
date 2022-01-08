@@ -46,13 +46,14 @@ library(fontawesome)
 ```{r meta, results='asis'}
 # <meta> tags to add to <head>
 # these are various tags that provide info about our site
+description_text <- "The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. "
 meta() |> 
   meta_viewport() |> 
   # keep this meta tag for google search indexing
   meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
   meta_general(
     application_name = 'COVID-19 in the Urban Built Environment',
-    description = "Our research team aims to develop environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings.",
+    description = description_text,
     robots = 'index',
     subject = "COVID-19 SARS-CoV-2 environmental microbiology epidemiology urban built environment Ontario",
     rating = "General"
@@ -61,7 +62,7 @@ meta() |>
     title = "COVID-19 in the Urban Built Environment",
     url = "https://cube-ontario.github.io",
     image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
-    image_alt = "CUBE Study Infographic: [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility. [Panel 3]: Testing: We use a PCR test to determine which samples contain coronavirus. We are also testing a CRISPR-based method and other approaches.",
+    image_alt = description_text,
     og_type = "website",
     og_site_name = "COVID-19 in the Urban Built Environment",
     og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
@@ -112,6 +113,11 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 <br>
 
 
+<div class='card'>
+  <h2>We're hiring!</h2>
+  <p>We're looking for a junior technician to help us detect SARS-CoV-2 from environmental samples. [Click here for more details](./job_posting.html)</p>
+</div>
+<br>
 
 <!-- SITES MAP SECTION -->
 
@@ -301,7 +307,7 @@ for (i = 0; i < acc.length; i++) {
   <hr>
 
 ```{r results='asis'}
-# use results='asis' for this chunk to get raw html
+# use results='asis' for this chunk to return as raw html
 
 # this function generates the html for a single person's profile
 make_bio <- function(name, photo, bio){

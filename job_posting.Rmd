@@ -1,0 +1,71 @@
+---
+title: "Position: Junior technician"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: false
+    toc_depth: 6
+---
+
+
+**uOttawa Biology**    
+**Location**: Ottawa, ON     
+**Posted**: 07 January 2022      
+
+-----
+  
+<br> <br>
+
+
+### Job Description
+
+An opportunity exists for a junior technician and project manager within the [Coronavirus in the Urban Built Environment (CUBE)](https://cube-ontario.github.io/) research team at the University of Ottawa’s Department of Biology in the laboratory of Dr. Rees Kassen. The successful candidate will be responsible for rapid and timely processing and reporting microbiological assays and serve as a liaison with an interdisciplinary research team of physicians, health care workers, microbiologists, and staff at congregate living and learning centres. Ability to work with microorganisms and strong communication, organizational, and management skills are therefore essential. Access to a vehicle is important, and use will be reimbursed. This work is part of an on-going effort to develop more effective environmental surveillance techniques for the coronavirus and other microbes, a major focus of re-opening efforts regionally and OneHealth initiatives globally.  
+    
+The laboratory work will involve assaying environmental (floor) swabs for the presence of SARS-CoV-2 RNA using RT-PCR. Additional duties will involve project management including coordinating and managing the delivery and collection of swabs, managing laboratory supplies and support for on-going laboratory research, and communicating results to the research team and partners. 
+      
+---- 
+
+<br><br>
+
+### Job responsibilities    
+
+-	Molecular assays of environmental (floor) swabs for SARS-Cov-2 RNA using RT-PCR  
+-	Data management and reporting    
+-	Project management     
+-	Communication with team members and external partners    
+      
+---- 
+
+<br><br>
+
+### Required skills      
+
+-	Good oral and written communication skills     
+-	Good organizational skills     
+-	Ability to work independently       
+-	Experience working with microbes in the lab     
+-	Molecular biology experience in the lab    
+-	Ability to communicate effectively with an interdisciplinary team spread over multiple locales (Ottawa, Toronto, Sault Ste Marie) and with community members responsible for managing health and safety in congregate living and learning settings.     
+- A valid driver’s license.   
+    
+---- 
+
+<br><br>
+
+
+### Position details  
+
+- **Anticipated start date**: 01 February 2022     
+- **Duration**: six (6) months, with a possibility of extension for an additional six months     
+- **Anticipated regular hours of work per week**: 37.5   
+- **Salary**: Approximately $46,000 per year, commensurate with qualifications and experience.    
+
+<br><br><br>
+
+### How to apply  
+
+Interested candidates should submit a cover letter, CV, and names of at least two references as single PDF to [cubestudy21@gmail.com](mailto: cubestudy21@gmail.com). Review of applications will commence 14 January 2022 and continue until the position is filled. The CUBE team is committed to ensuring equity, diversity and inclusion in all dimensions of its work. We strongly encourage applications from all qualified candidates and especially those from historically under-represented groups in research.    
+
+
+---------
