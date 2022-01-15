@@ -1,0 +1,50 @@
+---
+title: "I need help getting the CUBE report..."
+output: 
+  html_document:
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+----
+
+### "Where do I find the most current password?"
+
+- A new key is generated for each update; old keys won't work. 
+- Try searching your inbox for the subject **[CUBE] weekly report - encryption key** and use the **most recent version**. That key will work*.  
+- *If it doesn't, then email [Jason Moggridge](mailto:ja.moggridge@gmail.com) for the key and request that your email be added to the mailing list.
+
+----
+
+### "I can't open the encrypted file..."   
+    
+<br>
+*Try these steps:*   
+   
+#### 1. Make sure you are in the shared CUBE dropbox folder
+
+- If you are navigating online, the url should be like this:   
+    https://www.dropbox.com/home/CUBE%20Study/Data%20Analysis
+  
+- Otherwise, you probably have the Dropbox app installed on your computer (highly recommended).
+  - Ensure that the files are synced to your computer (*ie* sync is not paused). 
+  - The report will be in the dropbox folder under `~/Dropbox/CUBE Study/Data Analysis/`   
+<br>
+    
+#### 2. Open the encrypted html file locally, not through dropbox.com
+ 
+<!-- ![]('~/Dropbox/') -->
+- Navigate to wherever you have the encrypted html file on your computer (see step 1). 
+- Open the encrypted html file and enter the key. 
+- This will prompt you to save a new (decrypted) html file. Do so. 
+- Open the decrypted file that you just saved. It will work*.
+- *If issues persist, first ensure that you are indeed using the most recent key, then email [Jason Moggridge](mailto:ja.moggridge@gmail.com). Please try to provide any information about where the issue is occurring.
+
+
+
+
+
