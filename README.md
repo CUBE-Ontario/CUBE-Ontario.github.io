@@ -1,5 +1,4 @@
 # CUBE_website
-Website for CUBE project
 
 This is the repository for our public-facing website hosted on github pages: https://cube-ontario.github.io.  
 
