@@ -15,20 +15,12 @@
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<style>h1 {font-size: 34px;}
-       h1.title {font-size: 38px;}
-       h2 {font-size: 30px;}
-       h3 {font-size: 24px;}
-       h4 {font-size: 18px;}
-       h5 {font-size: 16px;}
-       h6 {font-size: 12px;}
-       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
-       pre:not([class]) { background-color: white }</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="site_libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script>
+<script src="site_libs/bs3compat-0.3.1/transition.js"></script>
+<script src="site_libs/bs3compat-0.3.1/tabs.js"></script>
+<script src="site_libs/bs3compat-0.3.1/bs3compat.js"></script>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -119,7 +111,6 @@ if (window.hljs) {
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -424,22 +415,20 @@ div.tocify {
 Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings
 </h2>
 <hr>
-<br> <!-- ## About CUBE section-->
-<div class='card'>
+<!-- ## About CUBE section-->
+<div class="card">
 <!-- header -->
-<h2>
+<div class="card-header">
+<h4 style="margin: 5px; padding: 0px">
 About the CUBE study
-</h2>
-<hr>
+</h4>
+</div>
+<div class="card-body">
 <!-- *--infographic here--* -->
-<img class='info' src="figures/CUBE_info6.png" 
-      alt="CUBE Study Infographic: 
-      [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
-      [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
-      [Panel 3]: Testing: We use a PCR test to determine which samples contain SARS-CoV2. We are also testing a CRISPR-based method and other approaches.">
-<ul>
-<hr>
+<p><img class='info' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic"></p>
 <!-- blurb -->
+<p>
+<ul>
 <li>
 The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares.
 </li>
@@ -453,356 +442,629 @@ Currently, we are focused on facilities located in Toronto, Ottawa, and Sault St
 <a href="https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2">Click here to read our preprint</a> from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
 </li>
 </ul>
-</div>
-<p><br></p>
-<div class="card">
-<h2>
-We’re hiring!
-</h2>
-<p>
-We’re looking for a junior technician to help us detect SARS-CoV-2 from environmental samples. <a href="./job_posting.html">Click here for more details</a>
 </p>
 </div>
-<p><br></p>
-<!-- SITES MAP SECTION -->
-<div class='card'>
-<h2>
-Study Locations
-</h2>
-<hr>
-<!-- map description -->
+</div>
+<p><br> <br></p>
+<!-- ## Map _ section -->
 <!-- dynamic text with values based on the data in sites.tsv -->
-<p>
-Our research team is currently monitoring 20 buildings in Toronto, Ottawa, and Sault Ste. Marie, including 9 long-term care homes, 5 daycares, and 1 university (6 buildings). Click any city to expand.
-</p>
-<div id="htmlwidget-4544e4493a4a930b5723" style="width:95%;height:300px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4544e4493a4a930b5723">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"setView":[[45,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"zoomControl":false,"dragging":false,"maxZoom":6,"minZoom":6}]},{"method":"addAwesomeMarkers","args":[[43.7,43.7,45.4,45.4,45.4,45.4,45.4,45.4,45.4,45.4,45.4,45.3,43.8,43.6,45.4,45.4,43.7,45.4,46.5,46.5],[-79.3,-79.3,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.8,-79.3,-79.4,-75.6,-75.7,-79.4,-75.7,-84.3,-84.3],{"icon":"cube","markerColor":["green","green","purple","purple","purple","purple","purple","purple","green","green","green","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":6},null,["Daycare","Daycare","University","University","University","University","University","University","Daycare","Daycare","Daycare","LTC","LTC","LTC","LTC","LTC","LTC","LTC","LTC","LTC"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6,46.5],"lng":[-84.3,-75.6]}},"evals":[],"jsHooks":[]}</script>
-</div>
-<p><br></p>
-<!-- "Learn more" section -->
-<!-- Library of congress lecture card -->
-<div class='card' style="width=100% padding=2em">
-<h2 class="cardtitle">
-Learn More
-</h2>
-<hr>
-<a href="https://www.loc.gov/item/webcast-9908/">
-<div class="videocard">
-<IMG class="centered_img" src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image">
-<h4 style="color: #2c3e50">
-U.S. Library of Congress COVID19 Webinar Lecture
+<div class="card">
+<!-- header -->
+<div class="card-header">
+<h4 style="margin: 5px; padding: 0px">
+Study Locations
 </h4>
-<h5 style="color: #2c3e50">
+</div>
+<!-- map description -->
+<div class="card-body">
+<p>Our research team is currently monitoring 20 buildings in Toronto, Ottawa, and Sault Ste. Marie, including 9 long-term care homes, 5 day-cares, and 6 university buildings. <em>Click any city to expand</em>.</p>
+<p><!-- map --></p>
+<div id="htmlwidget-2ad1d64fb14cc88835dc" style="width:95%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2ad1d64fb14cc88835dc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"zoomControl":false},"setView":[[45,-80],6,[]],"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"zoomControl":false,"dragging":false,"maxZoom":6,"minZoom":6}]},{"method":"addAwesomeMarkers","args":[[43.7,43.7,45.4,45.4,45.4,45.4,45.4,45.4,45.4,45.4,45.4,45.3,43.8,43.6,45.4,45.4,43.7,45.4,46.5,46.5],[-79.3,-79.3,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.7,-75.8,-79.3,-79.4,-75.6,-75.7,-79.4,-75.7,-84.3,-84.3],{"icon":"cube","markerColor":["green","green","purple","purple","purple","purple","purple","purple","green","green","green","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue","cadetblue"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":6},null,["Daycare","Daycare","University","University","University","University","University","University","Daycare","Daycare","Daycare","LTC","LTC","LTC","LTC","LTC","LTC","LTC","LTC","LTC"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[43.6,46.5],"lng":[-84.3,-75.6]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br> <br></p>
+<!-- ## "Learn more" section -->
+<div class='card'>
+<!-- header -->
+<div class="card-header bg-light mb-3">
+<h4 style="margin: 5px; padding: 0px">
+Learn more
+</h4>
+</div>
+<div class='card-body'>
+<div class ='flex'>
+<div class="row">
+<div class="col-12 col-md-6">
+<!-- lecture -->
+<div class="card bg-light mb-3" style="height:100%">
+<a href="https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832">
+<div class="card-header">
+<b>Swabbing floors to detect COVID-19 could be a useful indicator of the disease’s spread</b>
+</div>
+<div class="card-body">
+<img src="pics/convo_card_preview.jpeg" alt="'Wet floor' signs lying on a tile floor">
+<p style="color: #2c3e50">
+Aaron Hinz and Rees Kassen for <em>the Conversation</em>
+</p>
+</div>
+<p></a></p>
+</div>
+</div>
+<div class="col-12 col-md-6">
+<!-- lecture -->
+<div class="card bg-light mb-3" style="height:100%">
+<a href="https://www.loc.gov/item/webcast-9908/">
+<div class="card-header">
+<b>Library of congress lecture</b>
+</div>
+<div class="card-body">
+<img src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image">
+<p style="color: #2c3e50">
 Presented by Rees Kassen and Caroline Nott
-</h5>
+</p>
 <i class="fas fa-play"></i>    <em>Skip to 44:10</em>
 </div>
-</a> <br>
+<p></a></p>
 </div>
-<p><br></p>
-<!-- FAQs card -->
-<div class='card'>
-<h2>
-Frequently Asked Questions
-</h2>
+</div>
+</div>
+<p><br> <br></p>
+<div class='row'>
+<div class='col-12 col-md-4'>
+
+<!-- ## We're hiring _ section-->
+<div class='card bg-light mb-3' style="height:100%; width: 100%">
+<!-- header -->
+<div class="card-header">
+<h5 style="margin: 5px; padding: 0px">
+We’re hiring!
+</h5>
+</div>
+<!-- body -->
+<div class='card-body'>
+We’re looking for a junior technician to help us detect SARS-CoV-2 from environmental samples.
 <hr>
-<!-- class: "accordion" is the container for the question (button) -->
-<!-- class: "panel" is the answer that is revealed on click -->
-<!-- Example: -->
-<!-- <button class="accordion"> Question </button> -->
-<!-- <div class="panel"> <p> Answer </p> </div> -->
-<button class="accordion">
-<h4 class="faq">
-Why do you swab the floors?
-</h4>
-</button>
-<div class="panel">
-<p class="faqans">
-We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (e.g. schools, daycares, long-term care homes, workplaces, etc.).
-<p/>
-</div>
-<button class="accordion">
-<h4 class="faq">
-How long will you be swabbing our facilities?
-</h4>
-</button>
-<div class="panel">
-<p class="faqans">
-Most facilities are swabbed on a weekly basis for a number of months.
-<p/>
-</div>
-<button class="accordion">
-<h4 class="faq">
-When will we hear about the results?
-</h4>
-</button>
-<div class="panel">
-<p class="faqans">
-The results will be made publicly available when the study is complete.
-<p/>
-</div>
-<button class="accordion">
-<h4 class="faq">
-Can you get COVID-19 from the floor? Should we be cleaning our floors more often?
-</h4>
-</button>
-<div class="panel">
-<p class="faqans">
-The current scientific consensus is that COVID-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by COVID-19 directly from floors, but floors may have some viable virus present.
-<p/>
-</div>
-<button class="accordion">
-<h4 class="faq">
-What institutions are you affiliated with?
-</h4>
-</button>
-<div class="panel">
-<p class="faqans">
-Our research team has members affliated with The Ottawa Hospital, Children’s Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.
-<p/>
-</div>
-<button class="accordion">
-<h4 class="faq">
-Who is funding the study?
-</h4>
-</button>
-<div class="panel">
-<p class="faqans">
-The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.
-<p/>
-</div>
-<!-- this javascript is needed to observe click/hover events for highlighting and expanding the accordion sections -->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    <!-- Toggle between adding and removing the "active" class, -->
-    <!-- to highlight the button that controls the panel  -->
-    this.classList.toggle("active");
-    <!-- Toggle between hiding and showing the active panel  -->
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "none") {
-      panel.style.display = "block";
-    } else {
-      panel.style.display = "none";
-    }
-  });
-}
-</script>
-<div>
-
+<a class="btn btn-primary" href="job_posting.html" role="button">More details</a>
 </div>
 </div>
-<p><br></p>
+</div>
+<div class='col-12 col-md-4'>
 <!-- CUBE @ Your Facility -->
-<div class="card">
-<h2>
+<div class='card bg-light mb-3' style="height:100%; width: 100%">
+<div class="card-header">
+<h5>
 CUBE @ Your Facility
-</h2>
-<p>To arrange for CUBE testing in your facility, <a href="./contact.html">please contact us</a>.</p>
+</h5>
 </div>
-<p><br></p>
-<!-- Contribute to CUBE -->
-<div class="card">
-<h2>
-Contribute to CUBE
-</h2>
-<p>
-If you are interested in contributing to the CUBE research project, <a href="./contact.html">please contact us</a> .
-</p>
-</div>
-<p><br></p>
-<!-- Research team section -->
-<div class='card' style="background-color: white">
-<h2>
-Research Team
-</h2>
+<div class='card-body'>
+To arrange for CUBE testing in your facility, please contact us.
 <hr>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Madison.jpg" alt="Madison Burella">
-<h4>
-Madison Burella
+<a class="btn btn-primary" href="contact.html" role="button">Contact us</a>
+</div>
+</div>
+</div>
+<div class='col-12 col-md-4'>
+<!-- Contribute to CUBE -->
+<div class='card bg-light mb-3' style="height:100%; width: 100%">
+<div class="card-header">
+<h5>
+Contribute to CUBE
+</h5>
+</div>
+<div class='card-body'>
+If you are interested in contributing to the CUBE research project, please get in touch.
+<hr>
+<a class="btn btn-primary" href="contact.html" role="button">Contact us</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br> <br></p>
+<!-- FAQs card -->
+<!-- ## "Learn more" section -->
+<div class="card">
+<!-- header -->
+<div class="card-header">
+<h4 style="margin: 5px; padding: 0px">
+Frequently Asked Questions
 </h4>
+</div>
+<div class="card-body">
+<i>click to expand</i>
+<div id="accordion">
+<div class="card" style="padding: 0px; margin: 10px;">
+<div id="heading_1" class="card-header" style="padding: 1px; margin: 0px">
+<button class="btn btn-link" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1" style="margin: 0px; padding: 1px">
+<p style="margin: 0px; padding: 10px 8px">
+<strong>Why do you swab the floors?</strong>
+</p>
+</button>
+</div>
+<div id="collapse_1" class="collapse hide" aria-labelledby="heading_1" data-parent="#accordion" style="padding: 1px">
+<div class="card-body" style="padding: 10px 5px">
+<p>We swab floors to pick up any SARS-CoV-2 RNA (the genetic material of the virus) that we can then detect using laboratory-based genetic methods. The aim of our study is to develop this technique as a means to monitor the presence of SARS-CoV-2 in congregate settings (e.g. schools, daycares, long-term care homes, workplaces, etc.).</p>
+</div>
+</div>
+</div>
+<div class="card" style="padding: 0px; margin: 10px;">
+<div id="heading_2" class="card-header" style="padding: 1px; margin: 0px">
+<button class="btn btn-link" data-toggle="collapse" data-target="#collapse_2" aria-expanded="true" aria-controls="collapse_2" style="margin: 0px; padding: 1px">
+<p style="margin: 0px; padding: 10px 8px">
+<strong>How long will you be swabbing our facilities?</strong>
+</p>
+</button>
+</div>
+<div id="collapse_2" class="collapse hide" aria-labelledby="heading_2" data-parent="#accordion" style="padding: 1px">
+<div class="card-body" style="padding: 10px 5px">
+<p>Most facilities are swabbed on a weekly basis for a number of months.</p>
+</div>
+</div>
+</div>
+<div class="card" style="padding: 0px; margin: 10px;">
+<div id="heading_3" class="card-header" style="padding: 1px; margin: 0px">
+<button class="btn btn-link" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true" aria-controls="collapse_3" style="margin: 0px; padding: 1px">
+<p style="margin: 0px; padding: 10px 8px">
+<strong>When will we hear about the results?</strong>
+</p>
+</button>
+</div>
+<div id="collapse_3" class="collapse hide" aria-labelledby="heading_3" data-parent="#accordion" style="padding: 1px">
+<div class="card-body" style="padding: 10px 5px">
+<p>The results will be made publicly available when the study is complete.</p>
+</div>
+</div>
+</div>
+<div class="card" style="padding: 0px; margin: 10px;">
+<div id="heading_4" class="card-header" style="padding: 1px; margin: 0px">
+<button class="btn btn-link" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" aria-controls="collapse_4" style="margin: 0px; padding: 1px">
+<p style="margin: 0px; padding: 10px 8px">
+<strong>Can you get COVID-19 from the floor? Should we be cleaning our floors more often?</strong>
+</p>
+</button>
+</div>
+<div id="collapse_4" class="collapse hide" aria-labelledby="heading_4" data-parent="#accordion" style="padding: 1px">
+<div class="card-body" style="padding: 10px 5px">
+<p>The current scientific consensus is that COVID-19 is mainly transmitted through aerosols. It is highly unlikely for an individual to become infected by COVID-19 directly from floors, but floors may have some viable virus present.</p>
+</div>
+</div>
+</div>
+<div class="card" style="padding: 0px; margin: 10px;">
+<div id="heading_5" class="card-header" style="padding: 1px; margin: 0px">
+<button class="btn btn-link" data-toggle="collapse" data-target="#collapse_5" aria-expanded="true" aria-controls="collapse_5" style="margin: 0px; padding: 1px">
+<p style="margin: 0px; padding: 10px 8px">
+<strong>What institutions are you affiliated with?</strong>
+</p>
+</button>
+</div>
+<div id="collapse_5" class="collapse hide" aria-labelledby="heading_5" data-parent="#accordion" style="padding: 1px">
+<div class="card-body" style="padding: 10px 5px">
+<p>Our research team has members affliated with The Ottawa Hospital, Children’s Hospital of Eastern Ontario, Mt. Sinai Hospital, University of Ottawa, Carleton University, University of Toronto, University of Waterloo, and DNA Genotek.</p>
+</div>
+</div>
+</div>
+<div class="card" style="padding: 0px; margin: 10px;">
+<div id="heading_6" class="card-header" style="padding: 1px; margin: 0px">
+<button class="btn btn-link" data-toggle="collapse" data-target="#collapse_6" aria-expanded="true" aria-controls="collapse_6" style="margin: 0px; padding: 1px">
+<p style="margin: 0px; padding: 10px 8px">
+<strong>Who is funding the study?</strong>
+</p>
+</button>
+</div>
+<div id="collapse_6" class="collapse hide" aria-labelledby="heading_6" data-parent="#accordion" style="padding: 1px">
+<div class="card-body" style="padding: 10px 5px">
+<p>The CUBE study has received funding from NSERC, The Ottawa Hospital Academic Medical Organization (TOHAMO), University of Ottawa, Carleton University, and DNA Genotek.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br> <br></p>
+<!-- Research team section /// style="background-color: white" -->
+<div class="card">
+<div class="card-header">
+<h4>
+Research Team
+</h4>
+</div>
+<div class="card-body">
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Madison.jpg" class="card-img" alt="profile photo for Madison Burella"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
+Madison Burella
+</h5>
+<p class="card-text">
 Madison is a senior medical student at the Northern Ontario School of Medicine and is currently assisting with on-site swabbing in Sault Ste. Marie.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Lucas.jpg" alt="Dr. Lucas Castellani">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Lucas.jpg" class="card-img" alt="profile photo for Dr. Lucas Castellani"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Lucas Castellani
-</h4>
+</h5>
+<p class="card-text">
 Dr. Castellani is an infectious diseases physician at the Sault Area Hospital and Assistant Professor at the Northern Ontario School of Medicine.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Evgueni2.jpg" alt="Evgueni Doukhanine">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Evgueni2.jpg" class="card-img" alt="profile photo for Evgueni Doukhanine"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Evgueni Doukhanine
-</h4>
+</h5>
+<p class="card-text">
 Molecular biologist at DNA Genotek specializing in microbiome research and development of chemical reagents and collection devices to facilitate stabilization of primary samples.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Mike.jpg" alt="Dr. Michael Fralick">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Mike.jpg" class="card-img" alt="profile photo for Dr. Michael Fralick"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Michael Fralick
-</h4>
+</h5>
+<p class="card-text">
 Mike is the Toronto Lead for CUBE, Assistant Professor at University of Toronto, Clinician Scientist at Sinai Health, and Locum general internist at The Sault Area Hospital.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/David.jpg" alt="Dr. David Guttman">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/David.jpg" class="card-img" alt="profile photo for Dr. David Guttman"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. David Guttman
-</h4>
+</h5>
+<p class="card-text">
 David is a Professor in the Department of Cell and Systems Biology at the University of Toronto and Director for the Centre of the Analysis of Genome Evolution and Function.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/aaron.png" alt="Aaron Hinz">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/aaron.png" class="card-img" alt="profile photo for Aaron Hinz"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Aaron Hinz
-</h4>
+</h5>
+<p class="card-text">
 Aaron is a Research Associate at the University of Ottawa with interests in genetics and molecular mechanisms of microbial adaptation. For the CUBE project, he has been optimizing methods for SARS-CoV-2 detection from built environment samples.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Bena_alt.jpg" alt="Benazir Hodzic-Santor">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Bena_alt.jpg" class="card-img" alt="profile photo for Benazir Hodzic-Santor"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Benazir Hodzic-Santor
-</h4>
+</h5>
+<p class="card-text">
 Bena is a medical student at the University of Toronto and a research assistant in Dr. Fralick’s lab. She is currently assisting with on-site swabbing in the GTA.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Laura_alt.jpg" alt="Dr. Laura Hug">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Laura_alt.jpg" class="card-img" alt="profile photo for Dr. Laura Hug"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Laura Hug
-</h4>
+</h5>
+<p class="card-text">
 Assistant Professor and Canada Research Chair in Environmental Microbiology in the Department of Biology at the University of Waterloo. Dr. Hug’s research uses a combination of multi-omics and classical microbiological techniques to examine microbial diversity and function in contaminated sites.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Rees.jpg" alt="Dr. Rees Kassen">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Rees.jpg" class="card-img" alt="profile photo for Dr. Rees Kassen"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Rees Kassen
-</h4>
+</h5>
+<p class="card-text">
 Full Professor and Cystic Fibrosis Canada Researcher, University of Ottawa. Dr. Kassen uses microbes to study the evolution of biodiversity. Rees is also active at the interface between science, society, and policy, serving currently as Chair of the Science and Innovation Advisory Council at the Institute on Governance and a member of the World Economic Forum’s <a href="https://www.weforum.org/communities/gfc-on-scientific-collaboration">Global Future Council on Scientific Collaboration</a>.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Derek.jpg" alt="Dr. Derek Macfadden">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Derek.jpg" class="card-img" alt="profile photo for Dr. Derek Macfadden"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Derek Macfadden
-</h4>
+</h5>
+<p class="card-text">
 Dr. MacFadden is a clinician scientist and epidemiologist at the Ottawa Hospital Research Institute.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/AMcGeer.jpg" alt="Dr. Allison McGeer">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/AMcGeer.jpg" class="card-img" alt="profile photo for Dr. Allison McGeer"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Allison McGeer
-</h4>
+</h5>
+<p class="card-text">
 Allison McGeer is an infectious diseases physician and microbiologist at Sinai Health System and Professor of Laboratory Medicine and Pathobiology at the University of Toronto.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Jason.jpg" alt="Jason Moggridge">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Jason.jpg" class="card-img" alt="profile photo for Jason Moggridge"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Jason Moggridge
-</h4>
+</h5>
+<p class="card-text">
 Research assistant for Dr. Michael Fralick. Jason is a data analyst and programmer for the CUBE study.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Caroline.jpg" alt="Dr. Caroline Nott">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Caroline.jpg" class="card-img" alt="profile photo for Dr. Caroline Nott"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Caroline Nott
-</h4>
+</h5>
+<p class="card-text">
 Infectious Diseases Physician and Director of the Antimicrobial Stewardship Program at The Ottawa Hospital (TOH). Dr. Nott has supported TOH Infection Prevention and Control and Occupational Health Departments as a COVID-19 Pandemic Support Lead since April 2020.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Ashley_alt.jpg" alt="Ashley Raudanskis">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Ashley_alt.jpg" class="card-img" alt="profile photo for Ashley Raudanskis"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Ashley Raudanskis
-</h4>
+</h5>
+<p class="card-text">
 Project Manager for the CUBE study. Ashley recently graduated from the University of Guelph and is focused on pursuing a career in healthcare in the near future.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/nisha.jpg" alt="Dr. Nisha Thampi">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/nisha.jpg" class="card-img" alt="profile photo for Dr. Nisha Thampi"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Nisha Thampi
-</h4>
+</h5>
+<p class="card-text">
 Medical director of the Infection Prevention and Control Program at CHEO, a pediatric health and research centre in Ottawa, and Associate Professor of Pediatrics at the University of Ottawa.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Tam_alt.jpg" alt="Tamara Van Bakel">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Tam_alt.jpg" class="card-img" alt="profile photo for Tamara Van Bakel"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Tamara Van Bakel
-</h4>
+</h5>
+<p class="card-text">
 Tamara is a Research Coordinator at Sinai Health System providing administrative support.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Gabriel.jpg" alt="Gabriel Wainer">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Gabriel.jpg" class="card-img" alt="profile photo for Gabriel Wainer"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Gabriel Wainer
-</h4>
+</h5>
+<p class="card-text">
 Gabriel Wainer is a Full Professor in the Department of Systems and Computer Engineering at Carleton University. He is an expert on spatial modeling and simulation and participates in the definition of prediction models indoors.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Alex.jpg" alt="Dr. Alex Wong">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Alex.jpg" class="card-img" alt="profile photo for Dr. Alex Wong"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Dr. Alex Wong
-</h4>
+</h5>
+<p class="card-text">
 Alex Wong is an Associate Professor of biology at Carleton University. His lab is optimizing methods for detecting SARS-CoV-2 in the built environment.
 </p>
 </div>
-<div class="row team-profile">
-<p>
-<img class="profilepic" src="pics/Veronica.jpg" alt="Veronica Zanichelli">
-<h4>
+</div>
+</div>
+</div>
+<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+<div class="row no-gutters">
+<div class="col-md-2" style="margin: auto; padding: auto;">
+<img src="pics/Veronica.jpg" class="card-img" alt="profile photo for Veronica Zanichelli"
+  style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+</div>
+<div class="col-md-10">
+<div class="card-body">
+<h5 class="card-title">
 Veronica Zanichelli
-</h4>
+</h5>
+<p class="card-text">
 Veronica is a clinical research coordinator for CUBE and other projects in the field of infectious diseases at the Ottawa Hospital Research Institute.
 </p>
 </div>
-<br>
+</div>
+</div>
+</div>
+<p><br></p>
+</div>
 </div>
 <p><br></p>
 <hr />
-<h4 style="text-align: center;">
+<h5 style="text-align: center;">
 <a href="#">Back to top</a>
-</h4>
+</h5>
 <hr />
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
 
 </div>
+<!-- ```{r} -->
+<!-- library(htmltools) -->
+<!-- library(tidyverse) -->
+<!-- library(bs4cards) -->
+<!-- # devtools::install_github("djnavarro/bs4cards") -->
+<!-- # df with one row per card -->
+<!-- df <- tribble( -->
+<!--   ~link, ~title, ~img_path, ~img_alt, ~body, -->
+<!--   "https://www.loc.gov/item/webcast-9908/", "U.S. Library of Congress COVID19 Webinar Lecture", "pics/loc_thumb2.jpg", "Library of Congress lecture", '<h5 style="color: #2c3e50">Presented by Rees Kassen and Caroline Nott</h5><br><i class="fas fa-play"></i>&nbsp;&nbsp; <em>Skip to 44:10</em>', -->
+<!--   "https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832","Swabbing floors to detect COVID-19 could be a useful indicator of the disease’s spread", "pics/convo_card_preview.jpeg", "'Wet floor' signs lying on a tile floor", '<h5 style="color: #2c3e50">Aaron Hinz and Rees Kassen </h5><br><p> in <em>the Conversation</em><p>' -->
+<!-- ) -->
+<!-- # # -->
+<!-- # my_card <- function(link, title, img_path, img_alt, body) { -->
+<!-- #   div( -->
+<!-- #     a(href = link, -->
+<!-- #       div( -->
+<!-- #         class = "card border-info mb-3",# .bg-light -->
+<!-- #         img(class="card-img-top", src=img_path, alt=img_alt, ), -->
+<!-- #         div( -->
+<!-- #           class = "card-body text-success", -->
+<!-- #           h4(class = "card-title", title), -->
+<!-- #           p(class = "card-text", body) -->
+<!-- #         ) -->
+<!-- #       ) -->
+<!-- #     ) -->
+<!-- #   ) -->
+<!-- # } -->
+<!-- #  -->
+<!-- #  -->
+<!-- # df |>  -->
+<!-- #   dplyr::mutate(card = purrr::pmap( -->
+<!-- #     .l = list(link, title, img_path, img_alt, body), -->
+<!-- #     .f = function(link, title, img_path, img_alt, body){ -->
+<!-- #       my_card(link, title, img_path, img_alt, body) -->
+<!-- #     })) |>  -->
+<!-- #   pull(card) |>  -->
+<!-- #   div(class='') -->
+<!-- ``` -->
 
 
 
@@ -853,7 +1115,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1,h2,h3,h4",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

@@ -5,7 +5,7 @@ output:
     toc: true
     toc_float:
       toc_collapsed: false
-    toc_depth: 2
+    toc_depth: 4
 ---
 
 <!-- ADDING NEW INFO to website: (how-to)-->
@@ -16,7 +16,6 @@ output:
 <!-- name <tab> pic_filename.jpg <tab> bio paragraph -->
 
 <!-- FAQ: add comma-delimited line to data/FAQs.csv with: "question", "answer" -->
-
 
 
 <h5 class='subtitle'>Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings</h2>
@@ -31,7 +30,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
+```{r libraries}
 library(tidyverse)
 library(leaflet)
 library(htmltools)
@@ -41,113 +40,53 @@ library(fontawesome)
 ```
 
 
+```{r card_fx}
+make_faq_bootstrap <- function(question, answer, x){
+  cat(glue(
+    '<div class="card" style="padding: 0px; margin: 10px;">
+    <div class="card-header" id="heading_{x}" style="padding: 1px; margin: 0px">
+      <button class="btn btn-link" data-toggle="collapse" data-target="#collapse_{x}" aria-expanded="true" aria-controls="collapse_{x}" style="margin: 0px; padding: 1px"><p style="margin: 0px; padding: 10px 8px"><strong>{question}</strong></p></button>
+    </div>
 
+    <div id="collapse_{x}" class="collapse hide" aria-labelledby="heading_{x}" data-parent="#accordion" style="padding: 1px">
+    <div class="card-body" style="padding: 10px 5px">
+      {answer}
+    </div>
+    </div>
+    </div>'
+  ))
+}
 
-```{r meta, results='asis'}
-# <meta> tags to add to <head>
-# these are various tags that provide info about our site
-description_text <- "The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. "
-meta() |> 
-  meta_viewport() |> 
-  # keep this meta tag for google search indexing
-  meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
-  meta_general(
-    application_name = 'COVID-19 in the Urban Built Environment',
-    description = description_text,
-    robots = 'index',
-    subject = "COVID-19 SARS-CoV-2 environmental microbiology epidemiology urban built environment Ontario",
-    rating = "General"
-  ) |>
-  meta_social(
-    title = "COVID-19 in the Urban Built Environment",
-    url = "https://cube-ontario.github.io",
-    image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
-    image_alt = description_text,
-    og_type = "website",
-    og_site_name = "COVID-19 in the Urban Built Environment",
-    og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
-    twitter_card_type = "summary_large_image",
-    twitter_creator = "@quaxlikeaduck",
-    twitter_site = "@quaxlikeaduck",
-    # twitter_image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
-    disable_pinterest = TRUE
+# this function generates the html for a single person's profile
+make_bio_bootstrap4 <- function(name, photo, bio){
+  photo <- glue('./pics/{photo}')
+  html_str <- glue(
+    '<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+      <div class="row no-gutters">
+      <div class="col-md-2" style="margin: auto; padding: auto;">
+      <img src="{photo}" class="card-img" alt="profile photo for {name}"
+      style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
+      </div>
+      <div class="col-md-10">
+      <div class="card-body">
+      <h5 class="card-title">{name}</h5>
+      <p class="card-text">{bio}</p>
+      </div>
+      </div>
+      </div>
+    </div>'
   )
-
-```
-
-```{r icons}
-email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
+  cat(html_str)
+}
 ```
 
 
 
-<br>
-<!-- ## About CUBE section-->
-<div class='card'>
-  <!-- header -->
-  <h2> About the CUBE study</h2>
-  <hr>
-  <!-- *--infographic here--* -->
-  <img class='info' src="figures/CUBE_info6.png" 
-      alt="CUBE Study Infographic: 
-      [Panel 1] Setting: CUBE monitors COVID-19 in congregate settings such as long-term care homes, schools, and daycares. Study sites are tested on a weekly or biweekly basis. 
-      [Panel 2] Sampling: We collect samples by swabbing a small area of the floor. We also measure the CO2 concentration of the air. Multiple samples are collected from each facility.
-      [Panel 3]: Testing: We use a PCR test to determine which samples contain SARS-CoV2. We are also testing a CRISPR-based method and other approaches.">
-  <ul>
-  <hr>
-  <!-- blurb -->
-   <li>
-   The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
-   </li>
-   <li>
-   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
-  </li>
-  <li>
-  Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
-  </li>
-  <li>
-  [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
-  </li>
-  </ul>
-</div>
-<br>
 
-
-<div class='card'>
-  <h2>We're hiring!</h2>
-  <p>We're looking for a junior technician to help us detect SARS-CoV-2 from environmental samples. [Click here for more details](./job_posting.html)</p>
-</div>
-<br>
-
-<!-- SITES MAP SECTION -->
-
-```{r message=FALSE, warning=FALSE}
+```{r map creation}
 # read site geo data and set marker colors based on type of site
 sites <- 
-  read_tsv(file = 'data/sites.tsv') 
-n_site <- sites |> nrow()
-# values to output in map description text
-n_ltc <- sites |> filter(type =="LTC") |> nrow()
-n_dc <- sites |> filter(type == 'Daycare') |> nrow()
-n_uni <- sites |> filter(type == 'University') |> nrow()
-n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
-```
-
-<div class='card'>
-  <h2>Study Locations</h2>
-  <hr>
-  <!-- map description -->
-  <!-- dynamic text with values based on the data in sites.tsv -->
-  <p>
-  Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` daycares, and 1 university (6 buildings). Click any city to expand.
-  </p>
-
-
-```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3, fig.align='center'}
-
-# read site geo data and set marker colors based on type of site
-sites <- 
-  read_tsv(file = 'data/sites.tsv') |> 
+  read_tsv(file = 'data/sites.tsv')  |> 
   mutate(
     color = case_when(
       type == 'LTC' ~ 'cadetblue',
@@ -156,6 +95,13 @@ sites <-
       type == 'School' ~ 'orange',
       TRUE ~ 'red'
     ))
+n_site <- sites |> nrow()
+# values to output in map description text
+n_ltc <- sites |> filter(type =="LTC") |> nrow()
+n_dc <- sites |> filter(type == 'Daycare') |> nrow()
+n_uni <- sites |> filter(type == 'University') |> nrow()
+n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
+
 # Possible values are "red", "darkred", "lightred", "orange", "beige", "green", "darkgreen", "lightgreen", "blue", "darkblue", "lightblue", "purple", "darkpurple", "pink", "cadetblue", "white", "gray", "lightgray", "black"
 
 # define Marker style: white cube logo on coloured background
@@ -201,139 +147,266 @@ ontario_map <-
     clusterOptions = markerClusterOptions(freezeAtZoom = zmlvl)
   )
 
+```
+
+
+```{r meta, results='asis'}
+# <meta> tags to add to <head>
+# these are various tags that provide info about our site
+description_text <- "The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. "
+meta() |> 
+  meta_viewport() |> 
+  # keep this meta tag for google search indexing
+  meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
+  meta_general(
+    application_name = 'COVID-19 in the Urban Built Environment',
+    description = description_text,
+    robots = 'index',
+    subject = "COVID-19 SARS-CoV-2 environmental microbiology epidemiology urban built environment Ontario",
+    rating = "General"
+  ) |>
+  meta_social(
+    title = "COVID-19 in the Urban Built Environment",
+    url = "https://cube-ontario.github.io",
+    image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
+    image_alt = description_text,
+    og_type = "website",
+    og_site_name = "COVID-19 in the Urban Built Environment",
+    og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@quaxlikeaduck",
+    twitter_site = "@quaxlikeaduck",
+    # twitter_image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
+    disable_pinterest = TRUE
+  )
+
+```
+
+```{r icons}
+email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
+```
+
+
+
+
+<!-- ## About CUBE section-->
+<div class='card'>
+
+<!-- header -->
+<div class='card-header'>
+  <h4 style="margin: 5px; padding: 0px">About the CUBE study</h4>
+</div>
+
+<div class='card-body'>
+
+<!-- *--infographic here--* -->
+<img class='info' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic">
+
+<!-- blurb -->
+<p>
+  <ul>
+  <li>
+  The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
+  </li>
+  <li>
+  We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
+  </li>
+  <li>
+  Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
+  </li>
+  <li>
+  [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
+  </li>
+  </ul>
+</p>
+
+</div>
+</div>
+
+<br>
+<br>
+
+
+<!-- ## Map _ section -->
+<!-- dynamic text with values based on the data in sites.tsv -->
+  
+<div class='card'>
+  <!-- header -->
+  <div class='card-header'>
+  <h4 style="margin: 5px; padding: 0px">Study Locations</h4>
+  </div>
+  
+  <!-- map description -->
+  <div class='card-body'>
+  Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` day-cares, and 6 university buildings. *Click any city to expand*.
+
+  <!-- map -->
+```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3, fig.align='center'}
 # display the map
 ontario_map
 ```
-
-</div>
-<br>
-
-
-<!-- "Learn more" section -->
-<!-- Library of congress lecture card -->
-
-<div class='card' style="width=100% padding=2em">
-  <h2 class="cardtitle">Learn More</h2>
-  <hr>
-  <a href="https://www.loc.gov/item/webcast-9908/">
-  <div class="videocard">
-  <IMG class="centered_img" src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image">
-  <h4 style="color: #2c3e50">U.S. Library of Congress COVID19 Webinar Lecture</h4>
-  <h5 style="color: #2c3e50">Presented by Rees Kassen and Caroline Nott</h5>
-  <i class="fas fa-play"></i>  &nbsp;&nbsp; <em>Skip to 44:10</em>
   </div>
-  </a>
-  <br>
 </div>
+
+<br>
 <br>
 
+<!-- ## "Learn more" section --> 
+<div class='card'>
+<!-- header -->
+<div class='card-header bg-light mb-3'>
+<h4 style="margin: 5px; padding: 0px">Learn more</h4>
+</div>
+
+<div class='card-body'>
+<div class ='flex'>
+<div class ='row'>
+
+
+<div class ='col-12 col-md-6'>
+<!-- lecture -->
+<div class='card bg-light mb-3' style='height:100%'>
+  <a href="https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832">
+  <div class='card-header'>
+  <b>Swabbing floors to detect COVID-19 could be a useful indicator of the disease’s spread</b>
+  </div>
+  <div class='card-body'>
+  <img src="pics/convo_card_preview.jpeg" alt="'Wet floor' signs lying on a tile floor"> 
+  <p style="color: #2c3e50">Aaron Hinz and Rees Kassen for <em>the Conversation</em></p>
+  </div> 
+  </a>
+</div>
+</div>
+
+<div class ='col-12 col-md-6'>
+<!-- lecture -->
+<div class='card bg-light mb-3' style='height:100%'>
+  <a href="https://www.loc.gov/item/webcast-9908/">
+  <div class='card-header'><b>Library of congress lecture</b></div>
+  <div class='card-body'>
+  <img src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image">
+  <p style="color: #2c3e50">Presented by Rees Kassen and Caroline Nott</p>
+  <i class="fas fa-play"></i>  &nbsp;&nbsp; <em>Skip to 44:10</em>
+  </div> 
+  </a>
+</div>
+</div>
+
+
+</div>
+
+<br>
+<br>
+
+<div class='row'>
+<div class='col-12 col-md-4'>
+
+<!-- ## We're hiring _ section-->
+<div class='card bg-light mb-3' style="height:100%; width: 100%">
+<!-- header -->
+<div class='card-header'>
+  <h5 style="margin: 5px; padding: 0px">We're hiring!</h5>
+</div>
+<!-- body -->
+<div class='card-body'>
+  We're looking for a junior technician to help us detect SARS-CoV-2 from environmental samples.
+  <hr>
+  <a class="btn btn-primary" href="job_posting.html" role="button">More details</a>
+</div>
+</div>
+</div>
+
+<div class='col-12 col-md-4'>
+<!-- CUBE @ Your Facility -->
+<div class='card bg-light mb-3' style="height:100%; width: 100%">
+  <div class='card-header'><h5>CUBE @ Your Facility</h5></div>
+  <div class='card-body'>
+  To arrange for CUBE testing in your facility, please contact us.
+  <hr>
+  <a class="btn btn-primary" href="contact.html" role="button">Contact us</a>
+</div>
+</div>
+</div>
+
+<div class='col-12 col-md-4'>
+<!-- Contribute to CUBE -->
+<div class='card bg-light mb-3' style="height:100%; width: 100%">
+  <div class='card-header'><h5>Contribute to CUBE</h5></div>
+  <div class='card-body'>
+  If you are interested in contributing to the CUBE research project, please get in touch.
+  <hr>
+  <a class="btn btn-primary" href="contact.html" role="button">Contact us</a>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>
+
+
+
+
+
+  
 
 <!-- FAQs card -->
-<div class='card'>
-<h2>Frequently Asked Questions</h2>
-<hr>
-<!-- class: "accordion" is the container for the question (button) -->
-<!-- class: "panel" is the answer that is revealed on click -->
 
-<!-- Example: -->
-<!-- <button class="accordion"> Question </button> -->
-<!-- <div class="panel"> <p> Answer </p> </div> -->
+<!-- ## "Learn more" section --> 
+<div class='card'>
+<!-- header -->
+<div class='card-header'>
+<h4 style="margin: 5px; padding: 0px">Frequently Asked Questions</h4>
+</div>
+
+<div class='card-body'>
+<i>click to expand</i>
+<div id="accordion">
+
 
 ```{r results='asis'}
-# generates the html for a given faq + answer pair 
-make_faq <- function(question, answer){
-  cat(glue(
-    '<button class="accordion">
-      <h4 class="faq">{question}</h4>
-    </button>
-    <div class="panel">
-      <p class="faqans">{answer}<p/>
-    </div>'
-  ))
-}
 # FAQs are stored in ./data/
-faqs <- read_csv('data/FAQs.csv') |> 
-  mutate(html = map2(question, answer, .f = ~make_faq(.x, .y)))
+x <- read_csv('data/FAQs.csv', col_types = cols()) |> 
+  mutate(x = row_number()) |> 
+  mutate(html = pmap(
+    .l = list(question, answer, x), 
+    .f = function(question, answer, x) {make_faq_bootstrap(question, answer, x)}
+  ))
 ```
 
-
-<!-- this javascript is needed to observe click/hover events for highlighting and expanding the accordion sections -->
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    <!-- Toggle between adding and removing the "active" class, -->
-    <!-- to highlight the button that controls the panel  -->
-    this.classList.toggle("active");
-    <!-- Toggle between hiding and showing the active panel  -->
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "none") {
-      panel.style.display = "block";
-    } else {
-      panel.style.display = "none";
-    }
-  });
-}
-</script>
-
-<div></div>
 </div>
+</div>
+</div>
+
+<br>
 <br>
 
-<!-- CUBE @ Your Facility -->
+
+  <!-- Research team section /// style="background-color: white" -->
 <div class='card'>
-  <h2>CUBE @ Your Facility</h2>
-  To arrange for CUBE testing in your facility, 
-  [please contact us](./contact.html).
-</div>
-<br>
-
-<!-- Contribute to CUBE -->
-<div class = 'card'>
-  <h2>Contribute to CUBE</h2>
-  <p>
-  If you are interested in contributing to the CUBE research project, 
-  [please contact us ](./contact.html) .
-  </p>
-</div>
-<br>
+  <div class='card-header'><h4>Research Team </h4></div>
+  <div class='card-body'>
   
-  
-  <!-- Research team section -->
-<div class='card' style="background-color: white">
-  <h2>Research Team </h2>
-  <hr>
-
-```{r results='asis'}
+```{r team_cards, results='asis'}
 # use results='asis' for this chunk to return as raw html
-
-# this function generates the html for a single person's profile
-make_bio <- function(name, photo, bio){
-  photo <- glue('./pics/{photo}')
-  html_str <- glue('<div class="row team-profile">
-         <p>
-            <img class="profilepic" src="{photo}" alt="{name}"> 
-            <h4>{name}</h4>
-            {bio}
-        </p>
-      </div>') 
-  cat(html_str)
-}
-
 # read profiles data and map to html; 
 team <- read_tsv('data/team_profiles.tsv') |> 
-  mutate(html = pmap(.l = list(name, path_to_pic, bio), .f = function(x,y,z) make_bio(x, y, z)))
+  mutate(html = pmap(.l = list(name, path_to_pic, bio), 
+                     .f = function(x,y,z) make_bio_bootstrap4(x, y, z)))
 ```
 <br>
 </div>
-
+</div>
 <br>
 
 -----
 
-<h4 style="text-align: center;">[Back to top](#) </h4>
+<h5 style="text-align: center;">[Back to top](#) </h5>
 
 ----
 
@@ -341,5 +414,51 @@ team <- read_tsv('data/team_profiles.tsv') |>
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
 
+
+
+
+
+
+<!-- ```{r} -->
+<!-- library(htmltools) -->
+<!-- library(tidyverse) -->
+<!-- library(bs4cards) -->
+<!-- # devtools::install_github("djnavarro/bs4cards") -->
+
+<!-- # df with one row per card -->
+<!-- df <- tribble( -->
+<!--   ~link, ~title, ~img_path, ~img_alt, ~body, -->
+<!--   "https://www.loc.gov/item/webcast-9908/", "U.S. Library of Congress COVID19 Webinar Lecture", "pics/loc_thumb2.jpg", "Library of Congress lecture", '<h5 style="color: #2c3e50">Presented by Rees Kassen and Caroline Nott</h5><br><i class="fas fa-play"></i>&nbsp;&nbsp; <em>Skip to 44:10</em>', -->
+<!--   "https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832","Swabbing floors to detect COVID-19 could be a useful indicator of the disease’s spread", "pics/convo_card_preview.jpeg", "'Wet floor' signs lying on a tile floor", '<h5 style="color: #2c3e50">Aaron Hinz and Rees Kassen </h5><br><p> in <em>the Conversation</em><p>' -->
+<!-- ) -->
+
+<!-- # # -->
+<!-- # my_card <- function(link, title, img_path, img_alt, body) { -->
+<!-- #   div( -->
+<!-- #     a(href = link, -->
+<!-- #       div( -->
+<!-- #         class = "card border-info mb-3",# .bg-light -->
+<!-- #         img(class="card-img-top", src=img_path, alt=img_alt, ), -->
+<!-- #         div( -->
+<!-- #           class = "card-body text-success", -->
+<!-- #           h4(class = "card-title", title), -->
+<!-- #           p(class = "card-text", body) -->
+<!-- #         ) -->
+<!-- #       ) -->
+<!-- #     ) -->
+<!-- #   ) -->
+<!-- # } -->
+<!-- #  -->
+<!-- #  -->
+<!-- # df |>  -->
+<!-- #   dplyr::mutate(card = purrr::pmap( -->
+<!-- #     .l = list(link, title, img_path, img_alt, body), -->
+<!-- #     .f = function(link, title, img_path, img_alt, body){ -->
+<!-- #       my_card(link, title, img_path, img_alt, body) -->
+<!-- #     })) |>  -->
+<!-- #   pull(card) |>  -->
+<!-- #   div(class='') -->
+
+<!-- ``` -->
 
 

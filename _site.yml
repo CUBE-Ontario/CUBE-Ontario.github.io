@@ -1,9 +1,10 @@
 ---
 output:
   html_document:
-    theme: flatly
+    css: "bootstrap.min.css"
+    theme:
+      version: 4
     highlight: textmate
-    css: style.css
 output_dir: '.'
 name: 'COVID-19 in the Urban Built Environment'
 title: 'COVID-19 in the Urban Built Environment'
