@@ -61,9 +61,9 @@ make_faq_bootstrap <- function(question, answer, x){
 make_bio_bootstrap4 <- function(name, photo, bio){
   photo <- glue('./pics/{photo}')
   html_str <- glue(
-    '<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem">
+    '<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
       <div class="row no-gutters">
-      <div class="col-md-2" style="margin: auto; padding: auto;">
+      <div class="col-md-2" style="margin: auto; padding: auto; ">
       <img src="{photo}" class="card-img" alt="profile photo for {name}"
       style="border-radius: 50%; height: 130px; width: 130px; object-fit: cover;">
       </div>
@@ -190,7 +190,7 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 
 
 <!-- ## About CUBE section-->
-<div class='card'>
+<div class='card' style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
 
 <!-- header -->
 <div class='card-header'>
@@ -230,7 +230,7 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 <!-- ## Map _ section -->
 <!-- dynamic text with values based on the data in sites.tsv -->
   
-<div class='card'>
+<div class='card' style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
   <!-- header -->
   <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">Study Locations</h4>
@@ -252,7 +252,7 @@ ontario_map
 <br>
 
 <!-- ## "Learn more" section --> 
-<div class='card'>
+<div class='card' style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 <!-- header -->
 <div class='card-header bg-light mb-3'>
 <h4 style="margin: 5px; padding: 0px">Learn more</h4>
@@ -263,7 +263,20 @@ ontario_map
 <div class ='row'>
 
 
-<div class ='col-12 col-md-6'>
+<div class ='col-12 col-md-4'>
+<!-- lecture -->
+<div class='card bg-light mb-3' style='height:100%'>
+  <a href="https://www.cbc.ca/listen/live-radio/1-90-columnists-from-cbc-radio/clip/15896240-looking-covid-try-floor">
+  <div class='card-header'><b>Looking for COVID? Try the floor</b></div>
+  <div class='card-body'>
+  <img src="pics/radio.png" alt="Looking for COVID? Try the floor - preview image">
+  <p style="color: #2c3e50">The CBC interviews Rees Kassen about his article in The Conversation</p>
+  </div> 
+  </a>
+</div>
+</div>
+
+<div class ='col-12 col-md-4'>
 <!-- lecture -->
 <div class='card bg-light mb-3' style='height:100%'>
   <a href="https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832">
@@ -278,7 +291,7 @@ ontario_map
 </div>
 </div>
 
-<div class ='col-12 col-md-6'>
+<div class ='col-12 col-md-4'>
 <!-- lecture -->
 <div class='card bg-light mb-3' style='height:100%'>
   <a href="https://www.loc.gov/item/webcast-9908/">
@@ -291,6 +304,9 @@ ontario_map
   </a>
 </div>
 </div>
+
+
+
 
 
 </div>
@@ -340,7 +356,7 @@ ontario_map
 <!-- FAQs card -->
 
 <!-- ## "Learn more" section --> 
-<div class='card'>
+<div class='card' style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 <!-- header -->
 <div class='card-header'>
 <h4 style="margin: 5px; padding: 0px">Frequently Asked Questions</h4>
@@ -396,3 +412,18 @@ team <- read_tsv('data/team_profiles.tsv') |>
 <!-- use this line to prevent the floating TOC from adding tons of blank space to the bottom of the webpage -->
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
 
+
+<!-- to add the hero pic above the TOC: -->
+<!-- javascript to insert a new div before the TOC in the TOC's parent -->
+<script>
+  $(document).ready(function() {
+    $('#TOC').prepend('<a href=\"index.html\"><div id=\"nav_logo\"><img src=\"logo.jpg\"></div></a>');
+  });
+</script>
+<style>
+#nav_logo {
+  width: 100%;
+  padding: 1em;
+  margin: 0.5em;
+}
+</style>
