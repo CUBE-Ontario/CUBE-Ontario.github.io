@@ -98,7 +98,7 @@ sites <-
 n_site <- sites |> nrow()
 # values to output in map description text
 n_ltc <- sites |> filter(type =="LTC") |> nrow()
-n_dc <- sites |> filter(type == 'Daycare') |> nrow()
+n_dc <- sites |> filter(type %in% c('School','Daycare')) |> nrow()
 n_uni <- sites |> filter(type == 'University') |> nrow()
 n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
 
@@ -122,7 +122,7 @@ ontario_map <-
     width = '95%', 
     height = 300, 
     padding = '5px', 
-    options = leafletOptions(zoomControl = FALSE)
+    options = leafletOptions(zoomControl = TRUE)
   ) |>
   # set the zoom to ~province level
   setView(lng = -80, lat = 45, zoom = zmlvl)  |>
@@ -131,10 +131,9 @@ ontario_map <-
     provider = providers$CartoDB.Positron, 
     # disable the zoom controls
     options = providerTileOptions(
-      zoomControl = FALSE,
-      dragging = FALSE,
-      maxZoom = zmlvl, 
-      minZoom = zmlvl)
+      zoomControl = TRUE,
+      maxZoom = zmlvl+1, 
+      minZoom = zmlvl-2)
   ) |>
   # add the custom cube markers we defined above
   addAwesomeMarkers(
@@ -238,7 +237,7 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
   
   <!-- map description -->
   <div class='card-body'>
-  Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` day-cares, and 6 university buildings. *Click any city to expand*.
+  Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` schools and day-cares, and 6 university buildings. *Click any city to expand*.
 
   <!-- map -->
 ```{r maps, message=F, warning=FALSE, echo=F, fig.height=3, fig.width=3, fig.align='center'}
