@@ -414,7 +414,7 @@ x <- read_csv('data/FAQs.csv', col_types = cols()) |>
 
 
   <!-- Research team section /// style="background-color: white" -->
-<div class='card'>
+<div class='card' style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.1);">
   <div class='card-header'><h4>Research Team </h4></div>
   <div class='card-body'>
   
