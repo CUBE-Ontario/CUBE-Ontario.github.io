@@ -199,8 +199,9 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 <div class='card-body'>
 
 <!-- *--infographic here--* -->
+<a href='figures/CUBE_info6.png'>
 <img class='info' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic">
-
+</a>
 <!-- blurb -->
 <p>
   <ul>
@@ -213,9 +214,9 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
   <li>
   Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
   </li>
-  <li>
-  [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring.
-  </li>
+  <!-- <li> -->
+  <!-- [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring. -->
+  <!-- </li> -->
   </ul>
 </p>
 
@@ -250,6 +251,26 @@ ontario_map
 <br>
 <br>
 
+<div class='card' style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+  <!-- header -->
+  <div class='card-header'>
+  <h4 style="margin: 5px; padding: 0px">Publications</h4>
+  </div>
+  <div class='card-body'>
+  <a href='https://www.facetsjournal.com/doi/10.1139/facets-2021-0139'>
+  **SARS-CoV-2 detection from the built environment and wastewater and its use for hospital surveillance.**
+  </a>
+  <p>
+  Aaron Hinz, Lydia Xing, Evgueni Doukhanine, Laura A. Hug, Rees Kassen, Banu Ormeci, Richard J. Kibbee, Alex Wong, Derek MacFadden, and Caroline Nott. <br>
+  FACETS. 7(): 82-97. https://doi.org/10.1139/facets-2021-0139
+  
+  </p>
+  </div>
+</div>
+
+<br>
+<br>
+
 <!-- ## "Learn more" section --> 
 <div class='card' style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 <!-- header -->
@@ -260,65 +281,73 @@ ontario_map
 <div class='card-body'>
 <div class ='flex'>
 <div class ='row'>
-
-
+<!-- cbc radio -->
 <div class ='col-12 col-md-4'>
-<!-- lecture -->
-<div class='card bg-light mb-3' style='height:100%'>
+<div class='card bg-light mb-3' style='height:90%'>
+  <div class='card-header'>CBC Radio</div>
   <a href="https://www.cbc.ca/listen/live-radio/1-90-columnists-from-cbc-radio/clip/15896240-looking-covid-try-floor">
-  <div class='card-header'><b>Looking for COVID? Try the floor</b></div>
+  <img src="pics/radio.png" alt="Looking for COVID? Try the floor - preview image"
+  style='object-fit: cover; margin-top:0.5em' width='100%' height='100px'>
   <div class='card-body'>
-  <img src="pics/radio.png" alt="Looking for COVID? Try the floor - preview image">
-  <p style="color: #2c3e50">The CBC interviews Rees Kassen about his article in The Conversation</p>
+  <!-- <p style="color: #2c3e50">-->
+  <p>
+  <b>Looking for COVID? Try the floor</b><br>
+  The CBC interviews Rees Kassen about his article in The Conversation<br>
+  <h6>Aired: 2022-02-21</h6>
+  </p>
   </div> 
   </a>
 </div>
 </div>
-
+<!-- conversation article -->
 <div class ='col-12 col-md-4'>
-<!-- lecture -->
-<div class='card bg-light mb-3' style='height:100%'>
-  <a href="https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832">
+<div class='card bg-light mb-3' style='height:90%'>
   <div class='card-header'>
-  <b>Swabbing floors to detect COVID-19 could be a useful indicator of the disease’s spread</b>
+  <b>The Conversation</b>
   </div>
+  <a href="https://theconversation.com/swabbing-floors-to-detect-covid-19-could-be-a-useful-indicator-of-the-diseases-spread-175832">
+  <img src="pics/convo_card_preview.jpeg" alt="'Wet floor' signs lying on a tile floor"
+  style='object-fit: cover; margin-top:0.5em' width='100%' height='100px'>
   <div class='card-body'>
-  <img src="pics/convo_card_preview.jpeg" alt="'Wet floor' signs lying on a tile floor"> 
-  <p style="color: #2c3e50">Aaron Hinz and Rees Kassen for <em>the Conversation</em></p>
+  <!-- <p style="color: #2c3e50"> -->
+  <p>
+  <b>Swabbing floors to detect COVID-19 could be a useful indicator of the disease’s spread</b>
+  Aaron Hinz and Rees Kassen for <em>the Conversation</em><br>
+  <h6>Published: 2022-02-15</h6>
+  </p>
+  
   </div> 
   </a>
 </div>
 </div>
 
-<div class ='col-12 col-md-4'>
 <!-- lecture -->
-<div class='card bg-light mb-3' style='height:100%'>
+<div class ='col-12 col-md-4'>
+<div class='card bg-light mb-3' style='height:90%'>
+  <div class='card-header'><b>Library of Congress</b></div>
   <a href="https://www.loc.gov/item/webcast-9908/">
-  <div class='card-header'><b>Library of congress lecture</b></div>
+  <img src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image"
+  style='object-fit: cover; margin-top:0.5em' width='100%' height='100px'>
   <div class='card-body'>
-  <img src="pics/loc_thumb2.jpg" alt="Library of Congress lecture preview image">
-  <p style="color: #2c3e50">Presented by Rees Kassen and Caroline Nott</p>
-  <i class="fas fa-play"></i>  &nbsp;&nbsp; <em>Skip to 44:10</em>
+  <p style="color: #2c3e50">LoC Lecture presented by Rees Kassen and Caroline Nott</p>
+  <i class="fas fa-play"></i>&nbsp;&nbsp; <em>Skip to 44:10</em>
+  <br><br>
+  <h6>Event on 2021-07-21</h6>
   </div> 
   </a>
 </div>
 </div>
-
-
-
-
-
 </div>
-
-<br>
 
 <div class='row'>
 <div class='col-12 col-md-4'>
 <!-- CUBE @ Your Facility -->
-<div class='card bg-light mb-3' style="height:100%; width: 100%">
+<div class='card bg-light mb-3' style="height:90%; width: 100%">
   <div class='card-header'><h5>CUBE @ Your Facility</h5></div>
   <div class='card-body'>
   To arrange for CUBE testing in your facility, please contact us.
+  <br>
+  <br>
   <hr>
   <a class="btn btn-primary" href="contact.html" role="button">Contact us</a>
 </div>
@@ -327,7 +356,7 @@ ontario_map
 
 <div class='col-12 col-md-4'>
 <!-- Contribute to CUBE -->
-<div class='card bg-light mb-3' style="height:100%; width: 100%">
+<div class='card bg-light mb-3' style="height:90%; width: 100%">
   <div class='card-header'><h5>Contribute to CUBE</h5></div>
   <div class='card-body'>
   If you are interested in contributing to the CUBE research project, please get in touch.
