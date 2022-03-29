@@ -8,6 +8,7 @@ output:
     toc_depth: 4
 ---
 
+
 <!-- ADDING NEW INFO to website: (how-to)-->
 
 <!-- Site: add a line to the data/sites.tsv file; don't include loction name; copy the coordinates from a location in the same city; add the type of facility; use tabs to seperate fields -->
@@ -22,6 +23,7 @@ output:
 <hr>
 
 ```{r setup, include=F}
+set.seed(124)
 knitr::opts_chunk$set(
   message = FALSE, warning = FALSE, echo = FALSE,
   comment = "#>",
