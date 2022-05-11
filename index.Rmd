@@ -99,7 +99,7 @@ sites <-
     ))
 n_site <- sites |> nrow()
 # values to output in map description text
-n_ltc <- sites |> filter(type =="LTC") |> nrow()
+n_ltc <- sites |> filter(type == "LTC") |> nrow()
 n_dc <- sites |> filter(type %in% c('School','Daycare')) |> nrow()
 n_uni <- sites |> filter(type == 'University') |> nrow()
 n_uni <- glue("{n_uni} {ifelse(n_uni >1, 'universities', 'university')}")
@@ -134,8 +134,8 @@ ontario_map <-
     # disable the zoom controls
     options = providerTileOptions(
       zoomControl = TRUE,
-      maxZoom = zmlvl+1, 
-      minZoom = zmlvl-2)
+      maxZoom = zmlvl + 1, 
+      minZoom = zmlvl - 2)
   ) |>
   # add the custom cube markers we defined above
   addAwesomeMarkers(
@@ -173,10 +173,8 @@ meta() |>
     image_alt = description_text,
     og_type = "website",
     og_site_name = "COVID-19 in the Urban Built Environment",
-    og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong", "Veronica Zanichelli"),
+    og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong"),
     twitter_card_type = "summary_large_image",
-    twitter_creator = "@quaxlikeaduck",
-    twitter_site = "@quaxlikeaduck",
     # twitter_image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
     disable_pinterest = TRUE
   )
