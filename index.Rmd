@@ -63,7 +63,7 @@ make_faq_bootstrap <- function(question, answer, x){
 make_bio_bootstrap4 <- function(name, photo, bio){
   photo <- glue('./pics/{photo}')
   html_str <- glue(
-    '<div class="card mb-3" style="min-height: 8rem; padding: 1rem 1rem 1rem 1rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    '<div class="card mb-3" style="min-height: 8rem; padding: 0.5rem 1rem 0.5rem 1rem; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.1);">
       <div class="row no-gutters">
       <div class="col-md-2" style="margin: auto; padding: auto; ">
       <img src="{photo}" class="card-img" alt="profile photo for {name}"
@@ -175,7 +175,6 @@ meta() |>
     og_site_name = "COVID-19 in the Urban Built Environment",
     og_author = c("Lucas Castellani","Evgueni Doukhanine", "Michael Fralick", "Aaron Hinz", "Benazir Hodzic-Santor", "Rees Kassen", "Derek MacFadden", "Allison McGeer","Jason Moggridge", "Caroline Nott", "Ashley Raudanskis", "Nisha Thampi", "Tamara Van Bakel", "Alex Wong"),
     twitter_card_type = "summary_large_image",
-    # twitter_image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
     disable_pinterest = TRUE
   )
 
@@ -186,21 +185,19 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 ```
 
 
-
-
 <!-- ## About CUBE section-->
-<div class='card' style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
 
 <!-- header -->
 <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">About the CUBE study</h4>
 </div>
 
-<div class='card-body'>
+<div class='card-body' style='box-shadow: 0 0 0px;'>
 
 <!-- *--infographic here--* -->
 <a href='figures/CUBE_info6.png'>
-<img class='info' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic">
+<img class='info' style='box-shadow: 0 0 0px;' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic">
 </a>
 <!-- blurb -->
 <p>
@@ -224,13 +221,12 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 </div>
 
 <br>
-<br>
 
 
 <!-- ## Map _ section -->
 <!-- dynamic text with values based on the data in sites.tsv -->
   
-<div class='card' style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
   <!-- header -->
   <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">Study Locations</h4>
@@ -249,9 +245,8 @@ ontario_map
 </div>
 
 <br>
-<br>
 
-<div class='card' style='box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'>
+<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
   <!-- header -->
   <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">Publications</h4>
@@ -269,10 +264,9 @@ ontario_map
 </div>
 
 <br>
-<br>
 
 <!-- ## "Learn more" section --> 
-<div class='card' style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
 <!-- header -->
 <div class='card-header bg-light mb-3'>
 <h4 style="margin: 5px; padding: 0px">Learn more</h4>
@@ -373,7 +367,6 @@ ontario_map
 </div>
 
 <br>
-<br>
 
 
 
@@ -384,7 +377,7 @@ ontario_map
 <!-- FAQs card -->
 
 <!-- ## "Learn more" section --> 
-<div class='card' style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
 <!-- header -->
 <div class='card-header'>
 <h4 style="margin: 5px; padding: 0px">Frequently Asked Questions</h4>
@@ -410,11 +403,10 @@ x <- read_csv('data/FAQs.csv', col_types = cols()) |>
 </div>
 
 <br>
-<br>
 
 
   <!-- Research team section /// style="background-color: white" -->
-<div class='card' style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.1);">
+<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
   <div class='card-header'><h4>Research Team </h4></div>
   <div class='card-body'>
   
@@ -428,7 +420,7 @@ team <- read_tsv('data/team_profiles.tsv') |>
 <br>
 </div>
 </div>
-<br>
+
 
 -----
 
