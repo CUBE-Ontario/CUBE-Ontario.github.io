@@ -185,16 +185,49 @@ meta() |>
 email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
 ```
 
+<!-- youtube video embedding -->
+
+<style>
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oVdM8T9QVmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<hr>
+
+
 
 <!-- ## About CUBE section-->
-<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
+<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
 
 <!-- header -->
 <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">About the CUBE study</h4>
 </div>
 
-<div class='card-body' style='box-shadow: 0 0 0px;'>
+<div class='card-body' style='box-shadow: 0 0 0px; margin: 2rem;'>
+
 
 <!-- *--infographic here--* -->
 <a href='figures/CUBE_info6.png'>
@@ -212,9 +245,6 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
   <li>
   Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
   </li>
-  <!-- <li> -->
-  <!-- [Click here to read our preprint](https://www.medrxiv.org/content/10.1101/2021.04.09.21255159v2) from an earlier study showing the effectiveness of environmental sampling for COVID-19 monitoring. -->
-  <!-- </li> -->
   </ul>
 </p>
 
@@ -227,7 +257,7 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 <!-- ## Map _ section -->
 <!-- dynamic text with values based on the data in sites.tsv -->
   
-<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
+<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
   <!-- header -->
   <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">Study Locations</h4>
@@ -247,7 +277,7 @@ ontario_map
 
 <br>
 
-<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
+<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
   <!-- header -->
   <div class='card-header'>
   <h4 style="margin: 5px; padding: 0px">Publications</h4>
@@ -275,8 +305,9 @@ medRxiv 2022.06.28.22276560; doi: https://doi.org/10.1101/2022.06.28.22276560
 
 <br>
 
+
 <!-- ## "Learn more" section --> 
-<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
+<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
 <!-- header -->
 <div class='card-header bg-light mb-3'>
 <h4 style="margin: 5px; padding: 0px">Learn more</h4>
@@ -387,7 +418,7 @@ medRxiv 2022.06.28.22276560; doi: https://doi.org/10.1101/2022.06.28.22276560
 <!-- FAQs card -->
 
 <!-- ## "Learn more" section --> 
-<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
+<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
 <!-- header -->
 <div class='card-header'>
 <h4 style="margin: 5px; padding: 0px">Frequently Asked Questions</h4>
@@ -416,7 +447,7 @@ x <- read_csv('data/FAQs.csv', col_types = cols()) |>
 
 
   <!-- Research team section /// style="background-color: white" -->
-<div class='card' style='box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
+<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
   <div class='card-header'><h4>Research Team </h4></div>
   <div class='card-body'>
   
