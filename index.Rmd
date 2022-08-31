@@ -39,6 +39,7 @@ library(htmltools)
 library(metathis)
 library(glue)
 library(fontawesome)
+set.seed(12345)
 ```
 
 
