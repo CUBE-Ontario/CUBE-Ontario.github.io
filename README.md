@@ -6,9 +6,9 @@ The webpage is rendered from a set of rmarkdown files (*.Rmd), with a yaml file 
 
 ## How to add a new team member
 
-- Add a new line to the data/team.tsv file with the name, bio, and path to image
-- Add the image to ./pics, resize if necessary
-- Build site again and new member's section will be rendered
+- Add a new row to the file `data/team.tsv` with the name, bio, and path to the image in `pics`
+- Add the image file `pics`, resize to reasonable resolution
+- `build_site()` and check that new member's section will be rendered
 
 ## How to add a new site.
 
