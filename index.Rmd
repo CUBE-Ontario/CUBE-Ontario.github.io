@@ -278,33 +278,53 @@ ontario_map
 
 <br>
 
-<div class='card' style='box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);'>
-  <!-- header -->
-  <div class='card-header'>
-  <h4 style="margin: 5px; padding: 0px">Publications</h4>
-  </div>
-  <!-- medrxiv ltc paper -->
-  <div class='card-body' style="padding-bottom: 0.25rem;">
-  <a href='https://www.medrxiv.org/content/10.1101/2022.06.28.22276560v1'>
-  **Detection of COVID-19 Outbreaks in Long-Term Care Homes Using Built Environment Testing for SARS-CoV-2: A Multicentre Prospective Study**
-  </a>
-  <p>
-  Mike Fralick, Caroline Nott, Jason Moggridge, Lucas Castellani, Ashley Raudanskis, David Guttman, Aaron Hinz, Nisha Thampi, Alex Wong, Doug Manuel, Allison McGeer, Evgueni Doukhanine, Hebah Mejbel, Veronica Zanichelli, Madison Burella, Sylva Donaldson, Pauline Wang, Rees Kassen, Derek MacFadden <br>
-medRxiv 2022.06.28.22276560; doi: https://doi.org/10.1101/2022.06.28.22276560
-  </p>
-  </div>
-  <!-- facets paper -->
-  <div class='card-body' style="padding-top: 0.25rem;">
-  <a href='https://www.facetsjournal.com/doi/10.1139/facets-2021-0139'>
-  **SARS-CoV-2 detection from the built environment and wastewater and its use for hospital surveillance.**</a>
-  <p>Aaron Hinz, Lydia Xing, Evgueni Doukhanine, Laura A. Hug, Rees Kassen, Banu Ormeci, Richard J. Kibbee, Alex Wong, Derek MacFadden, and Caroline Nott. <br>
-  FACETS 20 January 2022. 7(): 82-97. https://doi.org/10.1139/facets-2021-0139
-  </p>
-  </div>
-  <!-- end of publications -->
-</div>
+```{r results='asis'}
+## Publications
+library(googlesheets4)
+googlesheets4::gs4_deauth()
 
-<br>
+# template for publication
+publication_html <- function(authors, title, journal, year, vol_issue, doi, link) {
+  vol_issue <- if_else(is.na(vol_issue), ' ', paste0(' ', vol_issue, '. '))
+  h_style <- 'margin: 5px 15px 2px 10px; margin: 5px;'
+  p_style <- 'margin: 1px 15px 1px 10px; margin: 5px;'
+  str_glue(
+    '<div style="padding: 5px; margin: 0px 10px">
+      <h5 style="{h_style}">
+       <a href="{link}"><b>{title}</b></a>
+      </h5>
+      <p style="{p_style}">{authors}. <i>{journal}</i>. {year}.{vol_issue}{doi}</p>
+    </div>') |> 
+    as.character()
+}
+
+# inject publication data to html
+pubs_html <- 
+  'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing' |> 
+  googlesheets4::read_sheet() |> 
+  mutate(
+    template = publication_html(authors, title, journal, year, vol_issue_pages, doi, link)
+  ) |> 
+  pull(template) |> 
+  paste0(collapse = '')
+```
+
+
+```{r results='asis'}
+# publications card layout
+str_glue('
+   <div class="card" style="padding: 10px 0 10px 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);">
+    <div class="card-header">
+      <h4 style="margin: 5px; padding: 0px">Publications</h4>
+    </div>
+   {pubs_html}
+   </div>
+   <br>') |> 
+  as.character() |> 
+  cat()
+```
+  
+
 
 
 <!-- ## "Learn more" section --> 
