@@ -1,5 +1,5 @@
 ---
-title: "COVID-19 in the Urban Built Environment"
+title: "Coronavirus in the Urban Built Environment"
 output: 
   html_document:
     toc: true
@@ -227,18 +227,16 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
   <h4 style="margin: 5px; padding: 0px">About the CUBE study</h4>
 </div>
 
-<div class='card-body' style='box-shadow: 0 0 0px; margin: 2rem;'>
-
-
 <!-- *--infographic here--* -->
+<div class='card-body' style='box-shadow: 0 0 0px; margin: 2rem;'>
 <a href='figures/CUBE_info6.png'>
-<img class='info' style='box-shadow: 0 0 0px;' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic">
+  <img class='info' style='box-shadow: 0 0 0px;' src="figures/CUBE_info6.png" alt="CUBE Study Info-graphic">
 </a>
 <!-- blurb -->
 <p>
   <ul>
   <li>
-  The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. 
+  The Coronavirus in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and day-cares. 
   </li>
   <li>
   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.
@@ -251,7 +249,6 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 
 </div>
 </div>
-
 <br>
 
 
@@ -275,10 +272,9 @@ ontario_map
 ```
   </div>
 </div>
-
 <br>
 
-```{r results='asis'}
+```{r publications, results='asis'}
 ## Publications
 library(googlesheets4)
 googlesheets4::gs4_deauth()
@@ -307,13 +303,10 @@ pubs_html <-
   ) |> 
   pull(template) |> 
   paste0(collapse = '')
-```
 
-
-```{r results='asis'}
 # publications card layout
 str_glue('
-   <div class="card" style="padding: 10px 0 10px 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);">
+   <div class="card" style="padding: 0px 0 10px 0; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.1);">
     <div class="card-header">
       <h4 style="margin: 5px; padding: 0px">Publications</h4>
     </div>
