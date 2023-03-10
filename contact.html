@@ -295,7 +295,7 @@ $(document).ready(function () {
 
 
 <!-- contact form linked to google forms; described here: https://github.com/toperkin/staticFormEmails -->
-<p><br> Please use this form to get in contact with us.</p>
+<p>Please use this form to get in contact with us.</p>
 <hr />
 <!-- /* padding for all form elements*/ -->
 <style>
@@ -309,7 +309,6 @@ https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooF
 <!-- entry.1343111128=NAME -->
 <!-- entry.1111689708=EMAIL -->
 <!-- entry.1050507149=MESSAGE_BODY -->
-<div>
 <!-- My contact form front end -->
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 <!-- <h4>Your name:</h4> -->
@@ -330,7 +329,6 @@ https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooF
 </form>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
 </iframe>
-</div>
 <!-- javascript to send the info and display success message -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
@@ -340,8 +338,6 @@ $('#gform').on('submit', function(e) {
   $('#gform').prepend('<br><br><div class="alert alert-success" role="alert">Thanks for contacting us. We will be in touch soon.</div>');
   });
 </script>
-<br>
-<hr>
 
 
 

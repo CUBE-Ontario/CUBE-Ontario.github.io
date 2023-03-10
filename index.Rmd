@@ -10,23 +10,7 @@ output:
 ---
 
 ```{r setup, include=F}
-set.seed(124)
-knitr::opts_chunk$set(
-  message = FALSE, warning = FALSE, echo = FALSE,
-  comment = "#>",
-  fig.path = "figures", # use only for single Rmd files
-  collapse = TRUE
-)
-```
-
-```{r libraries}
-library(tidyverse)
-library(leaflet)
-library(htmltools)
-library(metathis)
-library(glue)
-library(fontawesome)
-set.seed(12345)
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE, collapse = TRUE)
 ```
 
 ```{r meta, results='asis'}
@@ -95,3 +79,14 @@ tibble::tribble(
 :::
 
 ------------------------------------------------------------------------
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'XXXXXXXXXX');
+</script>
+</head> 
