@@ -143,9 +143,7 @@ ontario_map <-
 
 ------------------------------------------------------------------------
 
-::: {style="font-size: 2rem; color: #888"}
 ## Overview
-:::
 
 ![](./figures/CUBE_info6.png){#infographic .img-responsive .img-fluid .rounded width="1050"}
 
@@ -155,9 +153,7 @@ ontario_map <-
 
 ------------------------------------------------------------------------
 
-::: {style="font-size: 2rem; color: #888"}
-## Study Locations
-:::
+## Study Locations  
 
 Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` schools and day-cares, and 6 university buildings.
 
@@ -176,9 +172,8 @@ ontario_map
 
 <!-- FAQs card -->
 
-::: {style="font-size: 2rem; color: #888"}
 ## Frequently Asked Questions
-:::
+
 
 *Click an FAQ to reveal the answer.*
 
