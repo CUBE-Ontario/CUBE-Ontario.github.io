@@ -74,7 +74,7 @@ media_cards <-
 
 ----------------------------------------------------
 
-::: {style="align: center; margin: auto"}
+::: {style="align: center; justify-content: center; justify-items: center; margin: auto"}
 
 ## Publications
 
@@ -85,7 +85,6 @@ media_cards <-
 ## Media
 
 `r media_cards`
-
 
 ----------------------------------------------------
 
