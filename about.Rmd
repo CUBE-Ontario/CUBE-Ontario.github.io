@@ -34,10 +34,15 @@ knitr::opts_chunk$set(
 ```{r}
 library(dplyr)
 library(leaflet)
+googlesheets4::gs4_deauth()
+
+data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
 
 # read site geo data and set marker colors based on type of site
 sites <- 
-  readr::read_tsv(file = 'data/sites.tsv')  |> 
+  googlesheets4::read_sheet(
+    data_url, sheet = 'locations'
+  ) |> 
   dplyr::mutate(
     color = dplyr::case_when(
       type == 'LTC' ~ 'cadetblue',
@@ -145,7 +150,7 @@ ontario_map <-
 
 ## Overview
 
-![](./figures/CUBE_info6.png){#infographic .img-responsive .img-fluid .rounded width="1050"}
+![](./public/img/infographic.png){#infographic .img-responsive .img-fluid .rounded width="1050"}
 
 -   The Coronavirus in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and day-cares.\
 -   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.\
