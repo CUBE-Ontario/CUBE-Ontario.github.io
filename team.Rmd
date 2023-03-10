@@ -1,0 +1,117 @@
+---
+title: 'CUBE Reseach Team'
+output: 
+  html_document:
+    css: styles.css
+---
+
+
+```{r setup, include=F}
+set.seed(124)
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  echo = FALSE,
+  comment = "#>",
+  collapse = TRUE
+)
+```
+
+```{r bio cards}
+library(googlesheets4)
+library(dplyr)
+googlesheets4::gs4_deauth()
+
+data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
+
+data <- googlesheets4::read_sheet(data_url, sheet = 'team') |> 
+  dplyr::mutate(
+    img = paste0('public/img/team/', path_to_pic)
+  ) 
+```
+
+
+
+<style>
+</style>
+
+
+```{r}
+make_card <- function(img, name, bio){
+  glue::glue(
+    '
+<div class=" team-card card bg-transparent border-0">
+<div class="team-card-col card-body m-0 p-0 col-12">
+<div class="team-card-row row no-gutters h-100 border-1 d-flex flex-wrap">
+
+<div class="team-pic-container col-3 col-sm container-fluid" >
+
+<img src="{img}" class="team-pic card-img"/>
+
+</div>
+
+<div class="col-9 h-100" style="justify: center; margin: auto">
+<h5 class="card-title my-auto px-3 pt-3 pb-1">{name}</h5>
+<p class="card-text my-auto px-3 pb-3 pt-1">{bio}</p>
+</div>
+
+</div>
+</div>
+</div>')
+}
+
+cards <- function(data) {
+  data |> 
+    dplyr::mutate(html = purrr::pmap(
+      .l = list(img, name, bio),
+      .f = \(img, name, bio) make_card(img, name, bio)
+    )) |> 
+    pull(html) |> 
+    stringr::str_remove_all('\n') |> 
+    paste0()
+}
+```
+
+```{r results='asis'}
+data |> cards() |> cat()
+```
+
+<!-- ```{r bio cards} -->
+<!-- # this function generates the html for a single person's profile -->
+<!-- team_member_card <- function(name, photo, bio){ -->
+<!--   photo <- glue::glue('./pics/{photo}') -->
+<!--   html_str <- glue::glue( -->
+<!--     '<div class="row no-gutters"> -->
+<!--       <div class="col-md-2" style="display: flex; align-content: center; margin: auto; padding: auto; "> -->
+<!--       <img src="{photo}" class="card-img member-pic" alt="profile photo for {name}" -->
+<!--       > -->
+<!--       </div> -->
+<!--       <div class="col-md-10"> -->
+<!--       <div class="card-body"> -->
+<!--       <h5 class="card-title">{name}</h5> -->
+<!--       <p class="card-text">{bio}</p> -->
+<!--       </div> -->
+<!--       </div> -->
+<!--     </div>' -->
+<!--   ) -->
+<!--   cat(html_str) -->
+<!-- } -->
+
+<!-- map_team_members <- function() { -->
+<!--   readr::read_tsv('data/team_profiles.tsv') |>  -->
+<!--   dplyr::mutate( -->
+<!--     html = purrr::pmap( -->
+<!--       .l = list(name, path_to_pic, bio),  -->
+<!--       .f = function(x,y,z) team_member_card(x, y, z) -->
+<!--       ) -->
+<!--     )   -->
+<!-- } -->
+
+<!-- ``` -->
+
+
+<!-- <!-- this is where the content is inserted -->
+<!-- ```{r results='asis'} -->
+<!-- map_team_members() -->
+<!-- ``` -->
+

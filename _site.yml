@@ -9,28 +9,28 @@ output_dir: '.'
 name: 'COVID-19 in the Urban Built Environment'
 title: 'COVID-19 in the Urban Built Environment'
 favicon: fa-cube
+theme: 'flatly'
+self_contained: true
+highlight: textmate
 new_session: true
 author:
-- Aaron Hinz
-- Ashley Raudanskis
-- Benazir Hodzic-Santor
-- Evgeni Douakine
-- Jason Moggridge
-- Tamara Van Bakel
-- Nisha Thampi
-- Rees Kassen
-- Veronica Zanichelli
-- Allison McGreer
-- Alex Wong
-- Michael Fralick
-- Caroline Nott
-- Derek McFadden
+- CUBE Team
 navbar:
   type: default
-  right:
-  - text: Home
+  left:
+  - text: CUBE
     href: index.html
     icon: fa-cube
+  - text: About
+    href: about.html
+    icon: fa-info
+  - text: Learn More
+    href: learn_more.html
+    icon: fa-video
+  - text: Team
+    href: team.html
+    icon: fa-users
+  right:
   - text: Contact
     href: contact.html
     icon: fa-envelope

@@ -1,0 +1,82 @@
+---
+title: 'CUBE Publications and Media'
+output: 
+  html_document:
+    css: styles.css
+---
+
+
+```{r echo=F, message=F, warning=F}
+set.seed(124)
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  echo = FALSE,
+  comment = "#>",
+  collapse = TRUE
+)
+
+## Publications
+library(googlesheets4)
+library(dplyr)
+googlesheets4::gs4_deauth()
+
+data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
+
+# inject publication cards
+publication_cards <-
+  googlesheets4::read_sheet(ss = data_url, sheet = 'publications') |> 
+  bs4cards::cards(
+    title = title,
+    text = paste(authors, journal, year, vol_issue_pages, doi),
+    link = link,
+    border_colour = '#cacaea',
+    label_colour = 'white',
+    border_width = 1,
+    width = 5,
+    spacing = 2
+  )
+
+# inject media cards
+media_cards <-
+  googlesheets4::read_sheet(ss = data_url, 
+                            sheet = 'media',
+                            col_types = 'ccccc') |> 
+  dplyr::mutate(image = ifelse(
+    stringr::str_detect(image, '^http'),
+    image,
+    paste0('./public/img/media/', image)
+  )) |> 
+  bs4cards::cards(
+    title = title,
+    image = image,
+    text = text,
+    link = link,
+    footer = footer,
+    layout = 'label-below',
+    border_colour = '#cacaea',
+    label_colour = '#ffffff',
+    border_width = 2,
+    width = 2,
+    spacing = 4
+  )
+```
+
+----
+
+::: {style="align: center; margin: auto"}
+
+## Publications
+
+`r publication_cards`
+
+----
+
+## Media
+
+`r media_cards`
+
+
+----
+
+:::

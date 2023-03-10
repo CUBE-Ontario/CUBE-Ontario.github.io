@@ -1,0 +1,65 @@
+---
+title: "CUBE Research Publications"
+output: 
+  html_document:
+    css: styles.css
+---
+
+```{r setup, include=F}
+set.seed(124)
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  echo = FALSE,
+  comment = "#>",
+  collapse = TRUE
+)
+```
+
+
+
+```{r publications, results='asis'}
+## Publications
+library(googlesheets4)
+library(dplyr)
+googlesheets4::gs4_deauth()
+
+# template for publication
+publication_html <- function(authors, title, journal, year, vol_issue, doi, link) {
+  vol_issue <- if_else(
+    is.na(vol_issue), ' ', paste0(' ', vol_issue, '. ')
+    )
+  h_style <- ''
+  p_style <- ''
+  stringr::str_glue(
+    '<div class="publication-card">
+      <h5 class="publication-heading">
+       <a href="{link}"><b>{title}</b></a>
+      </h5>
+      <p class="publication-para">
+        {authors}. <i>{journal}</i>. {year}.{vol_issue}{doi}
+      </p>
+    </div>') |> 
+    as.character()
+}
+
+# inject publication data to html
+pubs_html <- 
+  'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing' |> 
+  googlesheets4::read_sheet() |> 
+  mutate(
+    template = publication_html(authors, title, journal, year, vol_issue_pages, doi, link)
+  ) |> 
+  pull(template) |> 
+  paste0(collapse = '')
+
+# publications card layout
+stringr::str_glue(
+  '<div class="publications-container">
+   {pubs_html}
+   </div>
+   <br>') |> 
+  as.character() |> 
+  cat()
+```
+  
