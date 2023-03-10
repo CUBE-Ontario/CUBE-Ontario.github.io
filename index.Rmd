@@ -33,21 +33,22 @@ set.seed(12345)
 # <meta> tags to add to <head>
 # these are various tags that provide info about our site
 description_text <- "The COVID-19 in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and daycares. "
-meta() |> 
-  meta_viewport() |> 
+
+metathis::meta() |> 
+  metathis::meta_viewport() |> 
   # keep this meta tag for google search indexing
-  meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
-  meta_general(
+  metathis::meta_name("google-site-verification" = "2hjin2NTF-SVY6SAw-HRZcg1Z-q5iNEbwHOTW4yfIao") |> 
+  metathis::meta_general(
     application_name = 'COVID-19 in the Urban Built Environment',
     description = description_text,
     robots = 'index',
     subject = "COVID-19 SARS-CoV-2 environmental microbiology epidemiology urban built environment Ontario",
     rating = "General"
   ) |>
-  meta_social(
+  metathis::meta_social(
     title = "COVID-19 in the Urban Built Environment",
     url = "https://cube-ontario.github.io",
-    image = "https://cube-ontario.github.io/figures/CUBE_info6.png",
+    image = "https://cube-ontario.github.io/public/img/infographic.png",
     image_alt = description_text,
     og_type = "website",
     og_site_name = "COVID-19 in the Urban Built Environment",
@@ -58,11 +59,6 @@ meta() |>
 
 ```
 
-```{r icons}
-# remotes::install_github("mitchelloharawild/icons")
-email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid"), fill = '#2469e0', hover = '#fff')
-```
-
 #### Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings
 
 ------------------------------------------------------------------------
@@ -70,14 +66,15 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 <!-- youtube video embedding -->
 
 ::: {.video-container style="display: flex; text-align: center; margin: 0 auto; padding: 1rem;"}
-<iframe width="560" height="315" style="display: block; margin: 0 auto;" src="https://www.youtube.com/embed/oVdM8T9QVmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
+<iframe width="560" height="315" style="display: block; margin: 0 auto;" src="https://www.youtube.com/embed/oVdM8T9QVmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+
 :::
 
 ------------------------------------------------------------------------
 
-::: {#contact-cards style="margin: auto; justify-content: center; align-content: center; flex-wrap: wrap;"}
+::: {#contact-cards}
 ```{r}
 # add a new line to add a new card on the front page
 # >> "card title...", "card text...", "link: either local file name or url"
@@ -91,8 +88,8 @@ tibble::tribble(
     title = title,
     text = text,
     link = link,
-    spacing = 5, # space between cards
-    width = 5    # relative sizing (1 narrow - 5 wide)
+    spacing = 4, # space between cards
+    width = 4    # relative sizing (1 narrow - 5 wide)
   )
 ```
 :::

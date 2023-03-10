@@ -22,16 +22,18 @@ navbar:
     icon: fa-cube
   - text:  About
     href: about.html
-    icon: fa-info
-  - text:  Learn More
+    icon: fa-info-circle
+  - text:  Publications/Media
     href: learn_more.html
     icon: fa-book-open
   - text:  Team
     href: team.html
     icon: fa-users
   right:
-  - href: contact.html
+  - text: Contact
+    href: contact.html
     icon: fa-envelope
-  - href: https://github.com/CUBE-Ontario
+  - text: Github
+    href: https://github.com/CUBE-Ontario
     icon: fa-github
 ---

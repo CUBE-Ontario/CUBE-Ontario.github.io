@@ -245,7 +245,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="about.html">
-    <span class="fa fa-info"></span>
+    <span class="fa fa-info-circle"></span>
      
     About
   </a>
@@ -254,7 +254,7 @@ $(document).ready(function () {
   <a href="learn_more.html">
     <span class="fa fa-book-open"></span>
      
-    Learn More
+    Publications/Media
   </a>
 </li>
 <li>
@@ -270,12 +270,14 @@ $(document).ready(function () {
   <a href="contact.html">
     <span class="fa fa-envelope"></span>
      
+    Contact
   </a>
 </li>
 <li>
   <a href="https://github.com/CUBE-Ontario">
     <span class="fa fa-github"></span>
      
+    Github
   </a>
 </li>
       </ul>
@@ -293,16 +295,13 @@ $(document).ready(function () {
 
 
 <!-- contact form linked to google forms; described here: https://github.com/toperkin/staticFormEmails -->
-<p><br> Please use this form to get in contact with our project manager
-Ashley Raudanskis.</p>
+<p><br> Please use this form to get in contact with us.</p>
 <hr />
-<style>
-
 <!-- /* padding for all form elements*/ -->
+<style>
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 </style>
 <!-- Our google forms link (prototype url with form elements: entry.xxxx)
 https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/viewform?usp=pp_url&entry.1343111128=NAME&entry.1111689708=EMAIL&entry.1050507149=MESSAGE_bODY
@@ -313,25 +312,20 @@ https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooF
 <div>
 <!-- My contact form front end -->
 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-<div>
-<h4>
-Your name:
-</h4>
-<p><input type="text" name="entry.1343111128" id="entry.1343111128" class="contact-text-input" placeholder="Name"></p>
+<!-- <h4>Your name:</h4> -->
+<div class="form-group">
+<p><label for="entry.1343111128">Your name</label>
+<input type="text" name="entry.1343111128" id="entry.1343111128" class="form-control" placeholder="Name"></p>
 </div>
-<div>
-<h4>
-Your email address:
-</h4>
-<p><input type="text" name="entry.1111689708" id="entry.1111689708" class="contact-text-input" placeholder="Email address"></p>
+<div class="form-group">
+<p><label for="entry.1111689708">Your email</label>
+<input type="text" name="entry.1111689708" id="entry.1111689708" class="form-control" placeholder="Email address"></p>
 </div>
-<div>
-<h4>
-Your message:
-</h4>
-<textarea rows="5" cols="50" name="entry.1050507149" id="entry.1050507149" placeholder="Message to CUBE" class="contact-text-message"></textarea>
+<div class="form-group">
+<label for="entry.1111689708">Your message</label>
+<textarea rows="5" cols="50" name="entry.1050507149" id="entry.1050507149" placeholder="Message to CUBE" class="form-control"></textarea>
 </div>
-<br> <br> <button type="submit" class="btn btn-primary" value="Submit">
+<br> <button type="submit" class="btn btn-primary" value="Submit">
 <strong>Submit</strong> </button>
 </form>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
