@@ -252,7 +252,7 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="learn_more.html">
-    <span class="fa fa-video"></span>
+    <span class="fa fa-book-open"></span>
      
     Learn More
   </a>
@@ -270,14 +270,12 @@ $(document).ready(function () {
   <a href="contact.html">
     <span class="fa fa-envelope"></span>
      
-    Contact
   </a>
 </li>
 <li>
   <a href="https://github.com/CUBE-Ontario">
     <span class="fa fa-github"></span>
      
-    GitHub
   </a>
 </li>
       </ul>
@@ -294,8 +292,6 @@ $(document).ready(function () {
 </div>
 
 
-<style>
-</style>
 <div class="team-card card bg-transparent border-0">
 <div class="team-card-col card-body m-0 p-0 col-12">
 <div
@@ -826,40 +822,6 @@ environment.
 </div>
 </div>
 </div>
-<!-- ```{r bio cards} -->
-<!-- # this function generates the html for a single person's profile -->
-<!-- team_member_card <- function(name, photo, bio){ -->
-<!--   photo <- glue::glue('./pics/{photo}') -->
-<!--   html_str <- glue::glue( -->
-<!--     '<div class="row no-gutters"> -->
-<!--       <div class="col-md-2" style="display: flex; align-content: center; margin: auto; padding: auto; "> -->
-<!--       <img src="{photo}" class="card-img member-pic" alt="profile photo for {name}" -->
-<!--       > -->
-<!--       </div> -->
-<!--       <div class="col-md-10"> -->
-<!--       <div class="card-body"> -->
-<!--       <h5 class="card-title">{name}</h5> -->
-<!--       <p class="card-text">{bio}</p> -->
-<!--       </div> -->
-<!--       </div> -->
-<!--     </div>' -->
-<!--   ) -->
-<!--   cat(html_str) -->
-<!-- } -->
-<!-- map_team_members <- function() { -->
-<!--   readr::read_tsv('data/team_profiles.tsv') |>  -->
-<!--   dplyr::mutate( -->
-<!--     html = purrr::pmap( -->
-<!--       .l = list(name, path_to_pic, bio),  -->
-<!--       .f = function(x,y,z) team_member_card(x, y, z) -->
-<!--       ) -->
-<!--     )   -->
-<!-- } -->
-<!-- ``` -->
-<!-- <!-- this is where the content is inserted -->
-<!-- ```{r results='asis'} -->
-<!-- map_team_members() -->
-<!-- ``` -->
 
 
 

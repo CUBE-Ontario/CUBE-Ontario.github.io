@@ -4,7 +4,7 @@ output:
   html_document:
     theme: 
       version: 4
-      bootswatch: 'lumen'
+      bootswatch: 'superhero'
     css: styles.css
     toc: false
 ---
@@ -75,24 +75,26 @@ email_icon <- icons::icon_style(icons::fontawesome("paper-plane", style = "solid
 </iframe>
 :::
 
-<hr>
+------------------------------------------------------------------------
 
 ::: {#contact-cards style="margin: auto; justify-content: center; align-content: center; flex-wrap: wrap;"}
 ```{r}
+# add a new line to add a new card on the front page
+# >> "card title...", "card text...", "link: either local file name or url"
 tibble::tribble(
   ~title, ~text, ~link,
   "CUBE At Your Facility", " To arrange for CUBE testing in your facility, please contact us.", "contact.html",
   "Join The CUBE Reseach Group", "If you are interested in contributing to the CUBE research project, please get in touch.", "contact.html"
 ) |> 
+  # map data into nice html cards with responsive bootstrap layout
   bs4cards::cards(
     title = title,
     text = text,
     link = link,
-    border_colour = '#bbbbbb',
-    spacing = 5,
-    width = 5
+    spacing = 5, # space between cards
+    width = 5    # relative sizing (1 narrow - 5 wide)
   )
 ```
 :::
 
-\-\-\-\--
+------------------------------------------------------------------------

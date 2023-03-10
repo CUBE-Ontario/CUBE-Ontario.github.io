@@ -2,7 +2,10 @@
 title: 'About the CUBE Project'
 output: 
   html_document:
-    style: styles.css
+    theme: 
+      version: 4
+      bootswatch: 'superhero'
+    css: styles.css
 ---
 
 ```{r setup, include=F}
@@ -31,8 +34,11 @@ sites <-
       type == 'University' ~ 'purple',
       type == 'Daycare' ~ 'green',
       type == 'School' ~ 'orange',
+      type == 'Hospital' ~ 'darkblue',
       TRUE ~ 'red'
     ))
+
+# Possible values are "red", "darkred", "lightred", "orange", "beige", "green", "darkgreen", "lightgreen", "blue", "darkblue", "lightblue", "purple", "darkpurple", "pink", "cadetblue", "white", "gray", "lightgray", "black"
 
 # values to output in map description text
 n_site <- sites |> nrow()
@@ -50,8 +56,6 @@ n_uni <- glue::glue(
   "{n_uni} {ifelse(n_uni >1, 'universities', 'university')}"
   )
 
-# Possible values are "red", "darkred", "lightred", "orange", "beige", "green", "darkgreen", "lightgreen", "blue", "darkblue", "lightblue", "purple", "darkpurple", "pink", "cadetblue", "white", "gray", "lightgray", "black"
-
 # define Marker style: white cube logo on coloured background
 icons <- leaflet::awesomeIcons(
   icon = 'cube',
@@ -61,28 +65,55 @@ icons <- leaflet::awesomeIcons(
   markerColor = sites$color
 )
 
+city_coords <- tribble(
+  ~city, ~lat, ~lng,
+  'Ottawa', 44.9,	-75.7,
+  'Toronto', 43.2,	-79.3,
+  'Sault Ste. Marie', 46.0,	-84.3
+)
+
 # set zoom level for locking map
 zmlvl <- 5
 
 ontario_map <-
-  # leaflet map; size on page
   leaflet::leaflet(
-    width = '95%', 
+    width = '90%', 
     height = 325, 
-    padding = '1rem', 
+    padding = '2rem', 
     options = leafletOptions(zoomControl = TRUE)
   ) |>
   # set the zoom to ~province level
   setView(lng = -80, lat = 45, zoom = zmlvl)  |>
   # add the grey-shaded map tiles from cartoDB
   addProviderTiles(
-    provider = providers$CartoDB.Positron, 
+    provider = providers$CartoDB.PositronNoLabels,
     # disable the zoom controls
     options = providerTileOptions(
       zoomControl = TRUE,
-      maxZoom = zmlvl + 1, 
+      maxZoom = zmlvl + 1,
       minZoom = zmlvl - 2)
   ) |>
+  leaflet::addLabelOnlyMarkers(
+    data = city_coords,
+    lat = ~lat,
+    lng = ~lng,
+    label = ~city,
+    labelOptions = leaflet::labelOptions(
+      textsize = '2px',
+      noHide = T, 
+      direction = "bottom",
+      style = list(
+        "color" = "#0a0a0a",
+        "size" = "10px",
+        "font-family" = "sans-serif",
+        "font-style" = "bold",
+        "box-shadow" = "1px 1px rgba(0,0,0,0.25)",
+        "font-size" = "12px",
+        "border-color" = "none",
+        "background-color" = "none"
+      )
+    )
+  ) |> 
   # add the custom cube markers we defined above
   addAwesomeMarkers(
     data = sites,
@@ -91,25 +122,26 @@ ontario_map <-
     icon = icons,
     label = ~type,
     popup = NULL,
-    clusterOptions = markerClusterOptions(freezeAtZoom = zmlvl)
+    clusterOptions = markerClusterOptions(
+      freezeAtZoom = zmlvl, 
+      zoomToBoundsOnClick = F
+      )
   )
 ```
 
-::: {id="#about-page"}
+::: {##about-page}
 
 ------------------------------------------------------------------------
 
 ::: {style="font-size: 2rem; color: #888"}
-## Overview 
+## Overview
 :::
 
-![](./figures/CUBE_info6.png){#infographic .img-responsive .img-fluid .rounded}
+![](./figures/CUBE_info6.png){#infographic .img-responsive .img-fluid .rounded width="1050"}
 
 -   The Coronavirus in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and day-cares.\
 -   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.\
 -   Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
-
-
 
 ------------------------------------------------------------------------
 
@@ -119,21 +151,21 @@ ontario_map <-
 
 Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` schools and day-cares, and 6 university buildings.
 
-*Click any city to expand*
+*Click a marker to expand sites*
 
-::: {style="margin: auto; display: flex; align: center;"}
+::: {style="margin: auto; display: flex; align-content: center; align-items: center; align: center; text-align: center"}
 ```{r show map, message=F, warning=F, echo=F, fig.height=3, fig.width=3, fig.align='center'}
 # display the map
 ontario_map
 ```
 :::
 
-
 <!-- ends map container -->
 
 ------------------------------------------------------------------------
 
 <!-- FAQs card -->
+
 ::: {style="font-size: 2rem; color: #888"}
 ## Frequently Asked Questions
 :::
@@ -141,19 +173,22 @@ ontario_map
 *Click an FAQ to reveal the answer.*
 
 ```{r faqs, results='asis'}
-readr::read_tsv('data/FAQs.tsv') |> 
+# ignore Oauth
+googlesheets4::gs4_deauth()
+
+data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
+
+googlesheets4::read_sheet(data_url, sheet = 'FAQ') |> 
   bs4cards::cards(
-    border_colour = '#11afd0',
     title = question,
     text = answer,
     breakpoint = 5,
-    label_colour = '#f9fefe',
-      
     border_width = 1,
-    border_radius = 3
+    border_radius = 3, 
+    border_colour = '#bbbbbb',
+    # label_colour = '#51616f',
     )
 ```
 
 <br>
-
 :::

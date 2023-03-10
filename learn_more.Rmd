@@ -30,8 +30,6 @@ publication_cards <-
     title = title,
     text = paste(authors, journal, year, vol_issue_pages, doi),
     link = link,
-    border_colour = '#cacaea',
-    label_colour = 'white',
     border_width = 1,
     width = 5,
     spacing = 2
@@ -54,8 +52,6 @@ media_cards <-
     link = link,
     footer = footer,
     layout = 'label-below',
-    border_colour = '#cacaea',
-    label_colour = '#ffffff',
     border_width = 2,
     width = 2,
     spacing = 4

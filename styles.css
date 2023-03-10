@@ -29,6 +29,10 @@
     height: 100%;
 }
 
+/* centers the map*/
+.html-widget {
+    margin: auto;
+}
 
 /* About page */
 

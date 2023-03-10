@@ -1,15 +1,15 @@
 ---
 output:
   html_document:
-    css: "bootstrap.min.css"
+    css: 'bootstrap.min.css'
     theme:
+      bootswatch: 'superhero'
       version: 4
     highlight: textmate
 output_dir: '.'
 name: 'COVID-19 in the Urban Built Environment'
 title: 'COVID-19 in the Urban Built Environment'
 favicon: fa-cube
-theme: 'flatly'
 self_contained: true
 highlight: textmate
 new_session: true
@@ -18,23 +18,21 @@ author:
 navbar:
   type: default
   left:
-  - text: CUBE
+  - text:  CUBE
     href: index.html
     icon: fa-cube
-  - text: About
+  - text:  About
     href: about.html
     icon: fa-info
-  - text: Learn More
+  - text:  Learn More
     href: learn_more.html
-    icon: fa-video
-  - text: Team
+    icon: fa-book-open
+  - text:  Team
     href: team.html
     icon: fa-users
   right:
-  - text: Contact
-    href: contact.html
+  - href: contact.html
     icon: fa-envelope
-  - text: GitHub
-    href: https://github.com/CUBE-Ontario
+  - href: https://github.com/CUBE-Ontario
     icon: fa-github
 ---
