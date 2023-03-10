@@ -9,6 +9,9 @@ output:
     toc: false
 ---
 
+
+
+
 ```{r setup, include=F}
 knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE, collapse = TRUE)
 ```
@@ -42,6 +45,18 @@ metathis::meta() |>
   )
 
 ```
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8F9R0B5L51"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8F9R0B5L51');
+</script>
+</head> 
 
 #### Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings
 
@@ -79,14 +94,3 @@ tibble::tribble(
 :::
 
 ------------------------------------------------------------------------
-
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'XXXXXXXXXX');
-</script>
-</head> 
