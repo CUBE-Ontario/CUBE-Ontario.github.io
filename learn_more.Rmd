@@ -32,7 +32,7 @@ knitr::opts_chunk$set(
 
 ## Publications
 library(googlesheets4)
-library(dplyr)
+library(tidyverse)
 googlesheets4::gs4_deauth()
 
 data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
@@ -40,10 +40,20 @@ data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF
 # inject publication cards
 publication_cards <-
   googlesheets4::read_sheet(ss = data_url, sheet = 'publications') |> 
+  dplyr::mutate(
+    dplyr::across(where(is.character), ~stringr::str_remove(., '\\.$')),
+    vol_issue_pages = if_else(is.na(vol_issue_pages), '', vol_issue_pages),
+    text = paste0(
+      paste0(authors, '.\n'), 
+      paste0(journal, '.\n'),
+      paste0(year, '. ')
+    )
+  ) |> 
   bs4cards::cards(
     title = title,
-    text = paste(authors, journal, year, vol_issue_pages, doi),
+    text = text,
     link = link,
+    footer = doi,
     border_width = 1,
     width = 5,
     spacing = 2
