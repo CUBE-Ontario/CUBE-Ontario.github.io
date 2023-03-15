@@ -56,7 +56,7 @@ publication_cards <-
     footer = doi,
     border_width = 1,
     width = 5,
-    spacing = 4
+    spacing = 3
   )
 
 # inject media cards
@@ -78,7 +78,7 @@ media_cards <-
     layout = 'label-below',
     border_width = 2,
     width = 4,
-    spacing = 4
+    spacing = 3
   )
 ```
 
