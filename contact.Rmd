@@ -1,6 +1,10 @@
 ---
 title: "<br><br>Contact the CUBE team"
-output: html_document
+output: 
+  html_document:
+    theme: 
+      version: 4
+    css: styles.css
 ---
 
 <!-- contact form linked to google forms; described here: https://github.com/toperkin/staticFormEmails -->

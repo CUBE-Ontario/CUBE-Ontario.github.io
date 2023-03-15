@@ -3,7 +3,7 @@ output_dir: '.'
 output:
   html_document:
     theme:
-      bootswatch: 'superhero'
+      bootswatch: 'lumen'
       version: 4
     highlight: textmate
 name: 'COVID-19 in the Urban Built Environment'

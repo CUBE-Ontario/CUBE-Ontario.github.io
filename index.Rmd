@@ -4,7 +4,6 @@ output:
   html_document:
     theme: 
       version: 4
-      bootswatch: 'superhero'
     css: styles.css
     toc: false
 ---

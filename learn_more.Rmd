@@ -2,6 +2,8 @@
 title: 'CUBE Publications and Media'
 output: 
   html_document:
+    theme: 
+      version: 4
     css: styles.css
 ---
 
@@ -55,6 +57,7 @@ publication_cards <-
     link = link,
     footer = doi,
     border_width = 1,
+    border_colour = '#afafaf',
     width = 5,
     spacing = 3
   )
@@ -76,7 +79,8 @@ media_cards <-
     link = link,
     footer = footer,
     layout = 'label-below',
-    border_width = 2,
+    border_width = 1,
+    border_colour = '#afafaf',
     width = 4,
     spacing = 3
   )
