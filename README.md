@@ -4,8 +4,8 @@ This is the repository for our public-facing website hosted on github pages: htt
 
 The webpage is rendered from a set of rmarkdown files (*.Rmd), with a yaml file (_site.yml) for the layout, with a bootswatch theme (superhero), a custom css stylesheet (styles.css). The main page is derived from index.Rmd.
 
-The data for different sections comes from a google sheet here:
-'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
+The data for different sections comes from a [google sheet here]
+(https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing)
 
 Add new team members, locations for the map, publications, and FAQs to the respective sheet in the googlesheets file.
 
