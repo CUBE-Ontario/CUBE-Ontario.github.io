@@ -141,6 +141,22 @@ ontario_map <-
       zoomToBoundsOnClick = F
       )
   )
+
+# ignore Oauth
+googlesheets4::gs4_deauth()
+
+data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
+
+faq_section <- googlesheets4::read_sheet(data_url, sheet = 'FAQ') |> 
+  bs4cards::cards(
+    title = question,
+    text = answer,
+    breakpoint = 5,
+    border_width = 1,
+    border_radius = 3, 
+    border_colour = '#bbbbbb',
+    # label_colour = '#51616f',
+    )
 ```
 
 ::: {##about-page}
@@ -155,7 +171,16 @@ ontario_map <-
 -   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.\
 -   Currently, we are focused on facilities located in Toronto, Ottawa, and Sault Ste. Marie.
 
-------------------------------------------------------------------------
+--------------------------------------------------------
+
+## Long-Term Care Homes Study
+
+<center style="padding: 1rem;">
+
+![](./public/img/lct_inforgraphic.png){#infographic .img-responsive .img-fluid .rounded width="400"}
+</center>
+
+--------------------------------------------------------
 
 ## Study Locations  
 
@@ -182,21 +207,7 @@ ontario_map
 *Click an FAQ to reveal the answer.*
 
 ```{r faqs, results='asis'}
-# ignore Oauth
-googlesheets4::gs4_deauth()
-
-data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
-
-googlesheets4::read_sheet(data_url, sheet = 'FAQ') |> 
-  bs4cards::cards(
-    title = question,
-    text = answer,
-    breakpoint = 5,
-    border_width = 1,
-    border_radius = 3, 
-    border_colour = '#bbbbbb',
-    # label_colour = '#51616f',
-    )
+faq_section
 ```
 
 <br>
