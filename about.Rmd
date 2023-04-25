@@ -177,7 +177,7 @@ faq_section <- googlesheets4::read_sheet(data_url, sheet = 'FAQ') |>
 
 <center style="padding: 1rem;">
 
-![](./public/img/lct_inforgraphic.png){#infographic .img-responsive .img-fluid .rounded width="400"}
+![](./public/img/ltc_info.jpg){#infographic .img-responsive .img-fluid .rounded width="400"}
 </center>
 
 --------------------------------------------------------
