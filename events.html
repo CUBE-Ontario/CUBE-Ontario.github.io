@@ -11,7 +11,7 @@
 
 
 
-<title>  Contact the CUBE team</title>
+<title>Events</title>
 
 <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -296,55 +296,31 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><br><br>Contact the CUBE team</h1>
+<h1 class="title toc-ignore">Events</h1>
 
 </div>
 
 
-<!-- contact form linked to google forms; described here: https://github.com/toperkin/staticFormEmails -->
-<p>Please use this form to get in contact with us.</p>
+<div id="covarr-net-spring-2023-meeting" class="section level3">
+<h3>CoVaRR-Net Spring 2023 Meeting</h3>
+<p>May 16-18, 2023. Ottawa, ON.</p>
+<div class="figure">
+<img src="public/img/event/tasha_poster1.jpeg" alt="" />
+<p class="caption">Tasha Burhunduli presenting her poster
+“Community-wide built environment surveillance for SCV2 in Ottawa,
+Canada”</p>
+</div>
+<div class="figure">
+<img src="public/img/event/aaron_poster1.jpeg" alt="" />
+<p class="caption">Aaron Hinz presenting his poster “Respiratory virus
+surveillance using built environment floor swabbing”</p>
+</div>
+<div class="figure">
+<img src="public/img/event/tasha_poster2.jpeg" alt="" />
+<p class="caption">Tasha Burhunduli</p>
+</div>
 <hr />
-<!-- /* padding for all form elements*/ -->
-<style>
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-</style>
-<!-- Our google forms link (prototype url with form elements: entry.xxxx)
-https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/viewform?usp=pp_url&entry.1343111128=NAME&entry.1111689708=EMAIL&entry.1050507149=MESSAGE_bODY
--->
-<!-- entry.1343111128=NAME -->
-<!-- entry.1111689708=EMAIL -->
-<!-- entry.1050507149=MESSAGE_BODY -->
-<!-- My contact form front end -->
-<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSd-Vwhr0J7ShhAg_RWPJ2qdH9RnV5E1_aShIooFEoAKtfkKcg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-<!-- <h4>Your name:</h4> -->
-<div class="form-group">
-<p><label for="entry.1343111128">Your name</label>
-<input type="text" name="entry.1343111128" id="entry.1343111128" class="form-control" placeholder="Name"></p>
 </div>
-<div class="form-group">
-<p><label for="entry.1111689708">Your email</label>
-<input type="text" name="entry.1111689708" id="entry.1111689708" class="form-control" placeholder="Email address"></p>
-</div>
-<div class="form-group">
-<label for="entry.1111689708">Your message</label>
-<textarea rows="5" cols="50" name="entry.1050507149" id="entry.1050507149" placeholder="Message to CUBE" class="form-control"></textarea>
-</div>
-<br> <button type="submit" class="btn btn-primary" value="Submit">
-<strong>Submit</strong> </button>
-</form>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
-</iframe>
-<!-- javascript to send the info and display success message -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(1500);
-  $('#gform').prepend('<br><br><div class="alert alert-success" role="alert">Thanks for contacting us. We will be in touch soon.</div>');
-  });
-</script>
 
 
 

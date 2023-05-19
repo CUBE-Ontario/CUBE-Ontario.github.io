@@ -17,18 +17,21 @@ author:
 navbar:
   type: default
   left:
-  - text:  CUBE
+  - text: CUBE
     href: index.html
     icon: fa-cube
-  - text:  About
+  - text: About
     href: about.html
     icon: fa-info-circle
-  - text:  Publications/Media
+  - text: Publications/Media
     href: learn_more.html
     icon: fa-book-open
-  - text:  Team
+  - text: Team
     href: team.html
     icon: fa-users
+  - text: Events
+    href: events.html
+    icon: fa-handshake
   right:
   - text: Contact
     href: contact.html

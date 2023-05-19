@@ -1,0 +1,18 @@
+---
+title: "Events"
+output: html_document
+---
+
+### CoVaRR-Net Spring 2023 Meeting 
+
+May 16-18, 2023. Ottawa, ON.
+
+![Tasha Burhunduli presenting her poster "Community-wide built environment surveillance for SCV2 in Ottawa, Canada"](public/img/event/tasha_poster1.jpeg)
+
+![Aaron Hinz presenting his poster "Respiratory virus surveillance using built environment floor swabbing"](public/img/event/aaron_poster1.jpeg)
+
+
+![Tasha Burhunduli ](public/img/event/tasha_poster2.jpeg)
+
+
+------------------------------------
