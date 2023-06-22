@@ -5,6 +5,7 @@ output:
     theme: 
       version: 4
     css: styles.css
+    self-contained: false 
 ---
 
 
@@ -28,6 +29,7 @@ knitr::opts_chunk$set(
   message = FALSE, 
   warning = FALSE, 
   echo = FALSE,
+  include = TRUE,
   comment = "#>",
   collapse = TRUE
 )
