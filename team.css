@@ -1,0 +1,40 @@
+.img {
+  object-fit: cover;
+}
+
+/* Cards for each team member, using these styles */
+.team-card {
+  padding-top: 1rem;
+  border-width: 0;
+  border-radius: .6rem .6rem .6rem .6rem;
+}
+.team-card-col {
+  visibility: visible;
+  background-color: inherit;
+  border-radius: .6rem .6rem .6rem .6rem;
+  margin: 1rem;
+}
+.team-card-row {
+  display: flex;
+  flex-basis: auto;
+  flex-direction:row;
+  border-radius: .6rem .6rem .6rem .6rem;
+}
+.team-pic-container {
+  min-width: 130px;
+  border-radius: 50%;
+  margin:auto;
+  align-items: center;
+  text-align: right
+}
+.team-pic {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  display: block;
+  border-style:solid;
+  border-width:1px;
+  margin: -1px auto -1px auto;
+  border: none;
+  object-fit: cover;
+}

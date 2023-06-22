@@ -4,8 +4,8 @@ output:
   html_document:
     theme: 
       version: 4
-    css: styles.css
-    self-contained: false 
+    css: team.css
+    self_contained: true
 ---
 
 
@@ -19,7 +19,8 @@ output:
 
   gtag('config', 'G-8F9R0B5L51');
 </script>
-<link rel=“stylesheet” type=“text/css” href=“styles.css”>
+<link rel=“stylesheet” type=“text/css” href=“team.css”>
+
 </head> 
 
 
