@@ -186,7 +186,7 @@ faq_section <- googlesheets4::read_sheet(data_url, sheet = 'FAQ') |>
 
 Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` schools and day-cares, and 6 university buildings.
 
-*Click a marker to expand sites*
+<!-- *Click a marker to expand sites* -->
 
 ::: {style="margin: auto; display: flex; align-content: center; align-items: center; align: center; text-align: center"}
 ```{r show map, message=F, warning=F, echo=F, fig.height=3, fig.width=3, fig.align='center'}
