@@ -24,7 +24,7 @@ navbar:
     href: about.html
     icon: fa-info-circle
   - text: Publications/Media
-    href: learn_more.html
+    href: publications_media.html
     icon: fa-book-open
   - text: Team
     href: team.html
