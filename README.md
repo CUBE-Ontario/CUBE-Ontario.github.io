@@ -43,16 +43,23 @@ Go to [the googlesheets file](https://docs.google.com/spreadsheets/d/1zSHLGGOSBI
 
 -----
 
-## Add a new FAQ
+## How to add a new FAQ
 
 - Add a row with `question` and `answer` to the `FAQ` sheet in the [googlesheets file](https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing).
 - Rebuild the site, inspect, push changes to gh.
 
 -----
 
-## Add a new media appearance
+## How to add a new media appearance
 
 Add new media card details to the googlesheets 'media' sheet. Build. Push.
+
+
+-----
+
+
+## How to add to events...
+
 
 
 -----

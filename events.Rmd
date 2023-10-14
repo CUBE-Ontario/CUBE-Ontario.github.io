@@ -3,6 +3,17 @@ title: "Events"
 output: html_document
 ---
 
+### IDWeek 2023 Conference
+
+[October 10-14th, 2023. Boston, Mass.](https://idweek.org/)
+
+![Dr. Caroline Nott presents her poster "Detection of COVID-19 Outbreaks in Hospitals Using Built Environment Testing for SARS-CoV-2" at IDWeek ](public/img/event/idweek-1.jpg)
+
+<br/>
+
+----
+
+
 ### CoVaRR-Net Spring 2023 Meeting 
 
 May 16-18, 2023. Ottawa, ON.
