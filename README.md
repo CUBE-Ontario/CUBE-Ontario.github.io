@@ -60,6 +60,6 @@ Add new media card details to the googlesheets 'media' sheet. Build. Push.
 
 ## How to add to events...
 
-
+Need to write markdown in `about.rmd`, add images to `/public/img/event/`. Rebuild site and push to GH.
 
 -----
