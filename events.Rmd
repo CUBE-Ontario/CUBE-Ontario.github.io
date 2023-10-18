@@ -3,13 +3,19 @@ title: "Events"
 output: html_document
 ---
 
+
+-----
+
+
 ### IDWeek 2023 Conference
 
 [October 10-14th, 2023. Boston, Mass.](https://idweek.org/)
 
-![Dr. Caroline Nott presents her poster "Detection of COVID-19 Outbreaks in Hospitals Using Built Environment Testing for SARS-CoV-2" at IDWeek ](public/img/event/idweek-1.jpg)
+![Dr. Caroline Nott with her poster "Detection of COVID-19 Outbreaks in Hospitals Using Built Environment Testing for SARS-CoV-2" at IDWeek ](public/img/event/idweek-1.jpg)
 
 <br/>
+
+![Dr. Nisha Thampi presents her poster "Propective Environmental Surveillance of Floors in a Pediatric Emergency Department During the Fall 2022 Respiratory Synctial Virus Surge in Ottawa, Canada" at IDWeek 2023. ](public/img/event/idweek_nisha1.jpg)
 
 ----
 
