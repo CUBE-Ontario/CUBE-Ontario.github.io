@@ -2,6 +2,8 @@
 title: "Coronavirus in the Urban Built Environment"
 output: 
   html_document:
+    includes: 
+      in_header: header.html
     theme: 
       version: 4
     css: styles.css
