@@ -6,10 +6,23 @@ output: html_document
 
 -----
 
+### Sinai Health Quality and Safety Symposium
+
+*October 18th, 2023. Toronto, ON.*
+
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/prachi1.jpeg")
+```
+
+CUBE researcher Prachi Ray (M.Sc. candidate) brought home the 🏆 Top Abstract Award (Innovation Track) 🏆 for her work "Environmental surveillance for SARS-CoV-2 for outbreak detection in hospital: A single centre prospective study". Congratulations Prachi! 
+
+
+-----
 
 ### IDWeek 2023 Conference
 
-[October 10-14th, 2023. Boston, Mass.](https://idweek.org/)
+*[October 10-14th, 2023. Boston, Mass.](https://idweek.org/)*
 
 ![Dr. Caroline Nott with her poster "Detection of COVID-19 Outbreaks in Hospitals Using Built Environment Testing for SARS-CoV-2" at IDWeek ](public/img/event/idweek-1.jpg)
 
@@ -17,19 +30,27 @@ output: html_document
 
 ![Dr. Nisha Thampi presents her poster "Propective Environmental Surveillance of Floors in a Pediatric Emergency Department During the Fall 2022 Respiratory Synctial Virus Surge in Ottawa, Canada" at IDWeek 2023. ](public/img/event/idweek_nisha1.jpg)
 
+<br/>
+
 ----
 
 
 ### CoVaRR-Net Spring 2023 Meeting 
 
-May 16-18, 2023. Ottawa, ON.
+*May 16-18, 2023. Ottawa, ON.*
+
+<br/>
 
 ![Tasha Burhunduli presenting her poster "Community-wide built environment surveillance for SCV2 in Ottawa, Canada"](public/img/event/tasha_poster1.jpeg)
 
+<br/>
+
 ![Aaron Hinz presenting his poster "Respiratory virus surveillance using built environment floor swabbing"](public/img/event/aaron_poster1.jpeg)
 
+<br/>
 
-![Tasha Burhunduli ](public/img/event/tasha_poster2.jpeg)
+![Tasha Burhunduli sharing her poster at the CoVaRR-Net Spring 2023 Meeting](public/img/event/tasha_poster2.jpeg)
 
+<br/>
 
 ------------------------------------
