@@ -27,7 +27,7 @@ Go to [the googlesheets file](https://docs.google.com/spreadsheets/d/1zSHLGGOSBI
 
 ## How to add a new publication
 
-- Go to the `oublications` sheet in the [googlesheets file](https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing) 
+- Go to the `Publications` sheet in the [googlesheets file](https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing) 
 - Add a new line with the details of the article. Remove the relevant preprint if the article was published in a journal, if there was one.
 - Build site in Rstudio; a new card should appear for the new article.
 - Commit changes in git, push to this github repo to update the site.
