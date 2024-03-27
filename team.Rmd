@@ -41,7 +41,12 @@ googlesheets4::gs4_deauth()
 
 data_url <- 'https://docs.google.com/spreadsheets/d/1zSHLGGOSBIOgN3BXXGl2jPtJLBF6OExAznjqmRnzrTY/edit?usp=sharing'
 
-data <- googlesheets4::read_sheet(data_url, sheet = 'team') |> 
+team <- googlesheets4::read_sheet(data_url, sheet = 'team') |> 
+  dplyr::mutate(
+    img = paste0('public/img/team/', path_to_pic)
+  )
+
+alumni <- googlesheets4::read_sheet(data_url, sheet = 'alumni') |> 
   dplyr::mutate(
     img = paste0('public/img/team/', path_to_pic)
   )
@@ -85,7 +90,22 @@ cards <- function(data) {
 
 ```{r results='asis'}
 # cat out html into document
-data |> cards() |> cat()
+team |> cards() |> cat()
+```
+
+:::
+
+------------------------------------------------
+
+## CUBE Alumni
+
+The CUBE group wishes to recognize the excellent work of these former members of our research team who helped greatly in making our efforts a success.
+
+::: {style="align: center; margin: auto"}
+
+```{r results='asis'}
+# cat out html into document
+alumni |> cards() |> cat()
 ```
 
 :::
