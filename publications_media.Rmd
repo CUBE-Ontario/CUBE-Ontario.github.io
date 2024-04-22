@@ -43,11 +43,16 @@ publication_cards <-
   googlesheets4::read_sheet(ss = data_url, sheet = 'publications') |> 
   dplyr::mutate(
     dplyr::across(where(is.character), ~stringr::str_remove(., '\\.$')),
-    vol_issue_pages = if_else(is.na(vol_issue_pages), '', vol_issue_pages),
+    vol_issue_pages = if_else(
+      is.na(vol_issue_pages),
+      '', 
+      paste0(vol_issue_pages, '.\n')
+    ),
     text = paste0(
       paste0(authors, '.\n'), 
       paste0(journal, '.\n'),
-      paste0(year, '. ')
+      paste0(year, '. '),
+      vol_issue_pages
     )
   ) |> 
   arrange(desc(year), desc(row_number())) |> 
