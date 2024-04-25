@@ -4,6 +4,19 @@ output: html_document
 ---
 
 
+### GIM Research Day 2024
+
+*April 17th, 2024. University of Toronto, Division of General Internal Medicine*
+
+CUBE researcher Prachi Ray presented her poster "Environmental surveillance of SARS-CoV-2 for COVID-19 outbreak detection in hospital: A single centre prospective study".
+
+[![Click to enlarge](public/img/event/msh_poster_small.jpg)](public/img/event/msh_poster_large.jpg)
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+# knitr::include_graphics("public/img/event/msh_poster_prachi.jpg")
+```
+
+
 -----
 
 ### Sinai Health Quality and Safety Symposium
