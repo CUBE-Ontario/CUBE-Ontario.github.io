@@ -3,6 +3,7 @@ title: "Events"
 output: html_document
 ---
 
+----
 
 ### GIM Research Day 2024
 
@@ -10,12 +11,8 @@ output: html_document
 
 CUBE researcher Prachi Ray presented her poster "Environmental surveillance of SARS-CoV-2 for COVID-19 outbreak detection in hospital: A single centre prospective study".
 
-[![Click to enlarge](public/img/event/msh_poster_small.jpg)](public/img/event/msh_poster_large.jpg)
-
-```{r, out.width = "650px", echo=FALSE, fig.align='center'}
-# knitr::include_graphics("public/img/event/msh_poster_prachi.jpg")
-```
-
+[![Click to enlarge](public/img/event/msh_poster_small.jpg)](public/img/event/msh_poster_large.jpg)  
+*Click image to enlarge*
 
 -----
 
