@@ -85,8 +85,8 @@ tibble::tribble(
     footer = "May 30th, 2024",
     text = text,
     link = link,
-    spacing = 4, # space between cards
-    width = 4    # relative sizing (1 narrow - 5 wide)
+    spacing = 0, # space between cards
+    width = 5    # relative sizing (1 narrow - 5 wide)
   )
 ```
 :::
