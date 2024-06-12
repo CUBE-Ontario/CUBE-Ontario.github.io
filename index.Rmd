@@ -77,11 +77,12 @@ metathis::meta() |>
 # >> "card title...", "card text...", "link: either local file name or url"
 tibble::tribble(
   ~title, ~text, ~link,
-  "Press Release, May 5th, 2024", "Good news! CUBE is part of a successful grant application to Genome Canada’s Genomics Applications Partnership Program (GAPP).", "gapp_release.html",
+  "Press Release", "\nGood news! CUBE is part of a successful grant application to Genome Canada’s Genomics Applications Partnership Program (GAPP).", "gapp_release.html",
 ) |> 
   # map data into nice html cards with responsive bootstrap layout
   bs4cards::cards(
     title = title,
+    footer = "May 30th, 2024",
     text = text,
     link = link,
     spacing = 4, # space between cards
