@@ -69,27 +69,27 @@ metathis::meta() |>
 
 :::
 
-------------------------------------------------------------------------
+<!-- ------------------------------------------------------------------------ -->
 
-::: {#press-release}
-```{r}
-# add a new line to add a new card on the front page
-# >> "card title...", "card text...", "link: either local file name or url"
-tibble::tribble(
-  ~title, ~text, ~link,
-  "Press Release", "\nGood news! CUBE is part of a successful grant application to Genome Canada’s Genomics Applications Partnership Program (GAPP).", "gapp_release.html",
-) |> 
-  # map data into nice html cards with responsive bootstrap layout
-  bs4cards::cards(
-    title = title,
-    footer = "May 30th, 2024",
-    text = text,
-    link = link,
-    spacing = 0, # space between cards
-    width = 5    # relative sizing (1 narrow - 5 wide)
-  )
-```
-:::
+<!-- ::: {#press-release} -->
+<!-- ```{r} -->
+<!-- # add a new line to add a new card on the front page -->
+<!-- # >> "card title...", "card text...", "link: either local file name or url" -->
+<!-- tibble::tribble( -->
+<!--   ~title, ~text, ~link, -->
+<!--   "Press Release", "\nGood news! CUBE is part of a successful grant application to Genome Canada’s Genomics Applications Partnership Program (GAPP).", "gapp_release.html", -->
+<!-- ) |>  -->
+<!--   # map data into nice html cards with responsive bootstrap layout -->
+<!--   bs4cards::cards( -->
+<!--     title = title, -->
+<!--     footer = "May 30th, 2024", -->
+<!--     text = text, -->
+<!--     link = link, -->
+<!--     spacing = 0, # space between cards -->
+<!--     width = 5    # relative sizing (1 narrow - 5 wide) -->
+<!--   ) -->
+<!-- ``` -->
+<!-- ::: -->
 
 
 ------------------------------------------------------------------------
