@@ -10,10 +10,22 @@ output:
 ----
 
 
-![](./public/img/press_release/gapp-announcement.jpeg){.img-responsive .img-fluid .rounded }
-*L-R: Dr. Rees Kassen, Attila Szantner (MMOS), Jerome Waldispuhl, and Sébastian Caisse (Gearbox)*
+<!-- 
+-->
 
-<section>
+<div class="d-flex justify-content-center align-items-center">
+  <img 
+    src="./public/img/press_release/gapp-announcement.jpeg" 
+    class="img-fluid img-responsive rounded"
+  />
+  <br/>
+  <i>
+  L-R: Dr. Rees Kassen, Attila Szantner (MMOS), Jerome Waldispuhl, and Sébastian Caisse (Gearbox)
+  </i>
+</div>
+
+
+<section class"p-2 m-2">
 <p>
 On May 30, 2024, Genome Canada gave the green light to a project that aims to harness the power of citizen science by using video games to process massive metagenomic data sets. The project will be led by computer science professor Dr. Jérôme Waldispühl from McGill University and Co-Studio Head Director of Operations Sébastien Caisse from Gearbox Studio Québec, the makers of the popular Borderlands video game, in partnership with the Scientific Director of the CUBE consortium, Dr. Rees Kassen of McGill University. CUBE will supply genomic information from swabs  so that gamers can help identify the antimicrobial resistance genes and organisms of highest concern in hospital settings. Genome Canada's funding will provide substantial support to galvanize CUBE initiatives at Sinai Health, Ottawa Hospital, and the Sault Area Hospital.  
 </p>
