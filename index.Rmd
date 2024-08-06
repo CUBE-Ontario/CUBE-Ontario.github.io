@@ -58,7 +58,7 @@ metathis::meta() |>
 
 #### Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings
 
-------------------------------------------------------------------------
+<br></br>
 
 <!-- youtube video embedding -->
 
