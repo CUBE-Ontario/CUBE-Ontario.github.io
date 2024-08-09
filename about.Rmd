@@ -175,6 +175,8 @@ faq_section <- googlesheets4::read_sheet(data_url, sheet = 'FAQ') |>
 
 ## Long-Term Care Homes Study
 
+[DOI: 10.1056/EVIDoa2200203](https://evidence.nejm.org/doi/full/10.1056/EVIDoa2200203)
+
 <center style="padding: 1rem;">
 
 ![](./public/img/ltc_info.jpg){#infographic .img-responsive .img-fluid .rounded width="400"}
