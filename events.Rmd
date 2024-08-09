@@ -5,9 +5,26 @@ output: html_document
 
 ----
 
+### EDAR7 Conference 2024
+
+*May 26<sup>th</sup>-31<sup>st</sup>, 2024. McGill University, Montreal, QC.*
+
+Alex Hicks presenting her poster "Environmental Detection of MRSA and VRE in Single-Patient Rooms" at the Environmental Dimension of Antimicrobial Resistance (EDAR7) conference.
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/alex_edar.jpg")
+```
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/alex_poster2.jpg")
+```
+
+
+----
+
 ### GIM Research Day 2024
 
-*April 17th, 2024. University of Toronto, Division of General Internal Medicine*
+*April 17<sup>th</sup>, 2024. University of Toronto, Division of General Internal Medicine*
 
 CUBE researcher Prachi Ray presented her poster "Environmental surveillance of SARS-CoV-2 for COVID-19 outbreak detection in hospital: A single centre prospective study".
 
@@ -18,7 +35,7 @@ CUBE researcher Prachi Ray presented her poster "Environmental surveillance of S
 
 ### Sinai Health Quality and Safety Symposium
 
-*October 18th, 2023. Toronto, ON.*
+*October 18<sup>th</sup>, 2023. Toronto, ON.*
 
 
 ```{r, out.width = "650px", echo=FALSE, fig.align='center'}
@@ -32,7 +49,7 @@ CUBE researcher Prachi Ray (M.Sc. candidate) brought home the 🏆 Top Abstract 
 
 ### IDWeek 2023 Conference
 
-*[October 10-14th, 2023. Boston, Mass.](https://idweek.org/)*
+*[October 10<sup>th</sup>-14<sup>th</sup>, 2023. Boston, Mass.](https://idweek.org/)*
 
 ![Dr. Caroline Nott with her poster "Detection of COVID-19 Outbreaks in Hospitals Using Built Environment Testing for SARS-CoV-2" at IDWeek ](public/img/event/idweek-1.jpg)
 
@@ -47,7 +64,7 @@ CUBE researcher Prachi Ray (M.Sc. candidate) brought home the 🏆 Top Abstract 
 
 ### CoVaRR-Net Spring 2023 Meeting 
 
-*May 16-18, 2023. Ottawa, ON.*
+*May 16<sup>th</sup>-18<sup>th</sup>, 2023. Ottawa, ON.*
 
 <br/>
 
