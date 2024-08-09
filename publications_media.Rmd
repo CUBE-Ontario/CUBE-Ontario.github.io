@@ -69,14 +69,17 @@ publication_cards <-
 
 # inject media cards
 media_cards <-
-  googlesheets4::read_sheet(ss = data_url, 
-                            sheet = 'media',
-                            col_types = 'ccccc') |> 
-  dplyr::mutate(image = ifelse(
-    stringr::str_detect(image, '^http'),
-    image,
-    paste0('./public/img/media/', image)
-  )) |> 
+  googlesheets4::read_sheet(
+    ss = data_url, 
+    sheet = 'media',
+    col_types = 'ccccc'
+    ) |> 
+  dplyr::mutate(
+    image = ifelse(
+      stringr::str_detect(image, '^http'),
+      image,
+      paste0('./public/img/media/', image)
+    )) |> 
   bs4cards::cards(
     title = title,
     image = image,
@@ -104,16 +107,45 @@ CUBE was part of a successful grant application to Genome Canada’s Genomics Ap
 
 ::: {style="align: center; justify-content: center; justify-items: center; margin: auto"}
 
+
 ## Publications
+
+<div id="pubs"> 
 
 `r publication_cards`
 
+</div>
+
 ----------------------------------------------------
+
 
 ## Media
 
+<div id="media"> 
+
 `r media_cards`
+
+</div>
+
+
 
 ----------------------------------------------------
 
 :::
+
+<script>
+
+  // Select all 'a' tags within "pubs"; set the 'target' attribute to '_blank'
+  
+  document.getElementById("pubs").querySelectorAll("a").forEach(function(link) {
+      link.setAttribute("target", "_blank");
+  });
+  
+  
+  // Select all 'a' tags within "media"; set the 'target' attribute to '_blank'
+  
+  document.getElementById("media").querySelectorAll("a").forEach(function(link) {
+      link.setAttribute("target", "_blank");
+  });
+
+</script>
