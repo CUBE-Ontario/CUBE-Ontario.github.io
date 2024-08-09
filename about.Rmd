@@ -65,10 +65,10 @@ n_dc <- sites |>
 n_uni <- sites |> 
   dplyr::filter(type == 'University') |>
   nrow()
+n_lib <- sites |> 
+  dplyr::filter(type == 'Library') |>
+  nrow()
 
-n_uni <- glue::glue(
-  "{n_uni} {ifelse(n_uni >1, 'universities', 'university')}"
-  )
 
 # define Marker style: white cube logo on coloured background
 icons <- leaflet::awesomeIcons(
@@ -186,27 +186,21 @@ faq_section <- googlesheets4::read_sheet(data_url, sheet = 'FAQ') |>
 
 ## Study Locations  
 
-Our research team is currently monitoring `r n_site` buildings in Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` schools and day-cares, and 6 university buildings.
+Our research team has conducted environmental surface surveillance studies at  `r n_site` buildings  to date across Toronto, Ottawa, and Sault Ste. Marie, including `r n_ltc` long-term care homes, `r n_dc` schools and day-cares, `r n_uni` university buildings, and `r n_lib` public libraries.
 
-<!-- *Click a marker to expand sites* -->
 
-::: {style="margin: auto; display: flex; align-content: center; align-items: center; align: center; text-align: center"}
+::: {style="margin: auto; display: flex; align-content: center; align-items: center; align: center; text-align: center;"}
 ```{r show map, message=F, warning=F, echo=F, fig.height=3, fig.width=3, fig.align='center'}
 # display the map
 ontario_map
 ```
 :::
 
-<!-- ends map container -->
-
 ------------------------------------------------------------------------
 
 <!-- FAQs card -->
 
 ## Frequently Asked Questions
-
-
-*Click an FAQ to reveal the answer.*
 
 ```{r faqs, results='asis'}
 faq_section
