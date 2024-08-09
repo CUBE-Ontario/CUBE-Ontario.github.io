@@ -93,6 +93,15 @@ media_cards <-
 
 ----------------------------------------------------
 
+## Announcements
+
+###### *2024-05-30*
+
+CUBE was part of a successful grant application to Genome Canada’s Genomics Applications Partnership Program (GAPP). Read the full <a href='gapp_release.html'>press release here.<a>
+
+
+----------------------------------------------------
+
 ::: {style="align: center; justify-content: center; justify-items: center; margin: auto"}
 
 ## Publications

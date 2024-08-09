@@ -56,7 +56,7 @@ metathis::meta() |>
 <link rel=“stylesheet” type=“text/css” href=“styles.css”>
 </head> 
 
-#### Developing environmental sampling as a method for monitoring SARS-CoV-2 in congregate settings
+#### Developing environmental surface sampling as a method for the detection and monitoring of SARS-CoV-2 and other microbial pathogens
 
 <br></br>
 
