@@ -49,6 +49,7 @@ sites <-
       type == 'Daycare' ~ 'green',
       type == 'School' ~ 'orange',
       type == 'Hospital' ~ 'darkblue',
+      type == 'library' ~ 'blue',s
       TRUE ~ 'red'
     ))
 
