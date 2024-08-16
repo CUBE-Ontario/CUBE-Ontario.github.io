@@ -44,13 +44,15 @@ sites <-
   ) |> 
   dplyr::mutate(
     color = dplyr::case_when(
-      type == 'LTC' ~ 'cadetblue',
+      type == 'LTC' ~ 'darkblue',
+      type == 'LTC (Active)' ~ 'blue',
       type == 'University' ~ 'purple',
       type == 'Daycare' ~ 'green',
       type == 'School' ~ 'orange',
-      type == 'Hospital' ~ 'darkblue',
-      type == 'library' ~ 'blue',s
-      TRUE ~ 'red'
+      type == 'Library' ~ 'cadetblue',
+      type == 'Hospital' ~ 'darkred',
+      type == 'Hospital (Active)' ~ 'red',
+      TRUE ~ 'gray'
     ))
 
 # Possible values are "red", "darkred", "lightred", "orange", "beige", "green", "darkgreen", "lightgreen", "blue", "darkblue", "lightblue", "purple", "darkpurple", "pink", "cadetblue", "white", "gray", "lightgray", "black"
