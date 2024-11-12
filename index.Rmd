@@ -32,7 +32,7 @@ metathis::meta() |>
   metathis::meta_social(
     title = "COVID-19 in the Urban Built Environment",
     url = "https://cube-ontario.github.io",
-    image = "https://cube-ontario.github.io/public/img/infographic.jpg",
+    image = "https://cube-ontario.github.io/public/img/infographic.png",
     image_alt = description_text,
     og_type = "website",
     og_site_name = "COVID-19 in the Urban Built Environment",
