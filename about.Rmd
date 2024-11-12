@@ -168,7 +168,7 @@ faq_section <- googlesheets4::read_sheet(data_url, sheet = 'FAQ') |>
 
 ## Overview
 
-![](./public/img/about_infographic.jpg){#infographic .img-responsive .img-fluid .rounded width="1050"}
+![](./public/img/infographic.jpg){#infographic .img-responsive .img-fluid .rounded width="1050"}
 
 -   The Coronavirus in the Urban Built Environment (CUBE) project seeks to develop environmental sampling as a spatially-resolved method for monitoring COVID-19 in congregate settings such as long-term care homes (LTC), universities, public schools, and day-cares.\
 -   We collect samples by swabbing floors; then, the swabs are tested for COVID-19 using an [RT-qPCR](https://en.wikipedia.org/wiki/Reverse_transcription_polymerase_chain_reaction) assay developed by [DNA Genotek](https://www.dnagenotek.com/) and/or a novel CRISPR-based device.\
