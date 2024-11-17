@@ -52,10 +52,9 @@ publication_cards <-
       paste0(authors, '.\n'), 
       paste0(journal, '.\n'),
       paste0(year, '. '),
-      vol_issue_pages
+      paste0(vol_issue_pages, ' ')
     )
   ) |> 
-  arrange(desc(year), desc(row_number())) |> 
   bs4cards::cards(
     title = title,
     text = text,
