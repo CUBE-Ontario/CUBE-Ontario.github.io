@@ -3,6 +3,28 @@ title: "Events"
 output: html_document
 ---
 
+<!-- <!--  Follow this template for adding new events --> 
+<!-- ---- -->
+<!-- ### event -->
+<!-- *month day<sup>th</sup>, year. Place, city, prov.* -->
+<!-- sentence(s) to describe presenter, talk, event. -->
+
+<!-- ```{r, out.width = "650px", echo=FALSE, fig.align='center'} -->
+<!-- knitr::include_graphics("public/img/event/alex_edar.jpg") -->
+<!-- ``` -->
+
+----
+
+### AMR Symposium 2024
+
+*November 19-20<sup>th</sup>, 2024. Toronto, ON.*
+
+Drs. Caroline Nott and Derek MacFadden present “Antimicrobial Resistance and the Built Environment” at the 2024 AMR Symposium.
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/amr_symp.jpg")
+```
+
 ----
 
 ### EDAR7 Conference 2024
