@@ -15,6 +15,24 @@ output: html_document
 
 ----
 
+### CSM Conference 2025
+
+*June 17-20<sup>th</sup>, 2025. Université de Montréal, Montreal, QC.*
+
+Nashira Ridgeway presenting her poster "Spatially and temporally resolved monitoring of microbial communities in hospital intensive care units: Insights into colonization and antimicrobial resistance" at CSM 2025.
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/nashira.jpeg")
+```
+
+Aaron Hinz and Sarah Clarke presenting their poster “Surveillance of viral and bacterial pathogens using built environment swabbing" at CSM 2025.
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/aaron-sarah.jpeg")
+```
+
+----
+
 ### AMR Symposium 2024
 
 *November 19-20<sup>th</sup>, 2024. Toronto, ON.*
