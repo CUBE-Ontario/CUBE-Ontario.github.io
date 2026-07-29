@@ -13,6 +13,19 @@ output: html_document
 <!-- knitr::include_graphics("public/img/event/alex_edar.jpg") -->
 <!-- ``` -->
 
+
+----
+
+### APIC Conference 2026
+
+*June 15-17<sup>th</sup>, 2026. Nashville, TN.*
+
+```{r, out.width = "650px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("public/img/event/emil_apic.jpeg")
+```
+
+Emil Hodzic-Santor presenting the poster "Environmental surveillance for SARS-CoV2, influenza, RSV, and H5N1: A multicentre prospective surveillance study at emergency departments and animal care facilities" at the annual Association for Professionals in Infection Control and Epidemiology (APIC) meeting.
+		
 ----
 
 ### CSM Conference 2025
